@@ -1,0 +1,21 @@
+a.rainbow {
+  color: black;
+  width: min-content;
+  text-decoration: none;
+  padding: 7px;
+  border-radius: 5px;
+  background: rgb(255, 177, 190);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 177, 190, 1) 0%,
+    rgba(248, 170, 221, 1) 25%,
+    rgba(186, 147, 223, 1) 50%,
+    rgba(108, 209, 239, 1) 75%,
+    rgba(120, 230, 208, 1) 100%
+  );
+  transition: all 250ms;
+}
+
+a.rainbow:hover {
+  text-decoration: underline;
+}

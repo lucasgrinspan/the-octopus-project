@@ -2,10 +2,14 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
+import Image from "./image"
+
 const Header = ({ siteTitle }) => (
   <header
     style={{
-      background: `rebeccapurple`,
+      background: "rgb(255,177,190)",
+      background:
+        "linear-gradient(90deg, rgba(255,177,190,1) 0%, rgba(248,170,221,1) 25%, rgba(186,147,223,1) 50%, rgba(108,209,239,1) 75%, rgba(120,230,208,1) 100%)",
       marginBottom: `1.45rem`,
     }}
   >
@@ -14,19 +18,25 @@ const Header = ({ siteTitle }) => (
         margin: `0 auto`,
         maxWidth: 960,
         padding: `1.45rem 1.0875rem`,
+        display: "flex",
+        flexDirection: "row",
+        alignItems: "center",
       }}
     >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
+      <Link
+        to="/"
+        style={{
+          color: `black`,
+          textDecoration: `none`,
+          fontWeight: "bolder",
+        }}
+      >
+        <img
+          alt="The Octopus Project"
+          src={require("../images/logo.png")}
+          style={{ width: 244, height: 100, marginBottom: 0 }}
+        />
+      </Link>
     </div>
   </header>
 )
