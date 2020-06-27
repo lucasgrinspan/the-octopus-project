@@ -1,0 +1,34 @@
+#charity-container {
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  align-items: flex-end;
+}
+#charity-total {
+  font-weight: bolder;
+  font-size: 3rem;
+  margin-bottom: 7px;
+}
+#charity-subtitle {
+  margin-bottom: 0;
+  font-weight: bold;
+  font-size: 1rem;
+}
+#op-logo {
+  width: 244px;
+  height: 100px;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 470px) {
+  #charity-total {
+    font-size: 2rem;
+  }
+  #charity-subtitle {
+    font-size: 0.785rem;
+  }
+  #op-logo {
+    height: calc(calc(70%) * 2.44);
+    width: 70%;
+  }
+}

@@ -14,8 +14,11 @@ const IndexPage = () => (
     <h1>Charities</h1>
     <p>
       Donate $5 to one of these charities and receive a crochet octopus in
-      return! If you have a charity that you feel strongly towards, contact Erin
-      and let her know.
+      return! If you have a charity that you feel strongly towards, contact{" "}
+      <a href="https://www.instagram.com/the_octopus_project/">
+        @the_octopus_project
+      </a>
+      .
     </p>
     <div style={{ maxWidth: "60ch" }}>
       {charities.map(charity => (

@@ -2,7 +2,9 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
-import Image from "./image"
+import Counter from "./counter"
+
+import { TOTAL } from "../data/donations"
 
 const Header = ({ siteTitle }) => (
   <header
@@ -21,6 +23,7 @@ const Header = ({ siteTitle }) => (
         display: "flex",
         flexDirection: "row",
         alignItems: "center",
+        justifyContent: "space-between",
       }}
     >
       <Link
@@ -34,9 +37,10 @@ const Header = ({ siteTitle }) => (
         <img
           alt="The Octopus Project"
           src={require("../images/logo.png")}
-          style={{ width: 244, height: 100, marginBottom: 0 }}
+          id="op-logo"
         />
       </Link>
+      <Counter total={TOTAL} />
     </div>
   </header>
 )
