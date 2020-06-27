@@ -76,7 +76,7 @@ export default [
       "This organization collectively addresses the inequities faced in the black transgender human experience",
     link: "https://blacktrans.org/about-us/",
     blm: true,
-    lgbt: false,
+    lgbt: true,
   },
   {
     name: "Transgender Awareness Alliance",
