@@ -13,6 +13,7 @@
   margin-bottom: 0;
   font-weight: bold;
   font-size: 1rem;
+  width: max-content;
 }
 #op-logo {
   width: 244px;
@@ -23,6 +24,7 @@
 @media screen and (max-width: 470px) {
   #charity-total {
     font-size: 2rem;
+    margin-bottom: 4px;
   }
   #charity-subtitle {
     font-size: 0.785rem;
