@@ -23,6 +23,18 @@ let calculateDonationTable = (orgs, donations) => {
   return donationTable
 }
 
+let calculateIdDonationTable = donations => {
+  let idDonationTable = {}
+  donations.forEach(donation => {
+    if (donation.id in idDonationTable) {
+      idDonationTable[donation.id] += donation.amount
+    } else {
+      idDonationTable[donation.id] = donation.amount
+    }
+  })
+  return idDonationTable
+}
+
 let findLargestReceiver = donationTable => {
   let largestReceiver = ""
   let largestAmount = 0
@@ -47,22 +59,30 @@ let findSmallestReceiver = donationTable => {
   return smallestReceiver
 }
 
-let findLargestDonation = donations => {
+// finds the largest donation from a single person
+let findLargestDonation = idDonationTable => {
+  // loop through the donation table and find the largest donation
   let largestDonation = 0
-  donations.forEach(donation => {
-    if (donation.amount > largestDonation) {
-      largestDonation = donation.amount
+  Object.keys(idDonationTable).forEach(id => {
+    if (idDonationTable[id] > largestDonation) {
+      largestDonation = idDonationTable[id]
     }
   })
   return largestDonation
 }
 
+let countNumDonators = idDonationTable => {
+  return Object.keys(idDonationTable).length
+}
+
 const StatsPage = () => {
   const orgs = charities.map(charity => charity.name)
   const donationTable = calculateDonationTable(orgs, DONATIONS)
+  const idDonationTable = calculateIdDonationTable(DONATIONS)
   let largestReceiver = findLargestReceiver(donationTable)
   let smallestReceiver = findSmallestReceiver(donationTable)
-  let largestDonation = findLargestDonation(DONATIONS)
+  let largestDonation = findLargestDonation(idDonationTable)
+  let numDonators = countNumDonators(idDonationTable)
 
   return (
     <Layout>
@@ -82,7 +102,9 @@ const StatsPage = () => {
           title="Largest donation so far?"
           value={largestDonation}
           unit="$"
+          isNum
         />
+        <StatCard title="How many have donated?" value={numDonators} isNum />
       </div>
     </Layout>
   )

@@ -1,8 +1,9 @@
 import React from "react"
 import "./stat-card.css"
-const StatCard = ({ title, value, unit }) => {
-  let valueClassName =
-    unit === "$" ? "stat-card-value dollar-amount" : "stat-card-value"
+const StatCard = ({ title, value, unit, isNum }) => {
+  let valueClassName = isNum
+    ? "stat-card-value dollar-amount"
+    : "stat-card-value"
   return (
     <div className="stat-card-container">
       <p className="stat-card-title">{title}</p>
