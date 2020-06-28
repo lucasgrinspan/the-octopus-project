@@ -5,28 +5,9 @@ import "./chart.css"
 import { COLORS } from "../../data/colors"
 
 function getWindowDimensions() {
-    const { innerWidth: width, innerHeight: height } = window
-    return {
-        width,
-        height,
-    }
-}
-
-function useWindowDimensions() {
-    const [windowDimensions, setWindowDimensions] = useState(
-        getWindowDimensions()
-    )
-
-    useEffect(() => {
-        function handleResize() {
-            setWindowDimensions(getWindowDimensions())
-        }
-
-        window.addEventListener("resize", handleResize)
-        return () => window.removeEventListener("resize", handleResize)
-    }, [])
-
-    return windowDimensions
+    let innerWidth = window.innerWidth
+    let innerHeight = window.innerHeight
+    return { width: innerWidth, height: innerHeight }
 }
 
 const theme = {
@@ -49,7 +30,7 @@ const theme = {
 const Chart = ({ colorData }) => {
     let windowWidth = 0
     useEffect(() => {
-        windowWidth = useWindowDimensions().width
+        windowWidth = getWindowDimensions().width
     })
 
     // convert color data to nivo structure

@@ -302,4 +302,20 @@ export const DONATIONS = [
         color: ["lavender"],
         sent: false,
     },
+    {
+        amount: 20,
+        org: "National Queer and Trans Therapists of Color Network (NQTTCN)",
+        id: 29,
+        date: "2020-06-28",
+        color: [],
+        sent: false,
+    },
+    {
+        amount: 20,
+        org: "National Queer and Trans Therapists of Color Network (NQTTCN)",
+        id: 30,
+        date: "2020-06-28",
+        color: [],
+        sent: false,
+    },
 ]
