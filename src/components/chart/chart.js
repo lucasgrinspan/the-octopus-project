@@ -5,7 +5,9 @@ import "./chart.css"
 import { COLORS } from "../../data/colors"
 
 function getWindowDimensions() {
-    const { innerWidth: width, innerHeight: height } = window
+    if (window) {
+        const { innerWidth: width, innerHeight: height } = window
+    }
     return {
         width,
         height,
@@ -47,6 +49,11 @@ const theme = {
 }
 
 const Chart = ({ colorData }) => {
+    let windowWidth = 0
+    useEffect(() => {
+        windowWidth = useWindowDimensions().width
+    })
+
     // convert color data to nivo structure
     let nivoColorData = []
     Object.keys(colorData).forEach(color => {
@@ -59,7 +66,6 @@ const Chart = ({ colorData }) => {
 
     let xLabelRotation = 0
     let legendOffset = 32
-    let windowWidth = useWindowDimensions().width
     let bottomMargin = 50
 
     if (windowWidth < 507) {
