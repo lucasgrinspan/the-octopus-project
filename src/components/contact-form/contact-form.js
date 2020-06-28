@@ -51,6 +51,7 @@ const ContactForm = ({}) => {
                     name="message"
                     placeholder="Order, comments, concerns, etc."
                     rows={4}
+                    style={{ resize: "none" }}
                 />
             </label>
             <button id="image-picker" type="button" onClick={openFilePicker}>

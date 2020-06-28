@@ -8,6 +8,11 @@ form#contact-form {
     border: 1px solid var(--text-medium);
     background-color: var(--off-white);
 }
+@media screen and (max-width: 450px) {
+    form#contact-form {
+        padding: 15px;
+    }
+}
 form#contact-form label {
     display: flex;
     flex-direction: column;
