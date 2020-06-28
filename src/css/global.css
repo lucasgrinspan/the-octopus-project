@@ -1,11 +1,11 @@
 :root {
     --brand-gradient: linear-gradient(
         90deg,
-        rgba(255, 177, 190, 1) 0%,
-        rgba(248, 170, 221, 1) 25%,
-        rgba(186, 147, 223, 1) 50%,
-        rgba(108, 209, 239, 1) 75%,
-        rgba(120, 230, 208, 1) 100%
+        #ffb1be 0%,
+        #f8aadd 25%,
+        #ba93df 50%,
+        #6cd1ef 75%,
+        #78e6d0 100%
     );
     --text-dark: #000000;
     --text-medium: #535353;

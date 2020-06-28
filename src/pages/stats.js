@@ -5,7 +5,6 @@ import SEO from "../components/seo"
 import StatCard from "../components/stat-card/stat-card"
 import CHARITIES from "../data/charities"
 import { DONATIONS } from "../data/donations"
-import { OCTOPI } from "../data/octopi"
 
 let calculateDonationTable = (orgs, donations) => {
     // populate the donation table
@@ -75,24 +74,26 @@ let countNumDonators = idDonationTable => {
     return Object.keys(idDonationTable).length
 }
 
-let countOctopiSent = octopi => {
+let countOctopiSent = donations => {
     let numSent = 0
-    octopi.forEach(octopus => {
-        if (octopus.sent) {
+    donations.forEach(donation => {
+        if (donation.sent) {
             numSent++
         }
     })
     return numSent
 }
 
-let calculateMostPopularOctopusColor = octopi => {
+let calculateMostPopularOctopusColor = donations => {
     let octopusTable = {}
-    octopi.forEach(octopus => {
-        if (octopus.color in octopusTable) {
-            octopusTable[octopus.color]++
-        } else {
-            octopusTable[octopus.color] = 1
-        }
+    donations.forEach(donation => {
+        donation.color.forEach(color => {
+            if (color in octopusTable) {
+                octopusTable[color]++
+            } else {
+                octopusTable[color] = 1
+            }
+        })
     })
 
     let mostPopularColor = ""
@@ -114,8 +115,8 @@ const StatsPage = () => {
     let smallestReceiver = findSmallestReceiver(donationTable)
     let largestDonation = findLargestDonation(idDonationTable)
     let numDonators = countNumDonators(idDonationTable)
-    let numOctopi = countOctopiSent(OCTOPI)
-    let mostPopularColor = calculateMostPopularOctopusColor(OCTOPI)
+    let numOctopi = countOctopiSent(DONATIONS)
+    let mostPopularColor = calculateMostPopularOctopusColor(DONATIONS)
 
     return (
         <Layout>
