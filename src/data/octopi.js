@@ -83,4 +83,68 @@ export const OCTOPI = [
     color: "light pink",
     sent: false,
   },
+  {
+    color: "hot pink",
+    sent: false,
+  },
+  {
+    color: "yellow",
+    sent: false,
+  },
+  {
+    color: "orange",
+    sent: false,
+  },
+  {
+    color: "fuzzy blue",
+    sent: false,
+  },
+  {
+    color: "grey",
+    sent: false,
+  },
+  {
+    color: "light pink",
+    sent: false,
+  },
+  {
+    color: "purple",
+    sent: false,
+  },
+  {
+    color: "yellow",
+    sent: false,
+  },
+  {
+    color: "light pink",
+    sent: false,
+  },
+  {
+    color: "hot pink",
+    sent: false,
+  },
+  {
+    color: "orange",
+    sent: false,
+  },
+  {
+    color: "yellow",
+    sent: false,
+  },
+  {
+    color: "light teal",
+    sent: false,
+  },
+  {
+    color: "teal",
+    sent: false,
+  },
+  {
+    color: "purple",
+    sent: false,
+  },
+  {
+    color: "dark green",
+    sent: false,
+  },
 ]
