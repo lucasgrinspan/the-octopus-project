@@ -3,6 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import StatCard from "../components/stat-card/stat-card"
+import Chart from "../components/chart/chart"
 import CHARITIES from "../data/charities"
 import { DONATIONS } from "../data/donations"
 
@@ -32,6 +33,20 @@ let calculateIdDonationTable = donations => {
         }
     })
     return idDonationTable
+}
+
+let calculateColorTable = donations => {
+    let octopusTable = {}
+    donations.forEach(donation => {
+        donation.color.forEach(color => {
+            if (color in octopusTable) {
+                octopusTable[color]++
+            } else {
+                octopusTable[color] = 1
+            }
+        })
+    })
+    return octopusTable
 }
 
 let findLargestReceiver = donationTable => {
@@ -84,18 +99,7 @@ let countOctopiSent = donations => {
     return numSent
 }
 
-let calculateMostPopularOctopusColor = donations => {
-    let octopusTable = {}
-    donations.forEach(donation => {
-        donation.color.forEach(color => {
-            if (color in octopusTable) {
-                octopusTable[color]++
-            } else {
-                octopusTable[color] = 1
-            }
-        })
-    })
-
+let calculateMostPopularOctopusColor = octopusTable => {
     let mostPopularColor = ""
     let maxColorRequested = 0
     Object.keys(octopusTable).forEach(color => {
@@ -111,12 +115,13 @@ const StatsPage = () => {
     const orgs = CHARITIES.map(charity => charity.name)
     const donationTable = calculateDonationTable(orgs, DONATIONS)
     const idDonationTable = calculateIdDonationTable(DONATIONS)
+    const colorTable = calculateColorTable(DONATIONS)
     let largestReceiver = findLargestReceiver(donationTable)
     let smallestReceiver = findSmallestReceiver(donationTable)
     let largestDonation = findLargestDonation(idDonationTable)
     let numDonators = countNumDonators(idDonationTable)
     let numOctopi = countOctopiSent(DONATIONS)
-    let mostPopularColor = calculateMostPopularOctopusColor(DONATIONS)
+    let mostPopularColor = calculateMostPopularOctopusColor(colorTable)
 
     return (
         <Layout>
@@ -159,6 +164,7 @@ const StatsPage = () => {
                     value={mostPopularColor}
                 />
             </div>
+            <Chart colorData={colorTable} />
         </Layout>
     )
 }
