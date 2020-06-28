@@ -13,14 +13,7 @@ const Header = () => {
   })
   return (
     <>
-      <header
-        style={{
-          background: "rgb(255,177,190)",
-          background:
-            "linear-gradient(90deg, rgba(255,177,190,1) 0%, rgba(248,170,221,1) 25%, rgba(186,147,223,1) 50%, rgba(108,209,239,1) 75%, rgba(120,230,208,1) 100%)",
-          marginBottom: `1.45rem`,
-        }}
-      >
+      <header>
         <div
           className="header-container"
           style={{
@@ -48,10 +41,18 @@ const Header = () => {
         </div>
         <nav
           className="header-container"
-          style={{ display: "flex", flexDirection: "row", paddingBottom: 0 }}
+          style={{
+            display: "flex",
+            flexDirection: "row",
+            paddingBottom: 0,
+            paddingTop: 0,
+          }}
         >
           <Link activeClassName="active" className="nav-link" to="/">
             Charities
+          </Link>
+          <Link activeClassName="active" className="nav-link" to="/contact/">
+            Contact
           </Link>
           <Link activeClassName="active" className="nav-link" to="/stats/">
             Stats

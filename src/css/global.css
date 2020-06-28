@@ -1,38 +1,59 @@
+:root {
+    --brand-gradient: linear-gradient(
+        90deg,
+        rgba(255, 177, 190, 1) 0%,
+        rgba(248, 170, 221, 1) 25%,
+        rgba(186, 147, 223, 1) 50%,
+        rgba(108, 209, 239, 1) 75%,
+        rgba(120, 230, 208, 1) 100%
+    );
+    --text-dark: #000000;
+    --text-medium: #535353;
+    --text-light: #dfdfdf;
+    --input-border: #8f8f8f;
+    --off-white: #ebedee;
+    --color-1: #4d284b;
+    --color-2: #ffb1be;
+}
+header {
+    background: var(--brand-gradient);
+    margin-bottom: 1.45rem;
+}
+a {
+    color: black;
+}
+a:visited {
+    color: black;
+}
 a.rainbow {
-  color: black;
-  width: min-content;
-  text-decoration: none;
-  padding: 7px;
-  border-radius: 5px;
-  background: rgb(255, 177, 190);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 177, 190, 1) 0%,
-    rgba(248, 170, 221, 1) 25%,
-    rgba(186, 147, 223, 1) 50%,
-    rgba(108, 209, 239, 1) 75%,
-    rgba(120, 230, 208, 1) 100%
-  );
-  transition: all 250ms;
+    color: black;
+    width: min-content;
+    text-decoration: none;
+    padding: 7px;
+    border-radius: 5px;
+    background: rgb(255, 177, 190);
+    background: var(--brand-gradient);
+    transition: all 250ms;
 }
 
 a.rainbow:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
 
 .header-container {
-  margin: 0 auto;
-  max-width: 960px;
-  padding: 1.45rem 1.0875rem;
+    margin: 0 auto;
+    max-width: 960px;
+    padding: 1.45rem 1.0875rem;
 }
 .nav-link {
-  padding: 7px;
-  border-radius: 5px 5px 0 0;
-  background-color: #d4ced6;
-  text-decoration: none;
-  color: black;
+    padding: 7px;
+    border-radius: 5px 5px 0 0;
+    background-color: #d4ced6;
+    text-decoration: none;
+    color: black;
+    margin-right: 2px;
 }
 .nav-link.active {
-  font-weight: bold;
-  background-color: #f7f1f9;
+    font-weight: bold;
+    background-color: #f7f1f9;
 }

@@ -7,14 +7,7 @@ const StatCard = ({ title, value, unit, isNum }) => {
   return (
     <div className="stat-card-container">
       <p className="stat-card-title">{title}</p>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
+      <div className="stat-card-value-wrapper">
         {unit ? <p className="stat-card-unit">{unit}</p> : null}
         <p className={valueClassName}>{value}</p>
       </div>

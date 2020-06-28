@@ -138,7 +138,11 @@ const StatsPage = () => {
           isNum
         />
         <StatCard title="How many have donated?" value={numDonators} isNum />
-        <StatCard title="How many octopi were sent?" value={numOctopi} isNum />
+        <StatCard
+          title="How many octopi have been sent?"
+          value={numOctopi}
+          isNum
+        />
         <StatCard
           title="Most popular octopus color?"
           value={mostPopularColor}
