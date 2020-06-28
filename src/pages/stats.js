@@ -5,6 +5,7 @@ import SEO from "../components/seo"
 import StatCard from "../components/stat-card"
 import charities from "../data/charities"
 import { DONATIONS } from "../data/donations"
+import { OCTOPI } from "../data/octopi"
 
 let calculateDonationTable = (orgs, donations) => {
   // populate the donation table
@@ -17,7 +18,6 @@ let calculateDonationTable = (orgs, donations) => {
     if (orgs.includes(donation.org)) {
       donationTable[donation.org] += donation.amount
     } else {
-      console.log(donation)
     }
   })
   return donationTable
@@ -75,6 +75,37 @@ let countNumDonators = idDonationTable => {
   return Object.keys(idDonationTable).length
 }
 
+let countOctopiSent = octopi => {
+  let numSent = 0
+  octopi.forEach(octopus => {
+    if (octopus.sent) {
+      numSent++
+    }
+  })
+  return numSent
+}
+
+let calculateMostPopularOctopusColor = octopi => {
+  let octopusTable = {}
+  octopi.forEach(octopus => {
+    if (octopus.color in octopusTable) {
+      octopusTable[octopus.color]++
+    } else {
+      octopusTable[octopus.color] = 1
+    }
+  })
+
+  let mostPopularColor = ""
+  let maxColorRequested = 0
+  Object.keys(octopusTable).forEach(color => {
+    if (octopusTable[color] > maxColorRequested) {
+      maxColorRequested = octopusTable[color]
+      mostPopularColor = color
+    }
+  })
+  return mostPopularColor
+}
+
 const StatsPage = () => {
   const orgs = charities.map(charity => charity.name)
   const donationTable = calculateDonationTable(orgs, DONATIONS)
@@ -83,6 +114,8 @@ const StatsPage = () => {
   let smallestReceiver = findSmallestReceiver(donationTable)
   let largestDonation = findLargestDonation(idDonationTable)
   let numDonators = countNumDonators(idDonationTable)
+  let numOctopi = countOctopiSent(OCTOPI)
+  let mostPopularColor = calculateMostPopularOctopusColor(OCTOPI)
 
   return (
     <Layout>
@@ -105,6 +138,11 @@ const StatsPage = () => {
           isNum
         />
         <StatCard title="How many have donated?" value={numDonators} isNum />
+        <StatCard title="How many octopi were sent?" value={numOctopi} isNum />
+        <StatCard
+          title="Most popular octopus color?"
+          value={mostPopularColor}
+        />
       </div>
     </Layout>
   )

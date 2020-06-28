@@ -13,7 +13,6 @@ const StatCard = ({ title, value, unit, isNum }) => {
           flexDirection: "row",
           alignItems: "center",
           justifyContent: "center",
-          width: "min-content",
         }}
       >
         {unit ? <p className="stat-card-unit">{unit}</p> : null}
