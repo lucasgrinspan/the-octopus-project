@@ -6,7 +6,7 @@ import Counter from "./counter"
 
 import { DONATIONS } from "../data/donations"
 
-const Header = ({ siteTitle }) => {
+const Header = () => {
   let donationTotal = 0
   DONATIONS.forEach(donation => {
     donationTotal += donation.amount
@@ -53,7 +53,7 @@ const Header = ({ siteTitle }) => {
           <Link activeClassName="active" className="nav-link" to="/">
             Charities
           </Link>
-          <Link activeClassName="active" className="nav-link" to="/stats">
+          <Link activeClassName="active" className="nav-link" to="/stats/">
             Stats
           </Link>
         </nav>
