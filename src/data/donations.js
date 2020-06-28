@@ -318,4 +318,12 @@ export const DONATIONS = [
         color: ["yellow"],
         sent: false,
     },
+    {
+        amount: 5,
+        org: "The Trevor Project",
+        id: 31,
+        date: "2020-06-28",
+        color: ["light pink"],
+        sent: false,
+    },
 ]

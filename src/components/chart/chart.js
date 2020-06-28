@@ -58,7 +58,7 @@ const Chart = ({ colorData }) => {
     }
 
     return (
-        <div style={{ height: 300, width: "100%" }}>
+        <div style={{ marginTop: 20, height: 300, width: "100%" }}>
             <h3 style={{ marginBottom: 0 }}>Octopus Colors Ordered</h3>
             <ResponsiveBar
                 isInteractive={false}
