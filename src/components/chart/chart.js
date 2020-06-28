@@ -1,8 +1,24 @@
-import React, { useState, useEffect } from "react"
+import React, { useEffect } from "react"
 import { ResponsiveBar } from "@nivo/bar"
 import "./chart.css"
 
 import { COLORS } from "../../data/colors"
+
+// sorts array based on order variable
+function mapOrder(array, order, key) {
+    array.sort(function (a, b) {
+        var A = a[key],
+            B = b[key]
+
+        if (order.indexOf(A) > order.indexOf(B)) {
+            return 1
+        } else {
+            return -1
+        }
+    })
+
+    return array
+}
 
 function getWindowDimensions() {
     let innerWidth = window.innerWidth
@@ -43,6 +59,9 @@ const Chart = ({ colorData }) => {
         })
     })
 
+    // place in rainbow order
+    let rainbowOrder = mapOrder(nivoColorData, Object.keys(COLORS), "name")
+
     let xLabelRotation = 0
     let legendOffset = 32
     let bottomMargin = 50
@@ -62,7 +81,7 @@ const Chart = ({ colorData }) => {
             <h3 style={{ marginBottom: 0 }}>Octopus Colors Ordered</h3>
             <ResponsiveBar
                 isInteractive={false}
-                data={nivoColorData}
+                data={rainbowOrder}
                 indexBy="name"
                 theme={theme}
                 keys={Object.keys(COLORS)}
