@@ -50,8 +50,8 @@ let findSmallestReceiver = donationTable => {
 let findLargestDonation = donations => {
   let largestDonation = 0
   donations.forEach(donation => {
-    if (donation.sum > largestDonation) {
-      largestDonation = donation.sum
+    if (donation.amount > largestDonation) {
+      largestDonation = donation.amount
     }
   })
   return largestDonation
