@@ -11,16 +11,15 @@ const openFilePicker = () => {
     }
 }
 
-const ContactForm = ({}) => {
+const ContactForm = () => {
     const [file, setFile] = useState(null)
 
     const changeImage = evt => {
-        imageIcon = <img src={URL.createObjectURL(evt.target.files[0])} />
         setFile(URL.createObjectURL(evt.target.files[0]))
     }
 
     let imageIcon = file ? (
-        <img src={file} id="img-thumbnail" />
+        <img src={file} id="img-thumbnail" alt="Your upload" />
     ) : (
         <IoIosImage style={{ marginLeft: 15 }} />
     )
