@@ -5,9 +5,7 @@ import "./chart.css"
 import { COLORS } from "../../data/colors"
 
 function getWindowDimensions() {
-    if (window) {
-        const { innerWidth: width, innerHeight: height } = window
-    }
+    const { innerWidth: width, innerHeight: height } = window
     return {
         width,
         height,
