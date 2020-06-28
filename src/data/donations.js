@@ -155,4 +155,19 @@ export const DONATIONS = [
     date: "2020-06-27",
     id: 21,
   },
+  {
+    amount: 10,
+    org: "The LoveLand Foundation",
+    id: 22,
+  },
+  {
+    amount: 10,
+    org: "The LoveLand Foundation",
+    id: 23,
+  },
+  {
+    amount: 7,
+    org: "The Trevor Project",
+    id: 24,
+  },
 ]

@@ -1,6 +1,7 @@
 .stat-card-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   border-radius: 20px;
   background-color: white;
   margin-bottom: 30px;
@@ -8,7 +9,7 @@
   margin-right: 15px;
   padding: 20px;
   width: 300px;
-  min-height: 200px;
+  min-height: 150px;
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
     0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
     0 16px 16px rgba(0, 0, 0, 0.12);
@@ -16,17 +17,17 @@
 .stat-card-title {
   font-weight: bold;
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.25rem;
   width: 100%;
 }
 .stat-card-value {
   font-weight: bolder;
   text-align: center;
-  font-size: 1.25rem;
-  margin-top: 15px;
+  font-size: 1.5rem;
+  margin-bottom: 0;
 }
 .stat-card-value.dollar-amount {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 .stat-card-unit {
   font-weight: bold;

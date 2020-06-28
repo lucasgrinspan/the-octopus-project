@@ -99,7 +99,7 @@ const StatsPage = () => {
         <StatCard title="Who's received the most?" value={largestReceiver} />
         <StatCard title="Who needs more love?" value={smallestReceiver} />
         <StatCard
-          title="Largest donation so far?"
+          title="Largest donation from a single person?"
           value={largestDonation}
           unit="$"
           isNum
