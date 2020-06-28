@@ -59,6 +59,14 @@ export default [
     desc:
       "A healing justice organization committed to transforming mental health for queer and trans people of color (QTPoC)",
     link: "https://www.nqttcn.com/",
+    blm: true,
+    lgbt: true,
+  },
+  {
+    name: "Central Florida LGBTQ+ Relief Fund",
+    desc:
+      "This organization assists Orlando area LGBTQ+ community members who are most in need as a result of the COVID-19 crisis",
+    link: "https://www.gofundme.com/f/central-florida-lgbtq-relief-fund",
     blm: false,
     lgbt: true,
   },
