@@ -343,4 +343,12 @@ export const DONATIONS = [
         color: ["maroon"],
         sent: false,
     },
+    {
+        amount: 5,
+        org: "The LoveLand Foundation",
+        id: 33,
+        date: "2020-06-29",
+        color: ["lavender"],
+        sent: false,
+    },
 ]
