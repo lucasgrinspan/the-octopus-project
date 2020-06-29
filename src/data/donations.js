@@ -388,7 +388,7 @@ export const DONATIONS = [
         org: "Black Girls CODE",
         id: 37,
         date: "2020-06-29",
-        color: [],
+        color: ["orange"],
         sent: false,
     },
     {
@@ -396,6 +396,8 @@ export const DONATIONS = [
         org: "Victory Fund",
         id: 37,
         date: "2020-06-29",
+        order: "bracelet",
+        orderColor: ["pride"],
         color: [],
         sent: false,
     },
