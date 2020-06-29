@@ -375,4 +375,12 @@ export const DONATIONS = [
         color: ["white"],
         sent: false,
     },
+    {
+        amount: 20,
+        org: "Project No Label",
+        id: 36,
+        date: "2020-06-29",
+        color: [],
+        sent: false,
+    },
 ]
