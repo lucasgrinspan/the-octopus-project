@@ -6,6 +6,7 @@ export const DONATIONS = [
         id: 0,
         color: ["yellow"],
         sent: true,
+        state: "Florida",
     },
     {
         amount: 20,
@@ -14,6 +15,7 @@ export const DONATIONS = [
         id: 1,
         color: ["maroon"],
         sent: true,
+        state: "Florida",
     },
     {
         amount: 10,

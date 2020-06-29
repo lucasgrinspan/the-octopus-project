@@ -12,15 +12,22 @@ const IndexPage = () => (
         <SEO title="Home" />
         <h1>Charities</h1>
         <p>
-            Donate $5 to one of these charities and receive a crochet octopus in
-            return! If you have a charity that you feel strongly towards,
+            <strong>
+                Donate at least $5 to one of these charities and receive a
+                crochet octopus in return!
+            </strong>{" "}
+            If you have an unlisted charity that you feel strongly about,
             contact{" "}
             <a href="https://www.instagram.com/the_octopus_project/">
                 @the_octopus_project
             </a>
-            . If you're ready with a donation, contact{" "}
+            . Once you have verification of your donation, contact{" "}
             <a href="https://www.instagram.com/the_octopus_project/">
                 @the_octopus_project
+            </a>
+            , email us at{" "}
+            <a href="mailto:contact@theoctopusproject.live">
+                contact@theoctopusproject.live
             </a>{" "}
             or head to our <Link to="/contact/">contact page</Link>.
         </p>

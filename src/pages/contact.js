@@ -15,13 +15,12 @@ const ContactPage = () => {
                 <a href="https://www.instagram.com/the_octopus_project/">
                     @the_octopus_project
                 </a>{" "}
-                or email us at{" "}
+                , email us at{" "}
                 <a href="mailto:contact@theoctopusproject.live">
                     contact@theoctopusproject.live
-                </a>
-                ! You can also contact us if you have any comments or concerns
-                as well. Additionally, you can use this form below if you
-                prefer.
+                </a>{" "}
+                or fill out this form with proof of your donation! Feel free to
+                share your comments or concerns with us as well!
             </p>
             <div style={{ display: "flex", justifyContent: "center" }}>
                 <ContactForm />

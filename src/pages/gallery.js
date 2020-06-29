@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 
-import { graphql } from "gatsby"
+import { graphql, Link } from "gatsby"
 import Gallery from "@browniebroke/gatsby-image-gallery"
 import "@browniebroke/gatsby-image-gallery/dist/style.css"
 
@@ -12,6 +12,18 @@ const GalleryPage = ({ data }) => {
         <Layout>
             <SEO title="Gallery" />
             <h1>Gallery</h1>
+            <p>
+                If you'd like one of your images to be featured in our gallery,
+                DM it to our{" "}
+                <a href="https://www.instagram.com/the_octopus_project">
+                    instagram account
+                </a>
+                , email it to us at{" "}
+                <a href="mailto:contact@theoctopusproject.live">
+                    contact@theoctopusproject.live
+                </a>
+                , or use our <Link to="/contact/">contact page</Link>.
+            </p>
             <Gallery images={images} />
         </Layout>
     )

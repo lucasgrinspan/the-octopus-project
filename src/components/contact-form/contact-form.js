@@ -33,14 +33,14 @@ const ContactForm = () => {
         >
             <label>
                 Name (or a fake name!)
-                <input type="text" name="name" placeholder="Octo Boy" />
+                <input type="text" name="name" placeholder="Octo Friend" />
             </label>
             <label>
                 Contact Email (if you want us to respond)
                 <input
                     type="email"
                     name="email"
-                    placeholder="you@example.com"
+                    placeholder="octofriend@example.com"
                 />
             </label>
             <label>
@@ -48,7 +48,7 @@ const ContactForm = () => {
                 <textarea
                     required
                     name="message"
-                    placeholder="Order, comments, concerns, etc."
+                    placeholder="Order, comments, concerns, questions, etc."
                     rows={4}
                     style={{ resize: "none" }}
                 />
