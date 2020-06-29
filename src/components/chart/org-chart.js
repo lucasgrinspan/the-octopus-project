@@ -1,7 +1,20 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import { ResponsivePie } from "@nivo/pie"
 
 const OrgChart = ({ donationTable }) => {
+    const [windowWidth, setWindowWidth] = useState(0)
+    useEffect(() => {
+        setWindowWidth(window.innerWidth)
+    })
+
+    let sideMargin = 80
+    let disableLabels = false
+    if (windowWidth < 590) {
+        disableLabels = true
+    } else if (windowWidth < 680) {
+        sideMargin = 100
+    }
+
     let nivoData = []
 
     let keysArray = Object.keys(donationTable).sort((a, b) => {
@@ -33,7 +46,7 @@ const OrgChart = ({ donationTable }) => {
     // we have to change the array back to the original
     keysArray.reverse().forEach((org, index) => {
         console.log({ org, amount: donationTable[org] })
-        if (index === Object.keys(donationTable).length - 1) {
+        if (index === keysArray.length - 1) {
             if (otherTotal + donationTable[org] === 0) {
                 return
             }
@@ -78,12 +91,28 @@ const OrgChart = ({ donationTable }) => {
                     "#ffaaa5",
                 ]}
                 sortByValue
-                margin={{ top: 40, right: 80, bottom: 80, left: 80 }}
+                margin={{
+                    top: 40,
+                    right: 80,
+                    bottom: sideMargin,
+                    left: sideMargin,
+                }}
                 innerRadius={0.5}
                 padAngle={0.7}
                 borderWidth={1}
                 borderColor={{ from: "color", modifiers: [["darker", 0.2]] }}
                 sliceLabel={d => `$${d.value}`}
+                enableRadialLabels={!disableLabels}
+                radialLabel={d => {
+                    if (
+                        d.id ===
+                        "National Queer and Trans Therapists of Color Network (NQTTCN)"
+                    ) {
+                        return "NQTTCN"
+                    } else {
+                        return d.id
+                    }
+                }}
                 radialLabelsSkipAngle={10}
                 radialLabelsTextXOffset={6}
                 radialLabelsTextColor="#333333"
