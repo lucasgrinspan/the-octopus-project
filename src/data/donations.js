@@ -24,6 +24,7 @@ export const DONATIONS = [
         id: 2,
         color: ["orange"],
         sent: true,
+        state: "Florida",
     },
     {
         amount: 5,
@@ -32,6 +33,7 @@ export const DONATIONS = [
         id: 3,
         color: ["light pink"],
         sent: true,
+        state: "Florida",
     },
     {
         amount: 50,
@@ -88,6 +90,7 @@ export const DONATIONS = [
         id: 8,
         color: ["hot pink"],
         sent: true,
+        state: "Florida",
     },
     {
         amount: 5,
@@ -96,6 +99,7 @@ export const DONATIONS = [
         id: 9,
         color: ["orange"],
         sent: true,
+        state: "Florida",
     },
     {
         amount: 5,
