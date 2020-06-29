@@ -359,4 +359,20 @@ export const DONATIONS = [
         color: [],
         sent: false,
     },
+    {
+        amount: 5,
+        org: "Dream Defenders Miami",
+        id: 35,
+        date: "2020-06-29",
+        color: ["grey"],
+        sent: false,
+    },
+    {
+        amount: 5,
+        org: "Victory Fund",
+        id: 35,
+        date: "2020-06-29",
+        color: ["white"],
+        sent: false,
+    },
 ]
