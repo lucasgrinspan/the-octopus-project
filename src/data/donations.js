@@ -65,7 +65,8 @@ export const DONATIONS = [
         date: "2020-06-26",
         id: 6,
         color: ["maroon"],
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 25,
@@ -107,7 +108,8 @@ export const DONATIONS = [
         date: "2020-06-27",
         id: 10,
         color: ["light blue"],
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 5,
@@ -139,7 +141,8 @@ export const DONATIONS = [
         date: "2020-06-27",
         id: 13,
         color: ["teal"],
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 10,
@@ -330,6 +333,14 @@ export const DONATIONS = [
         id: 31,
         date: "2020-06-28",
         color: ["light pink"],
+        sent: false,
+    },
+    {
+        amount: 5,
+        org: "The Trevor Project",
+        id: 32,
+        date: "2020-06-28",
+        color: ["maroon"],
         sent: false,
     },
 ]

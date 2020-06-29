@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import { ResponsiveBar } from "@nivo/bar"
 import "./chart.css"
 
@@ -20,10 +20,8 @@ function mapOrder(array, order, key) {
     return array
 }
 
-function getWindowDimensions() {
-    let innerWidth = window.innerWidth
-    let innerHeight = window.innerHeight
-    return { width: innerWidth, height: innerHeight }
+function getWindowWidth() {
+    return window.innerWidth
 }
 
 const theme = {
@@ -44,9 +42,9 @@ const theme = {
 }
 
 const Chart = ({ colorData }) => {
-    let windowWidth = 0
+    const [windowWidth, setWindowWidth] = useState(0)
     useEffect(() => {
-        windowWidth = getWindowDimensions().width
+        setWindowWidth(getWindowWidth())
     })
 
     // convert color data to nivo structure
