@@ -94,7 +94,7 @@ let countOctopiSent = donations => {
     let numSent = 0
     donations.forEach(donation => {
         if (donation.sent) {
-            numSent++
+            numSent += donation.color.length
         }
     })
     return numSent

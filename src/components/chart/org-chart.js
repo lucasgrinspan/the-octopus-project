@@ -42,7 +42,6 @@ const OrgChart = ({ donationTable }) => {
     let countingForOther = false
     // we have to change the array back to the original
     keysArray.reverse().forEach((org, index) => {
-        console.log({ org, amount: donationTable[org] })
         if (index === keysArray.length - 1) {
             if (otherTotal + donationTable[org] === 0) {
                 return
@@ -94,6 +93,8 @@ const OrgChart = ({ donationTable }) => {
                     bottom: sideMargin,
                     left: sideMargin,
                 }}
+                borderWidth={5}
+                borderColor={{ from: "color", modifiers: [["darker", 2]] }}
                 innerRadius={0.5}
                 padAngle={0.7}
                 borderWidth={1}
@@ -113,9 +114,9 @@ const OrgChart = ({ donationTable }) => {
                 radialLabelsTextXOffset={6}
                 radialLabelsTextColor="#333333"
                 radialLabelsLinkOffset={0}
-                radialLabelsLinkDiagonalLength={16}
-                radialLabelsLinkHorizontalLength={24}
-                radialLabelsLinkStrokeWidth={1}
+                radialLabelsLinkDiagonalLength={10}
+                radialLabelsLinkHorizontalLength={10}
+                radialLabelsLinkStrokeWidth={2}
                 radialLabelsLinkColor={{ from: "color" }}
                 slicesLabelsSkipAngle={10}
                 slicesLabelsTextColor="#333333"

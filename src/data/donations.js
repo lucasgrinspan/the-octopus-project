@@ -150,7 +150,7 @@ export const DONATIONS = [
         date: "2020-06-27",
         id: 14,
         color: ["light blue", "light pink"],
-        sent: false,
+        sent: true,
     },
     {
         amount: 5,
