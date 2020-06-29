@@ -3,7 +3,8 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import StatCard from "../components/stat-card/stat-card"
-import Chart from "../components/chart/chart"
+import ColorChart from "../components/chart/color-chart"
+import OrgChart from "../components/chart/org-chart"
 import CHARITIES from "../data/charities"
 import { DONATIONS } from "../data/donations"
 
@@ -164,7 +165,8 @@ const StatsPage = () => {
                     value={mostPopularColor}
                 />
             </div>
-            <Chart colorData={colorTable} />
+            <ColorChart colorData={colorTable} />
+            <OrgChart donationTable={donationTable} />
         </Layout>
     )
 }

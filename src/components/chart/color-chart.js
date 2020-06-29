@@ -41,7 +41,7 @@ const theme = {
     },
 }
 
-const Chart = ({ colorData }) => {
+const ColorChart = ({ colorData }) => {
     const [windowWidth, setWindowWidth] = useState(0)
     useEffect(() => {
         setWindowWidth(getWindowWidth())
@@ -75,7 +75,14 @@ const Chart = ({ colorData }) => {
     }
 
     return (
-        <div style={{ marginTop: 20, height: 300, width: "100%" }}>
+        <div
+            style={{
+                marginTop: 20,
+                marginBottom: 60,
+                height: 300,
+                width: "100%",
+            }}
+        >
             <h3 style={{ marginBottom: 0 }}>Octopus Colors Ordered</h3>
             <ResponsiveBar
                 isInteractive={false}
@@ -120,4 +127,4 @@ const Chart = ({ colorData }) => {
     )
 }
 
-export default Chart
+export default ColorChart
