@@ -383,4 +383,20 @@ export const DONATIONS = [
         color: [],
         sent: false,
     },
+    {
+        amount: 10,
+        org: "Black Girls CODE",
+        id: 37,
+        date: "2020-06-29",
+        color: [],
+        sent: false,
+    },
+    {
+        amount: 10,
+        org: "Victory Fund",
+        id: 37,
+        date: "2020-06-29",
+        color: [],
+        sent: false,
+    },
 ]
