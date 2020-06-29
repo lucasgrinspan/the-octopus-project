@@ -8,10 +8,7 @@ const OrgChart = ({ donationTable }) => {
     })
 
     let sideMargin = 80
-    let disableLabels = false
-    if (windowWidth < 590) {
-        disableLabels = true
-    } else if (windowWidth < 680) {
+    if (windowWidth < 680) {
         sideMargin = 100
     }
 
@@ -102,7 +99,6 @@ const OrgChart = ({ donationTable }) => {
                 borderWidth={1}
                 borderColor={{ from: "color", modifiers: [["darker", 0.2]] }}
                 sliceLabel={d => `$${d.value}`}
-                enableRadialLabels={!disableLabels}
                 radialLabel={d => {
                     if (
                         d.id ===
