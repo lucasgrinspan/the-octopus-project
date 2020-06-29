@@ -29,7 +29,12 @@ const IndexPage = () => (
             <a href="mailto:contact@theoctopusproject.live">
                 contact@theoctopusproject.live
             </a>{" "}
-            or head to our <Link to="/contact/">contact page</Link>.
+            or head to our <Link to="/contact/">contact page</Link>.<br />
+            <br />{" "}
+            <p>
+                Wanna meet the octopi? Check out the{" "}
+                <Link to="/gallery/">Gallery</Link>
+            </p>
         </p>
         <div style={{ maxWidth: "60ch" }}>
             {charities.map(charity => (
