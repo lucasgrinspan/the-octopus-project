@@ -83,6 +83,7 @@ const OrgChart = ({ donationTable }) => {
                 padAngle={0.7}
                 borderWidth={1}
                 borderColor={{ from: "color", modifiers: [["darker", 0.2]] }}
+                sliceLabel={d => `$${d.value}`}
                 radialLabelsSkipAngle={10}
                 radialLabelsTextXOffset={6}
                 radialLabelsTextColor="#333333"
