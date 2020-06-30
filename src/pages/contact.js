@@ -3,6 +3,9 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ContactForm from "../components/contact-form/contact-form"
+import ColorChart from "../components/color-chart/color-chart"
+
+import { COLORS, COLORS_CONTRAST } from "../data/colors"
 
 const ContactPage = () => {
     return (
@@ -30,6 +33,12 @@ const ContactPage = () => {
             <div style={{ display: "flex", justifyContent: "center" }}>
                 <ContactForm />
             </div>
+            <h1>Colors</h1>
+            <p>
+                These are the colors of yarn for the octopi we have available at
+                this moment.
+            </p>
+            <ColorChart colors={COLORS} colorsContrast={COLORS_CONTRAST} />
         </Layout>
     )
 }

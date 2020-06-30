@@ -451,4 +451,13 @@ export const DONATIONS = [
         braceletColor: ["pride"],
         sent: false,
     },
+    {
+        amount: 5,
+        org: "Dream Defenders Miami",
+        id: 38,
+        date: "2020-06-29",
+        order: ["octopus"],
+        octopusColor: "teal",
+        sent: false,
+    },
 ]

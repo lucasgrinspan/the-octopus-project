@@ -1,43 +1,41 @@
 .stat-card-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 20px;
-  background-color: white;
-  margin-bottom: 30px;
-  margin-left: 15px;
-  margin-right: 15px;
-  padding: 20px;
-  width: 300px;
-  min-height: 150px;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),
-    0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),
-    0 16px 16px rgba(0, 0, 0, 0.12);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 20px;
+    background-color: white;
+    margin-bottom: 30px;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding: 20px;
+    width: 300px;
+    min-height: 150px;
+    box-shadow: var(--shadow);
 }
 .stat-card-title {
-  font-weight: bold;
-  text-align: center;
-  font-size: 1.25rem;
-  width: 100%;
-  color: var(--text-medium);
+    font-weight: bold;
+    text-align: center;
+    font-size: 1.25rem;
+    width: 100%;
+    color: var(--text-medium);
 }
 .stat-card-value-wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 .stat-card-value {
-  font-weight: bolder;
-  text-align: center;
-  font-size: 1.5rem;
-  margin-bottom: 0;
-  text-transform: capitalize;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 0;
+    text-transform: capitalize;
 }
 .stat-card-value.dollar-amount {
-  font-size: 4rem;
+    font-size: 4rem;
 }
 .stat-card-unit {
-  font-weight: bold;
-  font-size: 1.25rem;
+    font-weight: bold;
+    font-size: 1.25rem;
 }

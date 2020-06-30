@@ -14,3 +14,21 @@ export const COLORS = {
     grey: "hsl(0, 0%, 66%)",
     black: "hsl(0, 0%, 6%)",
 }
+
+// true if color is light
+export const COLORS_CONTRAST = {
+    "light pink": true,
+    "hot pink": true,
+    coral: true,
+    maroon: false,
+    orange: true,
+    yellow: true,
+    "dark green": false,
+    "light blue": true,
+    teal: false,
+    "fuzzy blue": true,
+    lavender: false,
+    white: true,
+    grey: true,
+    black: false,
+}

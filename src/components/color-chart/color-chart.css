@@ -1,0 +1,23 @@
+#color-chart {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 25px;
+}
+.color-card {
+    width: 100%;
+    height: 150px;
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.color-card p {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 3px;
+    margin-right: 5px;
+}
+.color-card p.light {
+    color: white;
+}
