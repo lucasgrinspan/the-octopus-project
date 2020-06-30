@@ -152,7 +152,7 @@ const StatsPage = () => {
                     isNum
                 />
                 <StatCard
-                    title="How many have donated?"
+                    title="How many people have donated?"
                     value={numDonators}
                     isNum
                 />

@@ -7,7 +7,7 @@ const OrgChart = ({ donationTable }) => {
         setWindowWidth(window.innerWidth)
     })
 
-    let sideMargin = 80
+    let sideMargin = 0
     if (windowWidth < 680) {
         sideMargin = 100
     }
@@ -66,7 +66,7 @@ const OrgChart = ({ donationTable }) => {
     })
 
     return (
-        <div style={{ marginTop: 20, height: 400, width: "100%" }}>
+        <div style={{ marginTop: 40, height: 500, width: "100%" }}>
             <h3 style={{ marginBottom: 0 }}>Donation Recipients</h3>
             <ResponsivePie
                 data={nivoData}
@@ -88,9 +88,9 @@ const OrgChart = ({ donationTable }) => {
                 ]}
                 sortByValue
                 margin={{
-                    top: 40,
-                    right: 80,
-                    bottom: sideMargin,
+                    top: 0,
+                    right: sideMargin,
+                    bottom: 80,
                     left: sideMargin,
                 }}
                 borderWidth={5}
