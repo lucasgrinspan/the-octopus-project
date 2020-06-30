@@ -1,15 +1,30 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, useStaticQuery } from "gatsby"
+import Img from "gatsby-image"
 import { FaInstagram, FaHeart } from "react-icons/fa"
 const Footer = () => {
+    const data = useStaticQuery(graphql`
+        query {
+            file(relativePath: { eq: "logo-dark.png" }) {
+                childImageSharp {
+                    fixed(width: 200, height: 83) {
+                        ...GatsbyImageSharpFixed
+                    }
+                }
+            }
+        }
+    `)
     return (
         <footer>
             <div id="footer-border"></div>
             <div id="footer-content">
                 <div id="footer-top-content">
-                    <img
+                    <Img
                         id="footer-logo"
-                        src={require("../images/logo-dark.png")}
+                        fixed={data.file.childImageSharp.fixed}
+                        alt="The Octopus Project Logo"
+                        style={{ marginRight: 30 }}
+                        imgStyle={{ margin: 0 }}
                     />
                     <div id="footer-pages">
                         <Link to="/get-involved/">Get Involved</Link>

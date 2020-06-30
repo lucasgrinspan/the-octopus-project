@@ -72,17 +72,10 @@ footer #footer-bottom-text {
 footer #footer-bottom-text > * {
     margin-bottom: 10px;
 }
-footer #footer-bottom-text p {
-}
 footer .social-link {
     height: 2rem;
     width: 2rem;
     color: var(--text-bg-dark-light);
-}
-footer #footer-logo {
-    width: 200px;
-    height: 83px;
-    margin-right: 30px;
 }
 footer #footer-pages {
     display: flex;
