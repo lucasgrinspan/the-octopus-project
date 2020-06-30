@@ -96,6 +96,9 @@ a.rainbow:hover {
     justify-content: center;
     border-radius: 500px;
 }
+.step.icon {
+    padding-left: 0;
+}
 .step-instruction {
     margin-top: 0.87rem;
 }

@@ -13,22 +13,21 @@ const ContactPage = () => {
             <SEO title="Contact" />
             <h1>Contact</h1>
             <p>
-                If you've donated and would like to receive an octopus or
-                bracelet, send a DM to{" "}
+                We can be reached at our Instagram,{" "}
                 <a href="https://www.instagram.com/the_octopus_project/">
                     @the_octopus_project
                 </a>
-                , email us at{" "}
+                , our email at{" "}
                 <a href="mailto:contact@theoctopusproject.live">
                     contact@theoctopusproject.live
                 </a>{" "}
-                or fill out this form with proof of your donation! Feel free to
-                share your comments or concerns with us as well!
+                or through the form on this page! Feel free to share your
+                comments or concerns with us. We'd love to hear from you!
             </p>
             <p>
-                If you're ordering an octopus, make sure you provide us with an
-                email address so that we can contact you back for the order and
-                shipping details.
+                If you're ordering an octopus, make sure you provide us with a
+                valid email address so that we can contact you back for the
+                order and shipping details.
             </p>
             <div style={{ display: "flex", justifyContent: "center" }}>
                 <ContactForm />
