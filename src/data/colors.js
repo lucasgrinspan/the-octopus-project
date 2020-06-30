@@ -27,7 +27,7 @@ export const COLORS_CONTRAST = {
     "light blue": true,
     teal: false,
     "fuzzy blue": true,
-    lavender: false,
+    lavender: true,
     white: true,
     grey: true,
     black: false,
