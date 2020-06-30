@@ -496,7 +496,33 @@ export const DONATIONS = [
         org: "The LoveLand Foundation",
         id: 41,
         date: "2020-06-30",
-        order: [],
+        order: [], //
+        sent: false,
+    },
+    {
+        amount: 25,
+        org: "Black Girls CODE",
+        id: 42,
+        date: "2020-06-30",
+        order: ["octopus"],
+        octopusColor: ["coral"],
+        sent: false,
+    },
+    {
+        amount: 20,
+        org: "The LoveLand Foundation",
+        id: 43,
+        date: "2020-06-30",
+        order: ["octopus"],
+        octopusColor: ["yellow"], // also orange
+        sent: false,
+    },
+    {
+        amount: 12,
+        org: "Dream Defenders Miami",
+        id: 44,
+        date: "2020-06-30",
+        order: [], //
         sent: false,
     },
 ]

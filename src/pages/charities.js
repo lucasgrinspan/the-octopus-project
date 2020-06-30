@@ -17,11 +17,8 @@ const CharitiesPage = () => (
                 crochet octopus or bracelet in return!
             </strong>{" "}
             If you have an unlisted charity that you feel strongly about,
-            contact{" "}
-            <a href="https://www.instagram.com/the_octopus_project/">
-                @the_octopus_project
-            </a>
-            . Once you have verification of your donation, contact{" "}
+            contact let us know so we can work it out. Once you have
+            verification of your donation, contact{" "}
             <a href="https://www.instagram.com/the_octopus_project/">
                 @the_octopus_project
             </a>
