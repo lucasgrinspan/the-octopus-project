@@ -37,7 +37,7 @@ const IndexPage = () => {
                     . Make sure to take a screenshot of your receipt, the
                     successful donation page, or an email confirmation.
                 </p>
-                <p className="step" id="step-two">
+                <p className="step" id="step-three">
                     2.
                 </p>
                 <p className="step-instruction">
@@ -55,7 +55,7 @@ const IndexPage = () => {
                     </a>
                     , or use our <a href="/contact/">contact page</a>.
                 </p>
-                <p className="step" id="step-three">
+                <p className="step" id="step-four">
                     3.
                 </p>
                 <p className="step-instruction">
@@ -63,7 +63,7 @@ const IndexPage = () => {
                     We'll let you know when we send your octopus or bracelet as
                     well.
                 </p>
-                <p className="step" id="step-four">
+                <p className="step" id="step-five">
                     4.
                 </p>
                 <p className="step-instruction">
