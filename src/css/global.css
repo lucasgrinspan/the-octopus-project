@@ -29,6 +29,10 @@
         0 16px 16px rgba(0, 0, 0, 0.12);
 
     --width-max: 960px;
+    --alert-text-color: #856404;
+    --alert-bg: #fff3cd;
+    --alert-border: #ffeeba;
+    --alert-text-link: #533f03;
 }
 header {
     background: var(--brand-gradient);

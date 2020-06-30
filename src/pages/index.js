@@ -5,11 +5,13 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import "../css/global.css"
+import CovidAlert from "../components/covid-alert/covid-alert"
 
 const IndexPage = () => {
     return (
         <Layout>
             <SEO title="Home" />
+            <CovidAlert />
             <h1>Welcome</h1>
             <p>
                 The Octopus Project seeks to unite cute crochet octopi to

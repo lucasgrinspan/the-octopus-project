@@ -1,0 +1,34 @@
+#covid-alert {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--alert-border);
+    background-color: var(--alert-bg);
+    color: var(--alert-text-color);
+    margin-bottom: 30px;
+}
+#covid-alert-content {
+    margin-left: 6px;
+}
+#covid-alert-title {
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+#covid-alert-text {
+    margin-bottom: 0;
+}
+#covid-alert-text a {
+    color: var(--alert-text-link);
+    font-weight: bold;
+    text-decoration: none;
+}
+#covid-alert-text a:hover {
+    text-decoration: underline;
+}
+#covid-alert-icon {
+    height: 1.5rem;
+    width: 1.5rem;
+}
