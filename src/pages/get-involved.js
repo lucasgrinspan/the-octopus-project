@@ -79,7 +79,7 @@ const GetInvolvedPage = () => {
                     <Link to="/charities/">charities</Link>.
                 </p>
                 <div id="step-five" className="step icon">
-                    <FaHandHoldingHeart />
+                    <FaGlassCheers />
                 </div>
                 <p className="step-instruction">
                     <strong>Send us love!</strong> We are a small team working
