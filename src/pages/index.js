@@ -14,9 +14,10 @@ const IndexPage = () => {
             <p>
                 The Octopus Project seeks to unite cute crochet octopi to
                 wonderful people who've donated to one of these{" "}
-                <Link to="/charities/">charities</Link>! We also now offer
-                bracelets for a $5 donation! If you'd like to contribute to our
-                cause by providing any crafts you can make,{" "}
+                <Link to="/charities/">charities</Link>! Meet the octopi at our{" "}
+                <Link to="/gallery/">gallery</Link>. We also now offer bracelets
+                for a $5 donation! If you'd like to contribute to our cause by
+                providing any crafts you can make,{" "}
                 <Link to="/contact/">contact us</Link>!
             </p>
             <p>Here's how this works:</p>
