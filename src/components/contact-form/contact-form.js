@@ -63,6 +63,7 @@ const ContactForm = () => {
                 style={{ display: "none" }}
                 accept="image/png, image/jpeg"
                 onChange={changeImage}
+                multiple
             />
             <button id="submit" type="submit">
                 Send

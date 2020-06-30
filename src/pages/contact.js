@@ -14,7 +14,7 @@ const ContactPage = () => {
                 bracelet, send a DM to{" "}
                 <a href="https://www.instagram.com/the_octopus_project/">
                     @the_octopus_project
-                </a>{" "}
+                </a>
                 , email us at{" "}
                 <a href="mailto:contact@theoctopusproject.live">
                     contact@theoctopusproject.live
