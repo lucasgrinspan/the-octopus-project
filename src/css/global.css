@@ -28,6 +28,9 @@ header {
     background: var(--brand-gradient);
     margin-bottom: 1.45rem;
 }
+p {
+    max-width: 70ch;
+}
 a {
     color: black;
 }
@@ -46,6 +49,7 @@ a.rainbow {
     display: flex;
     flex-direction: row;
     align-items: center;
+    font-weight: bold;
 }
 
 a.rainbow:hover {

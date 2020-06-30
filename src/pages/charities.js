@@ -14,7 +14,7 @@ const CharitiesPage = () => (
         <p>
             <strong>
                 Donate at least $5 to one of these charities and receive a
-                crochet octopus in return!
+                crochet octopus or bracelet in return!
             </strong>{" "}
             If you have an unlisted charity that you feel strongly about,
             contact{" "}

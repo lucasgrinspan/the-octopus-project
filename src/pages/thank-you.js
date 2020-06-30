@@ -7,8 +7,8 @@ const ThankYouPage = () => (
         <SEO title="Thank You" />
         <h1>Submission Received</h1>
         <p>
-            Thank you for contacting us! If you ordered an octopus, we will be
-            in touch with you shortly!
+            Thank you for contacting us! If you ordered an item, we will be in
+            touch with you shortly to the email you provided!
         </p>
     </Layout>
 )

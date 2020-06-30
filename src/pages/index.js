@@ -13,8 +13,11 @@ const IndexPage = () => {
             <h1>Welcome</h1>
             <p>
                 The Octopus Project seeks to unite cute crochet octopi to
-                wonderful people who've donated to our{" "}
-                <Link to="/charities/">charities</Link>!
+                wonderful people who've donated to one of these{" "}
+                <Link to="/charities/">charities</Link>! We also now offer
+                bracelets for a $5 donation! If you'd like to contribute to our
+                cause by providing any crafts you can make,{" "}
+                <Link to="/contact/">contact us</Link>!
             </p>
             <p>Here's how this works:</p>
             <div id="steps-list">
@@ -22,7 +25,7 @@ const IndexPage = () => {
                     1.
                 </p>
                 <p className="step-instruction">
-                    Donate to one of these{" "}
+                    <strong>Donate</strong> to one of these BLM or LGBTQ+{" "}
                     <a
                         href="/charities/"
                         target="_blank"
@@ -37,9 +40,11 @@ const IndexPage = () => {
                     2.
                 </p>
                 <p className="step-instruction">
-                    Contact us! Send us a picture of your donation confirmation
-                    and the octopus color that you want. You can do this through
-                    our Instagram{" "}
+                    <strong>Contact us!</strong> Send us a picture of your
+                    donation confirmation and let us know whether you want a
+                    crochet octopus or a bracelet and the color you want it in.
+                    The bracelets come with octopi charms. You can do this
+                    through our Instagram{" "}
                     <a href="https://www.instagram.com/the_octopus_project">
                         @the_octopus_project
                     </a>
@@ -53,15 +58,16 @@ const IndexPage = () => {
                     3.
                 </p>
                 <p className="step-instruction">
-                    Sit tight and wait for a response from us! We'll let you
-                    know when we send your octopus!.
+                    <strong>Sit tight</strong> and wait for a response from us!
+                    We'll let you know when we send your octopus or bracelet as
+                    well.
                 </p>
                 <p className="step" id="step-four">
                     4.
                 </p>
                 <p className="step-instruction">
-                    Profit! Have fun with your octopus! Send us a picture of
-                    your octopus and you could make it to our{" "}
+                    <strong>Have fun</strong> with your gift! Send us a picture
+                    of your octopus or bracelet and you could make it to our{" "}
                     <a href="/gallery/">gallery page</a>.
                 </p>
             </div>
