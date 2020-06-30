@@ -38,6 +38,10 @@ let calculateIdDonationTable = donations => {
 let calculateOctopusColorTable = donations => {
     let octopusTable = {}
     donations.forEach(donation => {
+        console.log({
+            color: donation.order.includes("octopus"),
+            donation: donation,
+        })
         if (donation.order.includes("octopus")) {
             donation.octopusColor.forEach(color => {
                 if (color in octopusTable) {
