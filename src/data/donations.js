@@ -131,7 +131,7 @@ export const DONATIONS = [
         id: 11,
         order: ["octopus"],
         octopusColor: ["lavender"],
-        sent: false,
+        sent: true,
     },
     {
         amount: 5,
@@ -178,7 +178,7 @@ export const DONATIONS = [
         id: 15,
         order: ["octopus"],
         octopusColor: ["light pink"],
-        sent: false,
+        sent: true,
     },
     {
         amount: 5,
@@ -196,7 +196,7 @@ export const DONATIONS = [
         id: 16,
         order: ["octopus"],
         octopusColor: ["maroon"],
-        sent: false,
+        sent: true,
     },
     {
         amount: 10,
@@ -205,7 +205,7 @@ export const DONATIONS = [
         id: 17,
         order: ["octopus"],
         octopusColor: ["lavender"],
-        sent: false,
+        sent: true,
     },
     {
         amount: 10,
