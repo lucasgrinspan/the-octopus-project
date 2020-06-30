@@ -33,7 +33,7 @@ const Header = ({ data }) => {
                     >
                         <img
                             alt="The Octopus Project"
-                            src={require("../images/logo.png")}
+                            src={require("../images/logo.svg")}
                             id="op-logo"
                         />
                     </Link>
