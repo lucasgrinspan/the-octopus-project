@@ -18,7 +18,6 @@ let calculateDonationTable = (orgs, donations) => {
     donations.forEach(donation => {
         if (orgs.includes(donation.org)) {
             donationTable[donation.org] += donation.amount
-        } else {
         }
     })
     return donationTable
@@ -36,16 +35,18 @@ let calculateIdDonationTable = donations => {
     return idDonationTable
 }
 
-let calculateColorTable = donations => {
+let calculateOctopusColorTable = donations => {
     let octopusTable = {}
     donations.forEach(donation => {
-        donation.color.forEach(color => {
-            if (color in octopusTable) {
-                octopusTable[color]++
-            } else {
-                octopusTable[color] = 1
-            }
-        })
+        if (donation.order.includes("octopus")) {
+            donation.octopusColor.forEach(color => {
+                if (color in octopusTable) {
+                    octopusTable[color]++
+                } else {
+                    octopusTable[color] = 1
+                }
+            })
+        }
     })
     return octopusTable
 }
@@ -93,8 +94,8 @@ let countNumDonators = idDonationTable => {
 let countOctopiSent = donations => {
     let numSent = 0
     donations.forEach(donation => {
-        if (donation.sent) {
-            numSent += donation.color.length
+        if (donation.sent && donation.order.includes("octopus")) {
+            numSent += donation.octopusColor.length
         }
     })
     return numSent
@@ -113,10 +114,10 @@ let calculateMostPopularOctopusColor = octopusTable => {
 }
 
 const StatsPage = () => {
-    const orgs = CHARITIES.map(charity => charity.name)
-    const donationTable = calculateDonationTable(orgs, DONATIONS)
+    const ORGS = CHARITIES.map(charity => charity.name)
+    const donationTable = calculateDonationTable(ORGS, DONATIONS)
     const idDonationTable = calculateIdDonationTable(DONATIONS)
-    const colorTable = calculateColorTable(DONATIONS)
+    const colorTable = calculateOctopusColorTable(DONATIONS)
     let largestReceiver = findLargestReceiver(donationTable)
     let smallestReceiver = findSmallestReceiver(donationTable)
     let largestDonation = findLargestDonation(idDonationTable)
