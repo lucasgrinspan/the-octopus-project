@@ -25,7 +25,8 @@ const IndexPage = () => {
                     1.
                 </p>
                 <p className="step-instruction">
-                    <strong>Donate</strong> to one of these BLM or LGBTQ+{" "}
+                    <strong>Donate</strong> at least <strong>$5</strong> to one
+                    of these BLM or LGBTQ+{" "}
                     <a
                         href="/charities/"
                         target="_blank"
