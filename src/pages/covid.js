@@ -21,18 +21,22 @@ const CovidPage = () => {
             <SEO title="COVID-19" />
             <h1>COVID-19</h1>
             <p>
-                Here at The Octopus Project, we are taking coronavirus very
-                seriously. Each octopus is sanitized with both a Clorox wipe and
-                rubbing alcohol before it's packaged. The packaging is then
-                sanitized with a rubbing alcohol spray before it is mailed or
-                delivered.
+                &nbsp;&nbsp;&nbsp;&nbsp;Here at The Octopus Project, we are
+                taking coronavirus very seriously. Each octopus is sanitized
+                with both a Clorox wipe and rubbing alcohol before it's
+                packaged. The packaging is then sanitized with a rubbing alcohol
+                spray before it is mailed or delivered.
             </p>
             <p>
-                Please continue to wear masks and socially distance. Recognize
-                that the coronavirus is having a larger impact on lower income
-                communities, older people, people of color, and those with
-                autoimmune diseases. It's our job to wear masks to keep these
-                people safe.
+                &nbsp;&nbsp;&nbsp;&nbsp;Please continue to wear masks and
+                socially distance. Recognize that the coronavirus is having a
+                larger impact on lower income communities, older people, people
+                of color, and those with autoimmune diseases. It's our job to
+                wear masks to keep these people safe.{" "}
+                <a href="https://www.aamc.org/news-insights/new-coronavirus-affects-us-all-some-groups-may-suffer-more">
+                    Read more
+                </a>
+                .
             </p>
             <div
                 style={{
