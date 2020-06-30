@@ -15,7 +15,9 @@
     font-size: 1rem;
     width: max-content;
 }
-.op-logo * {
+#op-logo {
+    width: 244px;
+    height: 100px;
     margin-bottom: 0;
 }
 

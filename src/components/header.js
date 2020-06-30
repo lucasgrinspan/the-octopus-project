@@ -1,4 +1,4 @@
-import { Link, useStaticQuery } from "gatsby"
+import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 import Img from "gatsby-image"
@@ -6,22 +6,11 @@ import Counter from "./counter/counter"
 
 import { DONATIONS } from "../data/donations"
 
-const Header = () => {
+const Header = ({ data }) => {
     let donationTotal = 0
     DONATIONS.forEach(donation => {
         donationTotal += donation.amount
     })
-    const data = useStaticQuery(graphql`
-        query {
-            file(relativePath: { eq: "logo.png" }) {
-                childImageSharp {
-                    fixed(width: 244, height: 100) {
-                        ...GatsbyImageSharpFixed
-                    }
-                }
-            }
-        }
-    `)
     return (
         <>
             <header>
@@ -42,10 +31,10 @@ const Header = () => {
                             fontWeight: "bolder",
                         }}
                     >
-                        <Img
-                            fixed={data.file.childImageSharp.fixed}
-                            alt="The Octopus Project Logo"
-                            className="op-logo"
+                        <img
+                            alt="The Octopus Project"
+                            src={require("../images/logo.png")}
+                            id="op-logo"
                         />
                     </Link>
                     <Counter total={donationTotal} />
@@ -94,6 +83,14 @@ const Header = () => {
             </header>
         </>
     )
+}
+
+Header.propTypes = {
+    siteTitle: PropTypes.string,
+}
+
+Header.defaultProps = {
+    siteTitle: ``,
 }
 
 export default Header
