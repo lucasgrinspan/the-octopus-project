@@ -134,6 +134,11 @@ a.rainbow:hover {
     color: black;
     margin-right: 2px;
 }
+@media screen and (max-width: 450px) {
+    .nav-link {
+        font-size: 95%;
+    }
+}
 .nav-link.active {
     font-weight: bold;
     background-color: #f7f1f9;

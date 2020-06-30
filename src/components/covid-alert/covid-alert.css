@@ -29,6 +29,7 @@
     text-decoration: underline;
 }
 #covid-alert-icon {
+    flex-shrink: 0;
     height: 1.5rem;
     width: 1.5rem;
 }
