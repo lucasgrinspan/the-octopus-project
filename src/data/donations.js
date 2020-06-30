@@ -473,4 +473,22 @@ export const DONATIONS = [
         octopusColor: ["teal"],
         sent: false,
     },
+    {
+        amount: 5,
+        org: "The Trevor Project",
+        id: 40,
+        date: "2020-06-30",
+        order: ["bracelet"],
+        braceletColor: ["bi"],
+        sent: false,
+    },
+    {
+        amount: 10,
+        org: "Black Girls CODE",
+        id: 40,
+        date: "2020-06-30",
+        order: ["octopus"],
+        octopusColor: ["yellow"],
+        sent: false,
+    },
 ]
