@@ -470,7 +470,7 @@ export const DONATIONS = [
         id: 39,
         date: "2020-06-30",
         order: ["octopus"],
-        octopusColor: [],
+        octopusColor: ["teal"],
         sent: false,
     },
 ]
