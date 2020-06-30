@@ -49,6 +49,13 @@ const Header = () => {
                     }}
                 >
                     <Link activeClassName="active" className="nav-link" to="/">
+                        Home
+                    </Link>
+                    <Link
+                        activeClassName="active"
+                        className="nav-link"
+                        to="/charities/"
+                    >
                         Charities
                     </Link>
                     <Link

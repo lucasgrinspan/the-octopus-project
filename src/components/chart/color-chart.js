@@ -67,11 +67,11 @@ const ColorChart = ({ colorData }) => {
     if (windowWidth < 507) {
         xLabelRotation = 90
         legendOffset = 73
-        bottomMargin = 80
+        bottomMargin = 85
     } else if (windowWidth < 945) {
         xLabelRotation = 30
         legendOffset = 50
-        bottomMargin = 68
+        bottomMargin = 72
     }
 
     return (

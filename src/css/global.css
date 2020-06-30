@@ -13,7 +13,16 @@
     --input-border: #8f8f8f;
     --off-white: #f0f0f0;
     --color-1: #4d284b;
-    --color-2: #ffb1be;
+    --brand-color-1: #ffb1be;
+    --brand-color-2: #f8aadd;
+    --brand-color-3: #ba93df;
+    --brand-color-4: #6cd1ef;
+    --brand-color-5: #78e6d0;
+    --brand-color-1-dark: #4b3236;
+    --brand-color-2-dark: #412d3a;
+    --brand-color-3-dark: #3d2f4b;
+    --brand-color-4-dark: #1c3942;
+    --brand-color-5-dark: #1c3631;
 }
 header {
     background: var(--brand-gradient);
@@ -34,6 +43,9 @@ a.rainbow {
     background: rgb(255, 177, 190);
     background: var(--brand-gradient);
     transition: all 250ms;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 a.rainbow:hover {
@@ -56,4 +68,47 @@ a.rainbow:hover {
 .nav-link.active {
     font-weight: bold;
     background-color: #f7f1f9;
+}
+
+#steps-list {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    max-width: 70ch;
+}
+
+.step {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 15px;
+    padding-left: 4px;
+    height: 3rem;
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 500px;
+}
+.step-instruction {
+    margin-top: 0.87rem;
+}
+#step-one {
+    color: var(--brand-color-1-dark);
+    background-color: var(--brand-color-1);
+}
+#step-two {
+    color: var(--brand-color-2-dark);
+    background-color: var(--brand-color-2);
+}
+#step-three {
+    color: var(--brand-color-3-dark);
+    background-color: var(--brand-color-3);
+}
+#step-four {
+    color: var(--brand-color-4-dark);
+    background-color: var(--brand-color-4);
+}
+#step-five {
+    color: var(--brand-color-5-dark);
+    background-color: var(--brand-color-5);
 }

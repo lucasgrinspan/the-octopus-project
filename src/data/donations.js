@@ -356,6 +356,7 @@ export const DONATIONS = [
         org: "(F)EMPOWER Miami",
         id: 34,
         date: "2020-06-29",
+        order: "keychain",
         color: [],
         sent: false,
     },
