@@ -9,7 +9,7 @@ export const COLORS = {
     "light blue": "hsl(178, 98%, 78%)",
     teal: "hsl(180, 100%, 25%)",
     "fuzzy blue": "hsl(180, 100%, 47%)",
-    lavender: "hsl(259, 32%, 41%)",
+    lavender: "hsl(260, 100%, 75%)",
     white: "hsl(0, 0%, 95%)",
     grey: "hsl(0, 0%, 66%)",
     black: "hsl(0, 0%, 6%)",
