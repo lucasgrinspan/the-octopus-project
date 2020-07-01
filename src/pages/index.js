@@ -14,7 +14,7 @@ const IndexPage = () => {
             file(relativePath: { eq: "landing.jpg" }) {
                 childImageSharp {
                     fixed(width: 300, height: 300) {
-                        ...GatsbyImageSharpFixed
+                        ...GatsbyImageSharpFixed_tracedSVG
                     }
                 }
             }
