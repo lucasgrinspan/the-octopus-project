@@ -7,7 +7,7 @@ const ColorChart = ({ colors, colorsContrast }) => (
                 <div
                     key={color}
                     className="color-card"
-                    style={{ backgroundColor: colors[color] }}
+                    style={{ background: colors[color] }}
                 >
                     <p className={colorsContrast[color] ? "" : "light"}>
                         {color}
