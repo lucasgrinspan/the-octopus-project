@@ -59,7 +59,6 @@ const ColorChart = ({ colorData }) => {
 
     // place in rainbow order
     let rainbowOrder = mapOrder(nivoColorData, Object.keys(COLORS), "name")
-
     let xLabelRotation = 0
     let legendOffset = 37
     let bottomMargin = 50

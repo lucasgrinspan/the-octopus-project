@@ -539,7 +539,7 @@ export const DONATIONS = [
         id: 45,
         date: "2020-06-30",
         order: ["octopus"],
-        octopusColor: [""],
+        octopusColor: [], // david needs to respond
         sent: false,
     },
     {
