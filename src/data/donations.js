@@ -527,7 +527,8 @@ export const DONATIONS = [
         org: "Dream Defenders Miami",
         id: 44,
         date: "2020-06-30",
-        order: [], //
+        order: ["octopus"],
+        octopusColor: ["dark green"],
         sent: false,
     },
     {

@@ -1,5 +1,6 @@
 import React from "react"
-import { Link } from "gatsby"
+import { Link, useStaticQuery } from "gatsby"
+import Img from "gatsby-image"
 import { FiExternalLink } from "react-icons/fi"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -8,23 +9,54 @@ import "../css/global.css"
 import CovidAlert from "../components/covid-alert/covid-alert"
 
 const IndexPage = () => {
+    const data = useStaticQuery(graphql`
+        query {
+            file(relativePath: { eq: "landing.jpg" }) {
+                childImageSharp {
+                    fixed(width: 300, height: 300) {
+                        ...GatsbyImageSharpFixed
+                    }
+                }
+            }
+        }
+    `)
     return (
         <Layout>
             <SEO title="Home" />
             <CovidAlert />
             <h1>Welcome</h1>
-            <p>
-                The Octopus Project seeks to unite cute crochet octopi to
-                wonderful people who've donated to one of these{" "}
-                <Link to="/charities/">charities</Link>! Meet the octopi at our{" "}
-                <Link to="/gallery/">gallery</Link>. We also now offer bracelets
-                for a $5 donation!
-            </p>
-            <p>
-                If you'd like to help in other ways, check out our{" "}
-                <Link to="/get-involved/">get involved</Link> page!
-            </p>
-            <p>Anyways, here's how this works:</p>
+            <div id="landing-content-container">
+                <div id="landing-image">
+                    <Img
+                        alt="A cute crochet octopus"
+                        fixed={data.file.childImageSharp.fixed}
+                        style={{
+                            borderRadius: 10,
+                            boxShadow:
+                                "0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),0 16px 16px rgba(0, 0, 0, 0.12)",
+                        }}
+                    />
+                </div>
+
+                <div>
+                    <p>
+                        The Octopus Project seeks to unite cute crochet octopi
+                        to wonderful people who've donated to one of these BLM
+                        or LGBTQ+ <Link to="/charities/">charities</Link>! These
+                        octopi are hand-made with love by our talented team. We
+                        also now offer bracelets for a $5 donation! Meet the
+                        octopi and other products at our{" "}
+                        <Link to="/gallery/">gallery</Link>.
+                    </p>
+                    <p>
+                        If you'd like to help in other ways, check out our{" "}
+                        <Link to="/get-involved/">get involved</Link> page!
+                        While we can't offer money, we can give you community
+                        service hours, friendship and love!
+                    </p>
+                    <p>Anyways, here's how this works:</p>
+                </div>
+            </div>
             <div id="steps-list">
                 <p className="step" id="step-one">
                     1.

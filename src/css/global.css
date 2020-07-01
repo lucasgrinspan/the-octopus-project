@@ -34,6 +34,23 @@
     --alert-border: #ffeeba;
     --alert-text-link: #533f03;
 }
+#landing-image {
+    float: right;
+    display: inline;
+    margin-left: 30px;
+}
+@media screen and (max-width: 680px) {
+    #landing-content-container {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+    #landing-image {
+        order: 2;
+        margin-left: 0;
+        align-self: center;
+    }
+}
 header {
     background: var(--brand-gradient);
     margin-bottom: 1.45rem;
