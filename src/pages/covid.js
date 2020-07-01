@@ -25,14 +25,16 @@ const CovidPage = () => {
                 taking coronavirus very seriously. Each octopus is sanitized
                 with both a Clorox wipe and rubbing alcohol before it's
                 packaged. The packaging is then sanitized with a rubbing alcohol
-                spray before it is mailed or delivered.
+                spray before it is sent out.
             </p>
             <p>
                 &nbsp;&nbsp;&nbsp;&nbsp;Please continue to wear masks and
-                socially distance. Recognize that the coronavirus is having a
-                larger impact on lower income communities, older people, people
-                of color, and those with autoimmune diseases. It's our job to
-                wear masks to keep these people safe.{" "}
+                socially distance. While coronavirus is having a significant
+                impact on the world, The Octopus Project recognizes that
+                epidemics are both biological and social. The virus is having a
+                disproportionately larger impact on lower income communities,
+                older people, and those with autoimmune diseases. It's our duty
+                to wear masks to keep these people safe.{" "}
                 <a href="https://www.aamc.org/news-insights/new-coronavirus-affects-us-all-some-groups-may-suffer-more">
                     Read more
                 </a>

@@ -26,8 +26,8 @@ const GetInvolvedPage = () => {
                 </div>
                 <p className="step-instruction">
                     <strong>Donate your crafts!</strong> If you can make octopi
-                    themed arts and crafts, then we could use your help! We're
-                    also happy to sign hours for community service if your
+                    themed arts and crafts, we could use your help! We're also
+                    happy to sign hours for community service if your
                     school/organization approves!{" "}
                     <Link to="/contact/">Contact us</Link> if you'd like to go
                     this route.
@@ -52,7 +52,7 @@ const GetInvolvedPage = () => {
                     <a href="https://craftivist-collective.com">Craftivism</a>{" "}
                     is at the heart of our project, and we encourage you to
                     participate! We'd love it if you learn and educate others
-                    about the issues we care about,{" "}
+                    about the issues we care about, like{" "}
                     <a href="https://blacklivesmatter.com">
                         Black Lives Matter
                     </a>
@@ -74,9 +74,9 @@ const GetInvolvedPage = () => {
                     habit that didn't work out? Do you just have a bunch of
                     envelopes laying around? Send them to us and we'll put them
                     to good use! <Link to="/contact/">Contact us</Link> and let
-                    us know if you'd like to do this. If you'd like to donate
-                    with money, we'd prefer that you send that to one of these{" "}
-                    <Link to="/charities/">charities</Link>.
+                    us know if you'd like to do this. If you'd prefer to donate
+                    with money, we ask that you send that to one of these{" "}
+                    <Link to="/charities/">charities</Link> instead.
                 </p>
                 <div id="step-five" className="step icon">
                     <FaGlassCheers />
@@ -84,7 +84,9 @@ const GetInvolvedPage = () => {
                 <p className="step-instruction">
                     <strong>Send us love!</strong> We are a small team working
                     out of a college apartment, crocheting, coding, performing
-                    outreach, and sharing all the time. Your words mean a lot!
+                    outreach, and sharing all the time.{" "}
+                    <Link to="/contact/">Contact</Link> us and let us know what
+                    you think. Your words mean a lot!
                 </p>
             </div>
         </Layout>

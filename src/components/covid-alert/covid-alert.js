@@ -10,7 +10,7 @@ const CovidAlert = () => {
                 <p id="covid-alert-title">Coronavirus Update</p>
                 <p id="covid-alert-text">
                     We are taking all of the necessary precautions during the
-                    COVID-19 epidemic to ensure your safety.{" "}
+                    COVID-19 pandemic to ensure your safety.{" "}
                     <Link to="/covid/">Read more</Link>.
                 </p>
             </div>

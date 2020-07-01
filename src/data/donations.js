@@ -227,7 +227,8 @@ export const DONATIONS = [
         id: 19,
         order: ["octopus"],
         octopusColor: ["teal"],
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 10,
@@ -236,7 +237,8 @@ export const DONATIONS = [
         id: 20,
         order: ["octopus"],
         octopusColor: ["orange"],
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 5,
@@ -245,7 +247,8 @@ export const DONATIONS = [
         id: 21,
         order: ["octopus"],
         octopusColor: ["light pink"],
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 10,
@@ -254,7 +257,8 @@ export const DONATIONS = [
         date: "2020-06-27",
         order: ["octopus"],
         octopusColor: ["yellow"],
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 10,

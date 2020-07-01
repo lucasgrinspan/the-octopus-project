@@ -21,8 +21,8 @@ const IndexPage = () => {
                 for a $5 donation!
             </p>
             <p>
-                If you'd like to help in other ways, check out some of our ways
-                to <Link to="/get-involved/">get involved</Link>!
+                If you'd like to help in other ways, check out our{" "}
+                <Link to="/get-involved/">get involved</Link> page!
             </p>
             <p>Anyways, here's how this works:</p>
             <div id="steps-list">
@@ -42,15 +42,15 @@ const IndexPage = () => {
                     . Make sure to take a screenshot of your receipt, the
                     successful donation page, or an email confirmation.
                 </p>
-                <p className="step" id="step-three">
+                <p className="step" id="step-two">
                     2.
                 </p>
                 <p className="step-instruction">
                     <strong>Contact us!</strong> Send us a picture of your
                     donation confirmation and let us know whether you want a
-                    crochet octopus or a bracelet and the color you want it in.
-                    The bracelets come with octopi charms. You can do this
-                    through our Instagram{" "}
+                    crochet octopus or a bracelet, along with the color you want
+                    it in. The bracelets come with octopi charms and can be
+                    pride themed. You can do this through our Instagram{" "}
                     <a href="https://www.instagram.com/the_octopus_project">
                         @the_octopus_project
                     </a>
@@ -60,7 +60,7 @@ const IndexPage = () => {
                     </a>
                     , or use our <a href="/contact/">contact page</a>.
                 </p>
-                <p className="step" id="step-four">
+                <p className="step" id="step-three">
                     3.
                 </p>
                 <p className="step-instruction">
@@ -68,13 +68,21 @@ const IndexPage = () => {
                     We'll let you know when we send your octopus or bracelet as
                     well.
                 </p>
-                <p className="step" id="step-five">
+                <p className="step" id="step-four">
                     4.
                 </p>
                 <p className="step-instruction">
                     <strong>Have fun</strong> with your gift! Send us a picture
                     of your octopus or bracelet and you could make it to our{" "}
                     <a href="/gallery/">gallery page</a>.
+                </p>
+                <p className="step" id="step-five">
+                    5.
+                </p>
+                <p className="step-instruction">
+                    <strong>Consider getting involved</strong>! Check out some
+                    ways to <Link to="/get-involved/">get involved</Link>. We
+                    could use your help!
                 </p>
             </div>
         </Layout>
