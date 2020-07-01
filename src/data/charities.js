@@ -23,6 +23,15 @@ export default [
         lgbt: false,
     },
     {
+        name: "Campaign Zero",
+        desc:
+            "This organization seeks to end police violence by by pushing policy to limit police interventions, improve community interactions, and ensure accountability.",
+        link: "https://www.joincampaignzero.org",
+        blm: true,
+        lgbt: false,
+    },
+
+    {
         name: "Black Girls CODE",
         desc:
             "This organization aims to teach young black girls how to code to help them get future jobs in technology",
@@ -119,13 +128,5 @@ export default [
         link: "https://www.thetrevorproject.org/",
         blm: false,
         lgbt: true,
-    },
-    {
-        name: "Campaign Zero",
-        desc:
-            "This organization seeks to end police violence by by pushing policy to limit police interventions, improve community interactions, and ensure accountability.",
-        link: "https://www.joincampaignzero.org",
-        blm: true,
-        lgbt: false,
     },
 ]
