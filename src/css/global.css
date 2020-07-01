@@ -79,19 +79,21 @@ footer #footer-bottom-text > * {
 footer .social-link {
     height: 2rem;
     width: 2rem;
+}
+footer a {
     color: var(--text-bg-dark-light);
+    text-decoration: none;
+}
+footer a:visited {
+    color: var(--text-bg-dark-light);
+}
+footer a:hover {
+    text-decoration: underline;
+    color: var(--text-light);
 }
 footer #footer-pages {
     display: flex;
     flex-direction: column;
-}
-footer #footer-pages a {
-    color: var(--text-bg-dark-light);
-    text-decoration: none;
-}
-footer #footer-pages a:hover {
-    color: var(--text-bg-dark-light);
-    text-decoration: underline;
 }
 p {
     max-width: 70ch;

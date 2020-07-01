@@ -5,7 +5,7 @@ import Counter from "./counter/counter"
 
 import { DONATIONS } from "../data/donations"
 
-const Header = ({ data }) => {
+const Header = () => {
     let donationTotal = 0
     DONATIONS.forEach(donation => {
         donationTotal += donation.amount
