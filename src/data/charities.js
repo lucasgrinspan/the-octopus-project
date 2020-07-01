@@ -93,7 +93,7 @@ export default [
         link: "https://www.taagg.org/",
         blm: false,
         lgbt: true,
-        noDonate: false, // means that they can't donate to them
+        noDonate: true, // means that they can't donate to them
     },
     {
         name: "LGBTQ Freedom Fund",

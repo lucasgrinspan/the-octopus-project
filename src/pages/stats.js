@@ -12,18 +12,19 @@ let generateDonationTable = (orgs, donations) => {
     // populate the donation table
     let donationTable = {}
     orgs.forEach(org => {
-        if (donations[org].noDonate) {
-            // removes organizations that can't be donated to
+        if (org.noDonate) {
             return
         }
-        donationTable[org] = 0
+        donationTable[org.name] = 0
     })
 
     donations.forEach(donation => {
-        if (orgs.includes(donation.org)) {
-            donationTable[donation.org] += donation.amount
+        if (!Object.keys(donationTable).includes(donation.org)) {
+            return
         }
+        donationTable[donation.org] += donation.amount
     })
+    console.log(donationTable)
     return donationTable
 }
 
@@ -118,8 +119,7 @@ let calculateMostPopularOctopusColor = octopusTable => {
 }
 
 const StatsPage = () => {
-    const ORGS = CHARITIES.map(charity => charity.name)
-    const donationTable = generateDonationTable(ORGS, DONATIONS)
+    const donationTable = generateDonationTable(CHARITIES, DONATIONS)
     const idDonationTable = generateIdDonationTable(DONATIONS)
     const colorTable = generateOctopusColorTable(DONATIONS)
     let largestReceiver = findLargestReceiver(donationTable)
