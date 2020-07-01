@@ -78,7 +78,7 @@ const IndexPage = () => {
                     2.
                 </p>
                 <p className="step-instruction">
-                    <strong>Contact us!</strong> Send us a picture of your
+                    <strong>Let us know!</strong> Send us a picture of your
                     donation confirmation and let us know whether you want a
                     crochet octopus or a bracelet, along with the color you want
                     it in. The bracelets come with octopi charms and can be
