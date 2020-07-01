@@ -120,4 +120,12 @@ export default [
         blm: false,
         lgbt: true,
     },
+    {
+        name: "Campaign Zero",
+        desc:
+            "This organization seeks to end police violence by by pushing policy to limit police interventions, improve community interactions, and ensure accountability.",
+        link: "https://www.joincampaignzero.org",
+        blm: true,
+        lgbt: false,
+    },
 ]
