@@ -8,10 +8,14 @@ import OrgChart from "../components/chart/org-chart"
 import CHARITIES from "../data/charities"
 import { DONATIONS } from "../data/donations"
 
-let calculateDonationTable = (orgs, donations) => {
+let generateDonationTable = (orgs, donations) => {
     // populate the donation table
     let donationTable = {}
     orgs.forEach(org => {
+        if (donations[org].noDonate) {
+            // removes organizations that can't be donated to
+            return
+        }
         donationTable[org] = 0
     })
 
@@ -23,7 +27,7 @@ let calculateDonationTable = (orgs, donations) => {
     return donationTable
 }
 
-let calculateIdDonationTable = donations => {
+let generateIdDonationTable = donations => {
     let idDonationTable = {}
     donations.forEach(donation => {
         if (donation.id in idDonationTable) {
@@ -35,7 +39,7 @@ let calculateIdDonationTable = donations => {
     return idDonationTable
 }
 
-let calculateOctopusColorTable = donations => {
+let generateOctopusColorTable = donations => {
     let octopusTable = {}
     donations.forEach(donation => {
         if (donation.order.includes("octopus")) {
@@ -115,9 +119,9 @@ let calculateMostPopularOctopusColor = octopusTable => {
 
 const StatsPage = () => {
     const ORGS = CHARITIES.map(charity => charity.name)
-    const donationTable = calculateDonationTable(ORGS, DONATIONS)
-    const idDonationTable = calculateIdDonationTable(DONATIONS)
-    const colorTable = calculateOctopusColorTable(DONATIONS)
+    const donationTable = generateDonationTable(ORGS, DONATIONS)
+    const idDonationTable = generateIdDonationTable(DONATIONS)
+    const colorTable = generateOctopusColorTable(DONATIONS)
     let largestReceiver = findLargestReceiver(donationTable)
     let smallestReceiver = findSmallestReceiver(donationTable)
     let largestDonation = findLargestDonation(idDonationTable)

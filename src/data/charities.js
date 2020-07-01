@@ -89,10 +89,11 @@ export default [
     {
         name: "Transgender Awareness Alliance",
         desc:
-            "Assist transgender persons in South Carolina with getting a legal name change, provide support for healthy living, and seek equality and equity through activism",
+            "Assist transgender persons in South Carolina with getting a legal name change, provide support for healthy living, and seek equality and equity through activism. They don't have a donation link, but check out their partnered charities",
         link: "https://www.taagg.org/",
         blm: false,
         lgbt: true,
+        noDonate: false, // means that they can't donate to them
     },
     {
         name: "LGBTQ Freedom Fund",
