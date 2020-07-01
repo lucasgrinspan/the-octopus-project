@@ -129,4 +129,13 @@ export default [
         blm: false,
         lgbt: true,
     },
+    {
+        name: "The University Club Family Fund",
+        desc:
+            "University Club, a popular LGBTQ+ friendly nightclub, had to close recently due to COVID-19. They now find themselves with major financial responsibilities and no income, turning to the community for help. This fund helps alleviate their expenses",
+        link:
+            "https://www.gofundme.com/f/the-university-club-family-fund?utm_source=customer&utm_campaign=p_cp+share-sheet&utm_medium=copy_link-tip",
+        blm: false,
+        lgbt: true,
+    },
 ]

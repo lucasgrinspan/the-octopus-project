@@ -327,7 +327,7 @@ export const DONATIONS = [
     },
     {
         amount: 5,
-        org: "University Club Family Fund",
+        org: "The University Club Family Fund",
         id: 25,
         date: "2020-06-27",
         order: ["octopus"],
@@ -550,6 +550,15 @@ export const DONATIONS = [
         order: ["octopus", "bracelet"],
         octopusColor: ["orange"],
         braceletColor: ["pan"],
+        sent: false,
+    },
+    {
+        amount: 15,
+        org: "The University Club Family Fund",
+        id: 47,
+        date: "2020-07-01",
+        order: ["octopus"],
+        octopusColor: ["teal"],
         sent: false,
     },
 ]
