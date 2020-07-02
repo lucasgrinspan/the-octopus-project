@@ -27,6 +27,7 @@ const Footer = () => {
                         imgStyle={{ margin: 0 }}
                     />
                     <div id="footer-pages">
+                        <Link to="/the-team/">Meet the Team</Link>
                         <Link to="/get-involved/">Get Involved</Link>
                         <Link to="/contact/">Contact</Link>
                         <Link to="/stats/">Statistics</Link>
