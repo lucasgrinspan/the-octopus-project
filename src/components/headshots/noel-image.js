@@ -21,6 +21,7 @@ const NoelImage = () => (
             <Img
                 fixed={data.file.childImageSharp.fixed}
                 className="person-image first"
+                alt="Noel working on packaging at his desk"
             />
         )}
     />

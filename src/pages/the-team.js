@@ -66,7 +66,7 @@ const TheTeamPage = () => {
                     <p>
                         Lucas loves to check how many people visit the website
                         he made, so thank you for your part in making him smile
-                        at our analytics page.
+                        at our analytics report.
                     </p>
                 </div>
                 <LucasImage />
