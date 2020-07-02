@@ -1,0 +1,50 @@
+.person-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 45px;
+}
+.person-content {
+    display: flex;
+    flex-direction: column;
+    max-width: 65%;
+    order: 2;
+}
+.person-content p {
+    font-size: 1.125rem;
+    flex: 1;
+}
+.person-image {
+    width: 292px;
+    height: 292px;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    margin-left: 30px;
+    order: 2;
+    flex-shrink: 0;
+}
+.person-image.first {
+    order: 1;
+    margin-left: 0;
+    margin-right: 30px;
+}
+@media screen and (max-width: 630px) {
+    .person-section {
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+    .person-content {
+        max-width: 100%;
+    }
+    .person-content p {
+        font-size: 1rem;
+    }
+    .person-image {
+        margin-left: 0;
+    }
+    .person-image.first {
+        order: 2;
+        margin-right: 0;
+    }
+}
