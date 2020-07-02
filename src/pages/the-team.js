@@ -73,13 +73,13 @@ const TheTeamPage = () => {
             </div>
             <div className="person-section">
                 <div className="person-content">
-                    <h3>Noel</h3>
+                    <h3>Noel Griffith</h3>
                     <p>
                         Noel. His dedication to doing anything that Erin doesn't
                         want to do is unmatched. Crocheting 90 octopi per day is
                         mentally gruelling, so Noel provides comfort and support
-                        to Erin. He supplies her with everything she needs,
-                        including supplies and love.
+                        to Erin while she does that. He supplies her with
+                        everything she needs, including supplies and love.
                     </p>
                     <p>
                         Noel delivers Erin's octopi, making sure Erin's crafts
@@ -102,9 +102,9 @@ const TheTeamPage = () => {
                     </p>
                     <p>
                         Sounding more like a frog than a cat, Penelope works
-                        tirelessly doing nothing all day so that Erin can easily
-                        pet her during Erin's 6 hour long crochet sessions.
-                        Thank you Penny.
+                        tirelessly doing literally nothing all day so that Erin
+                        can easily pet her during Erin's 6 hour long crochet
+                        sessions. Thank you Penny.
                     </p>
                 </div>
                 <PennyImage />
