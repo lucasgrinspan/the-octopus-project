@@ -52,7 +52,9 @@ const IndexPage = () => {
                         If you'd like to help in other ways, check out our{" "}
                         <Link to="/get-involved/">get involved</Link> page!
                         While we can't offer money, we can give you community
-                        service hours, friendship and love!
+                        service hours, friendship and love! If you'd like to see
+                        the faces behind the project,{" "}
+                        <Link to="/the-team/">meet the team</Link>!
                     </p>
                     <p>Anyways, here's how this works:</p>
                 </div>
