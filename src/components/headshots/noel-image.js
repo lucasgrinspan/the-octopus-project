@@ -10,8 +10,8 @@ const NoelImage = () => (
                     childImageSharp {
                         # Specify a fluid image and fragment
                         # The default maxWidth is 800 pixels
-                        fluid {
-                            ...GatsbyImageSharpFluid_tracedSVG
+                        fixed(width: 292, height: 292) {
+                            ...GatsbyImageSharpFixed_tracedSVG
                         }
                     }
                 }
@@ -19,7 +19,7 @@ const NoelImage = () => (
         `}
         render={data => (
             <Img
-                fluid={data.file.childImageSharp.fluid}
+                fixed={data.file.childImageSharp.fixed}
                 className="person-image first"
             />
         )}

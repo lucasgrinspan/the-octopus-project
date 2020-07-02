@@ -24,7 +24,6 @@ let generateDonationTable = (orgs, donations) => {
         }
         donationTable[donation.org] += donation.amount
     })
-    console.log(donationTable)
     return donationTable
 }
 
