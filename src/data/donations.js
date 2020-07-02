@@ -542,7 +542,7 @@ export const DONATIONS = [
         id: 45,
         date: "2020-06-30",
         order: ["octopus"],
-        octopusColor: [], // david needs to respond
+        octopusColor: ["teal"],
         sent: false,
     },
     {
@@ -562,6 +562,15 @@ export const DONATIONS = [
         date: "2020-07-01",
         order: ["octopus"],
         octopusColor: ["teal"],
+        sent: false,
+    },
+    {
+        amount: 5,
+        org: "We The Protesters",
+        id: 48,
+        date: "2020-07-01",
+        order: ["octopus"],
+        octopusColor: [],
         sent: false,
     },
 ]
