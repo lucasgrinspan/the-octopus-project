@@ -25,9 +25,9 @@ const ContactPage = () => {
                 comments or concerns with us. We'd love to hear from you!
             </p>
             <p>
-                If you're ordering an octopus, make sure you provide us with a
-                valid email address so that we can contact you back for the
-                order and shipping details.
+                If you're ordering an octopus, bracelet, or scrunchie, make sure
+                you provide us with a valid email address so that we can contact
+                you back for the order and shipping details.
             </p>
             <div style={{ display: "flex", justifyContent: "center" }}>
                 <ContactForm />
