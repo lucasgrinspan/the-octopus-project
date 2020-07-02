@@ -608,4 +608,13 @@ export const DONATIONS = [
         order: [],
         sent: false,
     },
+    {
+        amount: 5,
+        org: "The Trevor Project",
+        id: 51,
+        date: "2020-07-02",
+        order: ["octopus"],
+        octopusColor: ["white"],
+        sent: false,
+    },
 ]
