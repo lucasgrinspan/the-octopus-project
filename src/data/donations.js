@@ -600,4 +600,12 @@ export const DONATIONS = [
         octopusColor: ["maroon"], //also green blue and pink
         sent: false,
     },
+    {
+        amount: 170,
+        org: "Black Girls CODE",
+        id: 52,
+        date: "2020-07-02",
+        order: [],
+        sent: false,
+    },
 ]
