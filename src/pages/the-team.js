@@ -106,7 +106,7 @@ const TheTeamPage = () => {
                 <div className="person-image-wrapper first">
                     <NoelImage />
                     <p className="caption" id="noel-caption">
-                        Little Mac main
+                        Logistik
                     </p>
                 </div>
             </div>
