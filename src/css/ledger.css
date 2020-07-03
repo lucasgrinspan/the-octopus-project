@@ -1,0 +1,4 @@
+table#ledger th {
+    cursor: pointer;
+    user-select: none;
+}
