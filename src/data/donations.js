@@ -646,4 +646,13 @@ export const DONATIONS = [
         order: ["raffle"],
         sent: false,
     },
+    {
+        amount: 5,
+        org: "The LoveLand Foundation",
+        id: 55,
+        date: "2020-07-03",
+        order: ["octopus"],
+        octopusColor: ["hot pink"], //multicolored
+        sent: false,
+    },
 ]
