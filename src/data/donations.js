@@ -353,7 +353,8 @@ export const DONATIONS = [
         date: "2020-06-28",
         order: ["octopus"],
         octopusColor: ["light pink"],
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 10,
@@ -389,7 +390,8 @@ export const DONATIONS = [
         date: "2020-06-28",
         order: ["octopus"],
         octopusColor: ["light pink"],
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 5,
@@ -571,7 +573,8 @@ export const DONATIONS = [
         date: "2020-07-01",
         order: ["octopus"],
         octopusColor: ["light blue"],
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 10,
