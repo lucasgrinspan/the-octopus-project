@@ -5,6 +5,7 @@ import { Link } from "gatsby"
 
 import "../css/products.css"
 import OctopusImage from "../components/product-images/octopus-image"
+import ScrunchieImage from "../components/product-images/scrunchie-image"
 
 const ProductsPage = () => {
     return (
@@ -65,7 +66,7 @@ const ProductsPage = () => {
                     </p>
                 </div>
                 <div className="product-image-wrapper">
-                    <OctopusImage />
+                    <ScrunchieImage />
                 </div>
             </div>
         </Layout>
