@@ -31,7 +31,7 @@ const RafflePage = () => {
                 activist beast could be yours! Donate at least{" "}
                 <strong>$3</strong> to one of our{" "}
                 <Link to="/charities/">charities</Link> and you'll be entered
-                into our raffle!
+                into our raffle! Make sure to let us know when you do this.
             </p>
             <p>
                 <strong>What can you do to increase your chances?</strong> For
