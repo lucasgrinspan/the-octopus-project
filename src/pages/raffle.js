@@ -46,14 +46,17 @@ const RafflePage = () => {
                     justifyContent: "center",
                 }}
             >
-                <Img
-                    fixed={data.file.childImageSharp.fixed}
-                    style={{
-                        borderRadius: 10,
-                        boxShadow:
-                            "0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),0 16px 16px rgba(0, 0, 0, 0.12)",
-                    }}
-                />
+                <div id="raffle-image">
+                    <Img
+                        fixed={data.file.childImageSharp.fixed}
+                        style={{
+                            borderRadius: 10,
+                            boxShadow:
+                                "0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),0 16px 16px rgba(0, 0, 0, 0.12)",
+                        }}
+                    />
+                    <p>Do I look like a hat to you?</p>
+                </div>
             </div>
             <h2 style={{ marginTop: 50 }}>FAQ</h2>
             <p

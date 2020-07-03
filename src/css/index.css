@@ -1,12 +1,15 @@
-div#landing-image {
+div#landing-image,
+div#raffle-image {
     position: relative;
 }
 
-div#landing-image:hover p#image-caption {
+div#landing-image:hover p,
+div#raffle-image:hover p {
     opacity: 1;
 }
 
-div#landing-image p#image-caption {
+div#landing-image p,
+div#raffle-image p {
     opacity: 0;
     position: absolute;
     top: 10px;
@@ -17,8 +20,8 @@ div#landing-image p#image-caption {
     transition: opacity 250ms ease-in-out;
 }
 
-div#landing-image p#image-caption:after {
-    content: '';
+div#landing-image p:after {
+    content: "";
     position: absolute;
     bottom: 0;
     left: 50%;
@@ -29,4 +32,21 @@ div#landing-image p#image-caption:after {
     border-bottom: 0;
     margin-left: -11px;
     margin-bottom: -11px;
+}
+div#raffle-image p {
+    top: 220px;
+    left: 40px;
+}
+div#raffle-image p:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 11px solid transparent;
+    border-bottom-color: var(--off-white);
+    border-top: 0;
+    margin-left: -11px;
+    margin-top: -11px;
 }
