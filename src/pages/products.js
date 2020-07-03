@@ -24,7 +24,25 @@ const ProductsPage = () => {
                 <strong>Made by:</strong> Erin Russell
             </p>
             <h3>Pride Bracelet</h3>
-            <p></p>
+            <p>
+                You can wear the pride rainbow colors on your wrist with these
+                bracelets. If you want a different pride flag, you can also get
+                these in the bi, trans, or any other colors. As a cherry on top,
+                they also come with cute octopi charms.
+            </p>
+            <p>
+                <strong>Made by:</strong> Lorem Ipsum
+            </p>
+            <h3>Scrunchies</h3>
+            <p>
+                Use it around your hair, wrist, or lend it to a friend and never
+                see it again. Wherever it goes, it will always be the cutest
+                scrunchie in its proximity. It goes without saying that there
+                will be octopi on them.
+            </p>
+            <p>
+                <strong>Made by:</strong> Lorem Ipsum
+            </p>
         </Layout>
     )
 }
