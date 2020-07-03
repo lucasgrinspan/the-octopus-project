@@ -629,4 +629,13 @@ export const DONATIONS = [
         octopusColor: ["yellow"], // green blue purple
         sent: false,
     },
+    {
+        amount: 5,
+        org: "We The Protesters",
+        id: 54,
+        date: "2020-07-03",
+        order: ["octopus"],
+        octopusColor: ["hot pink"],
+        sent: false,
+    },
 ]
