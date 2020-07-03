@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import "../css/global.css"
+import "../css/index.css"
 import CovidAlert from "../components/covid-alert/covid-alert"
 
 const IndexPage = () => {
@@ -36,6 +37,7 @@ const IndexPage = () => {
                                 "0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),0 16px 16px rgba(0, 0, 0, 0.12)",
                         }}
                     />
+                    <p id="image-caption">Take me with you!</p>
                 </div>
 
                 <div>

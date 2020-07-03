@@ -1,0 +1,35 @@
+div#landing-image {
+    position: relative;
+}
+
+div#landing-image:hover p#image-caption {
+    display: block;
+}
+
+div#landing-image p#image-caption {
+    display: none;
+    position: absolute;
+    width: max-content;
+    margin-left: auto;
+    margin-right: auto;
+    top: 10px;
+    left: 0;
+    right: 0;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--off-white);
+}
+
+div#landing-image p#image-caption:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 0;
+    border: 11px solid transparent;
+    border-top-color: var(--off-white);
+    border-bottom: 0;
+    margin-left: -11px;
+    margin-bottom: -11px;
+}
