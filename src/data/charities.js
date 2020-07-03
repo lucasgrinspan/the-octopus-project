@@ -64,7 +64,7 @@ export default [
         lgbt: false,
     },
     {
-        name: "National Queer and Trans Therapists of Color Network (NQTTCN)",
+        name: "National Queer and Trans Therapists of Color Network",
         desc:
             "A healing justice organization committed to transforming mental health for queer and trans people of color (QTPoC)",
         link: "https://www.nqttcn.com/",

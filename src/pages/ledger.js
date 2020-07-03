@@ -18,7 +18,7 @@ const LedgerPage = () => {
         }
     }
 
-    let tableData = DONATIONS.reverse().sort((a, b) => {
+    const tableData = DONATIONS.reverse().sort((a, b) => {
         if (sort.col === "date") {
             let firstDate = new Date(a.date)
             let secondDate = new Date(b.date)
@@ -56,6 +56,15 @@ const LedgerPage = () => {
         }
     }
 
+    const formatDate = date => {
+        return `${date.toLocaleString("en-US", {
+            timeZone: "UTC",
+            month: "long",
+            day: "numeric",
+            year: "numeric",
+        })}`
+    }
+
     return (
         <Layout>
             <SEO title="Ledger" />
@@ -64,32 +73,40 @@ const LedgerPage = () => {
                 There have been {DONATIONS.length} total donations. Thank you
                 for all!
             </p>
-            <table id="ledger">
-                <thead>
-                    <tr>
-                        <th scope="col" onClick={() => sortTable("amount")}>
-                            <SortIcon col="amount" /> Amount
-                        </th>
-                        <th scope="col" onClick={() => sortTable("org")}>
-                            <SortIcon col="org" /> Organization
-                        </th>
-                        <th scope="col" onClick={() => sortTable("date")}>
-                            <SortIcon col="date" /> Date
-                        </th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {tableData.map((donation, index) => {
-                        return (
-                            <tr key={index}>
-                                <td>{donation.amount}</td>
-                                <td>{donation.org}</td>
-                                <td>{donation.date}</td>
-                            </tr>
-                        )
-                    })}
-                </tbody>
-            </table>
+            <div style={{ overflow: "scroll" }}>
+                <table id="ledger">
+                    <thead>
+                        <tr>
+                            <th
+                                scope="col"
+                                className="amount-th"
+                                onClick={() => sortTable("amount")}
+                            >
+                                <SortIcon col="amount" /> $
+                            </th>
+                            <th scope="col" onClick={() => sortTable("org")}>
+                                <SortIcon col="org" /> Organization
+                            </th>
+                            <th scope="col" onClick={() => sortTable("date")}>
+                                <SortIcon col="date" /> Date
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {tableData.map((donation, index) => {
+                            return (
+                                <tr key={index}>
+                                    <td>${donation.amount}</td>
+                                    <td>{donation.org}</td>
+                                    <td>
+                                        {formatDate(new Date(donation.date))}
+                                    </td>
+                                </tr>
+                            )
+                        })}
+                    </tbody>
+                </table>
+            </div>
         </Layout>
     )
 }

@@ -21,7 +21,7 @@ export const DONATIONS = [
     },
     {
         amount: 10,
-        org: "National Queer and Trans Therapists of Color Network (NQTTCN)",
+        org: "National Queer and Trans Therapists of Color Network",
         date: "2020-06-26",
         id: 2,
         order: ["octopus"],
@@ -126,7 +126,7 @@ export const DONATIONS = [
     },
     {
         amount: 5,
-        org: "National Queer and Trans Therapists of Color Network (NQTTCN)",
+        org: "National Queer and Trans Therapists of Color Network",
         date: "2020-06-27",
         id: 11,
         order: ["octopus"],
@@ -301,7 +301,7 @@ export const DONATIONS = [
     },
     {
         amount: 5,
-        org: "National Queer and Trans Therapists of Color Network (NQTTCN)",
+        org: "National Queer and Trans Therapists of Color Network",
         id: 12,
         date: "2020-06-27",
         order: ["octopus"],
@@ -366,7 +366,7 @@ export const DONATIONS = [
     },
     {
         amount: 20,
-        org: "National Queer and Trans Therapists of Color Network (NQTTCN)",
+        org: "National Queer and Trans Therapists of Color Network",
         id: 29,
         date: "2020-06-28",
         order: ["octopus"],
@@ -375,7 +375,7 @@ export const DONATIONS = [
     },
     {
         amount: 20,
-        org: "National Queer and Trans Therapists of Color Network (NQTTCN)",
+        org: "National Queer and Trans Therapists of Color Network",
         id: 30,
         date: "2020-06-28",
         order: ["octopus"],

@@ -66,7 +66,14 @@ const OrgChart = ({ donationTable }) => {
     })
 
     return (
-        <div style={{ marginTop: 40, height: 500, width: "100%" }}>
+        <div
+            style={{
+                marginTop: 40,
+                marginBottom: 60,
+                height: 500,
+                width: "100%",
+            }}
+        >
             <h3 style={{ marginBottom: 0 }}>Donation Recipients</h3>
             <ResponsivePie
                 data={nivoData}

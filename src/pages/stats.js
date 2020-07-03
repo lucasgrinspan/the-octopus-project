@@ -1,5 +1,6 @@
 import React from "react"
 
+import { Link } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import StatCard from "../components/stat-card/stat-card"
@@ -171,6 +172,17 @@ const StatsPage = () => {
             </div>
             <ColorChart colorData={colorTable} />
             <OrgChart donationTable={donationTable} />
+            <Link
+                style={{
+                    fontSize: "1.25rem",
+                    display: "block",
+                    width: "100%",
+                    textAlign: "center",
+                }}
+                to="/ledger/"
+            >
+                Check the raw data.
+            </Link>
         </Layout>
     )
 }

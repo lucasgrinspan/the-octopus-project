@@ -1,4 +1,21 @@
+table#ledger {
+    min-width: 650px;
+    max-width: 100%;
+}
 table#ledger th {
     cursor: pointer;
     user-select: none;
+}
+table#ledger th.amount-th {
+    width: max-content;
+}
+table#ledger tr td:first-child {
+    padding-right: 0;
+}
+table#ledger tr td:last-child {
+    padding-left: 0;
+}
+table#ledger td {
+    overflow: hidden;
+    text-overflow: ellipsis;
 }
