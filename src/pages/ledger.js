@@ -6,7 +6,6 @@ import { DONATIONS } from "../data/donations"
 import "../css/ledger.css"
 
 const LedgerPage = () => {
-    // const [tableData, setTableData] = useState(DONATIONS)
     const [sort, setSort] = useState({ col: "date", down: true })
 
     const sortTable = col => {
@@ -71,7 +70,7 @@ const LedgerPage = () => {
             <h1>Ledger</h1>
             <p>
                 There have been {DONATIONS.length} total donations. Thank you
-                for all!
+                all!
             </p>
             <div style={{ overflow: "scroll" }}>
                 <table id="ledger">
