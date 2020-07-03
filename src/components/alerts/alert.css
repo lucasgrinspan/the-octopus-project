@@ -1,0 +1,56 @@
+.alert {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+.alert.full-width {
+    width: 100%;
+    margin-bottom: 0;
+    border-radius: 0;
+}
+.alert.full-width p {
+    display: inline;
+    margin-left: 5px;
+}
+.alert.alert-warn {
+    border: 2px solid var(--warn-border);
+    background-color: var(--warn-bg);
+    color: var(--warn-text-color);
+}
+.alert.alert-warn a {
+    color: var(--warn-text-link);
+}
+.alert.alert-success {
+    border: 2px solid var(--success-border);
+    background-color: var(--success-bg);
+    color: var(--success-text-color);
+}
+.alert.alert-success a {
+    color: var(--success-text-link);
+}
+.alert-content {
+    margin-left: 6px;
+}
+.alert-title {
+    font-size: 1.125rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.alert-text {
+    margin-bottom: 0;
+}
+.covid-alert-text a {
+    font-weight: bold;
+    text-decoration: none;
+}
+.alert-text a:hover {
+    text-decoration: underline;
+}
+.alert-icon {
+    flex-shrink: 0;
+    height: 1.5rem;
+    width: 1.5rem;
+}

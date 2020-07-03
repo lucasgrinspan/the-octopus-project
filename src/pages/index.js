@@ -7,7 +7,7 @@ import SEO from "../components/seo"
 
 import "../css/global.css"
 import "../css/index.css"
-import CovidAlert from "../components/covid-alert/covid-alert"
+import RaffleAlert from "../components/alerts/raffle-alert"
 
 const IndexPage = () => {
     const data = useStaticQuery(graphql`
@@ -22,9 +22,9 @@ const IndexPage = () => {
         }
     `)
     return (
-        <Layout>
+        <Layout index={true}>
             <SEO title="Home" />
-            <CovidAlert />
+            <RaffleAlert />
             <h1>Welcome</h1>
             <div id="landing-content-container">
                 <div id="landing-image">

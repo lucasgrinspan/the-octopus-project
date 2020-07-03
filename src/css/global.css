@@ -29,10 +29,15 @@
         0 16px 16px rgba(0, 0, 0, 0.12);
 
     --width-max: 960px;
-    --alert-text-color: #856404;
-    --alert-bg: #fff3cd;
-    --alert-border: #ffeeba;
-    --alert-text-link: #533f03;
+    --warn-text-color: #856404;
+    --warn-bg: #fff3cd;
+    --warn-border: #ffeeba;
+    --warn-text-link: #533f03;
+
+    --success-text-color: #155724;
+    --success-bg: #d4edda;
+    --success-border: #c3e6cb;
+    --success-text-link: #0b2e13;
 }
 #landing-image {
     float: right;
