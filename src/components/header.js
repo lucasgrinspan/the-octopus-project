@@ -4,14 +4,16 @@ import React from "react"
 import Counter from "./counter/counter"
 
 import { DONATIONS } from "../data/donations"
+import CovidAlert from "./alerts/covid-alert"
 
-const Header = () => {
+const Header = ({ index }) => {
     let donationTotal = 0
     DONATIONS.forEach(donation => {
         donationTotal += donation.amount
     })
     return (
         <>
+            {index && <CovidAlert />}
             <header>
                 <div
                     className="header-container"
@@ -83,13 +85,4 @@ const Header = () => {
         </>
     )
 }
-
-Header.propTypes = {
-    siteTitle: PropTypes.string,
-}
-
-Header.defaultProps = {
-    siteTitle: ``,
-}
-
 export default Header

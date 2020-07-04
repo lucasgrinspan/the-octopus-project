@@ -5,30 +5,39 @@
     align-items: center;
     margin-bottom: 45px;
 }
+
 .person-content {
     display: flex;
     flex-direction: column;
     max-width: 65%;
     order: 2;
 }
+
 .person-content p {
     font-size: 1.125rem;
     flex: 1;
 }
+
+.person-image-wrapper {
+    position: relative;
+    margin-left: 30px;
+    order: 2;
+    flex-shrink: 0;
+}
+
+.person-image-wrapper.first {
+    order: 1;
+    margin-left: 0;
+    margin-right: 30px;
+}
+
 .person-image {
     width: 292px;
     height: 292px;
     border-radius: 10px;
     box-shadow: var(--shadow);
-    margin-left: 30px;
-    order: 2;
-    flex-shrink: 0;
 }
-.person-image.first {
-    order: 1;
-    margin-left: 0;
-    margin-right: 30px;
-}
+
 @media screen and (max-width: 630px) {
     .person-section {
         flex-direction: column;
@@ -40,11 +49,106 @@
     .person-content p {
         font-size: 1rem;
     }
-    .person-image {
+    .person-image-wrapper {
         margin-left: 0;
     }
-    .person-image.first {
+    .person-image-wrapper.first {
         order: 2;
         margin-right: 0;
     }
+}
+
+div.person-image-wrapper:hover p.caption {
+    opacity: 1;
+}
+
+p.caption {
+    position: absolute;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: var(--off-white);
+    opacity: 0;
+    transition: opacity 250ms ease-in-out;
+}
+
+p.caption:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 0;
+    height: 0;
+    border: 11px solid transparent;
+    border-top-color: var(--off-white);
+    border-bottom: 0;
+    margin-left: -11px;
+    margin-bottom: -11px;
+}
+
+p#erin-caption {
+    top: 5px;
+    right: 5px;
+}
+
+p#erin-caption:after {
+    right: 65px
+}
+
+p#lianne-caption {
+    top: 5px;
+    right: 30px;
+}
+
+p#lianne-caption:after {
+    right: 70px;
+}
+
+p#lucas-caption {
+    top: 50px;
+    right: 115px;
+}
+
+p#lucas-caption:after {
+    right: 0;
+    top: 50%;
+    border-top: 11px solid transparent;
+    border-bottom: 11px solid transparent;
+    border-left-color: var(--off-white);
+    border-right: 0;
+    margin-top: -11px;
+    margin-right: -11px;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+p#noel-caption {
+    top: 50px;
+    right: 125px;
+}
+
+p#noel-caption:after {
+    right: 0;
+    top: 50%;
+    border-top: 11px solid transparent;
+    border-bottom: 11px solid transparent;
+    border-left-color: var(--off-white);
+    border-right: 0;
+    margin-top: -11px;
+    margin-right: -11px;
+    margin-left: 0;
+    margin-bottom: 0;
+}
+
+p#penelope-caption {
+    top: 176px;
+    right: 75px;
+}
+
+p#penelope-caption:after {
+    left: 50%;
+    top: 0;
+    border: 11px solid transparent;
+    border-bottom-color: var(--off-white);
+    border-top: 0;
+    margin-left: -11px;
+    margin-top: -11px;
 }

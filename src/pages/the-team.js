@@ -33,7 +33,12 @@ const TheTeamPage = () => {
                         with the beauty of her crafts.
                     </p>
                 </div>
-                <ErinImage />
+                <div className="person-image-wrapper">
+                    <ErinImage />
+                    <p id="erin-caption" className="caption">
+                        Thank you for stopping by!
+                    </p>
+                </div>
             </div>
             <div className="person-section">
                 <div className="person-content">
@@ -51,7 +56,12 @@ const TheTeamPage = () => {
                         now.
                     </p>
                 </div>
-                <LianneImage />
+                <div className="person-image-wrapper first">
+                    <LianneImage />
+                    <p id="lianne-caption" className="caption">
+                        Babbo babbo.
+                    </p>
+                </div>
             </div>
             <div className="person-section">
                 <div className="person-content">
@@ -69,7 +79,12 @@ const TheTeamPage = () => {
                         at our analytics report.
                     </p>
                 </div>
-                <LucasImage />
+                <div className="person-image-wrapper">
+                    <LucasImage />
+                    <p className="caption" id="lucas-caption">
+                        *schlorp*
+                    </p>
+                </div>
             </div>
             <div className="person-section">
                 <div className="person-content">
@@ -88,7 +103,12 @@ const TheTeamPage = () => {
                         she has done.
                     </p>
                 </div>
-                <NoelImage />
+                <div className="person-image-wrapper first">
+                    <NoelImage />
+                    <p className="caption" id="noel-caption">
+                        Logistik
+                    </p>
+                </div>
             </div>
             <div className="person-section">
                 <div className="person-content">
@@ -107,7 +127,12 @@ const TheTeamPage = () => {
                         sessions. Thank you Penny.
                     </p>
                 </div>
-                <PennyImage />
+                <div className="person-image-wrapper">
+                    <PennyImage />
+                    <p className="caption" id="penelope-caption">
+                        *vomits profusely*
+                    </p>
+                </div>
             </div>
         </Layout>
     )

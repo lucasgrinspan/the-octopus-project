@@ -6,7 +6,8 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 import "../css/global.css"
-import CovidAlert from "../components/covid-alert/covid-alert"
+import "../css/index.css"
+import RaffleAlert from "../components/alerts/raffle-alert"
 
 const IndexPage = () => {
     const data = useStaticQuery(graphql`
@@ -21,9 +22,9 @@ const IndexPage = () => {
         }
     `)
     return (
-        <Layout>
+        <Layout index={true}>
             <SEO title="Home" />
-            <CovidAlert />
+            <RaffleAlert />
             <h1>Welcome</h1>
             <div id="landing-content-container">
                 <div id="landing-image">
@@ -36,6 +37,7 @@ const IndexPage = () => {
                                 "0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),0 16px 16px rgba(0, 0, 0, 0.12)",
                         }}
                     />
+                    <p id="image-caption">Take me with you!</p>
                 </div>
 
                 <div>
@@ -44,9 +46,9 @@ const IndexPage = () => {
                         to wonderful people who've donated to one of these BLM
                         or LGBTQ+ <Link to="/charities/">charities</Link>! These
                         octopi are hand-made with love by our talented team. We
-                        also offer octopus themed bracelets and scrunchies for
-                        $5! Meet the octopi and other products at our{" "}
-                        <Link to="/gallery/">gallery</Link>.
+                        also offer octopus themed bracelets, scrunchies, and
+                        coasters for $5! Meet the octopi and other products at
+                        our <Link to="/gallery/">gallery</Link>.
                     </p>
                     <p>
                         If you'd like to help in other ways, check out our{" "}
@@ -82,10 +84,9 @@ const IndexPage = () => {
                 <p className="step-instruction">
                     <strong>Let us know!</strong> Send us a picture of your
                     donation confirmation and let us know whether you want a
-                    crochet octopus, bracelet, or a scrunchie, along with the
-                    color you want it in. The bracelets come with octopi charms
-                    and can be pride themed. You can do this through our
-                    Instagram{" "}
+                    crochet octopus, bracelet, scrunchie, or a coaster, along
+                    with the color you want it in. All of those are octopi
+                    themed! You can do this through our Instagram{" "}
                     <a href="https://www.instagram.com/the_octopus_project">
                         @the_octopus_project
                     </a>
