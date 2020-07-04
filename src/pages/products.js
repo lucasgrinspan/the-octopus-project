@@ -86,6 +86,25 @@ const ProductsPage = () => {
                     <CoasterImage />
                 </div>
             </div>
+            <div className="product-container">
+                <div className="product-content">
+                    <h3>The Beast</h3>
+                    <p>
+                        This isn't the type of octopus you would take to your
+                        parent's house. You'll be arrested on sight with
+                        possession of this monster. The Chonktopus. But don't
+                        get used to seeing this here because this is part of a
+                        limited time offer! This bad boy can only be received by
+                        winning our <Link to="/raffle/">raffle</Link>!
+                    </p>
+                    <p>
+                        <strong>Made by:</strong> Evil Scientists
+                    </p>
+                </div>
+                <div className="product-image-wrapper">
+                    <CoasterImage />
+                </div>
+            </div>
         </Layout>
     )
 }
