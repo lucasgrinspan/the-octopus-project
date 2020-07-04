@@ -776,4 +776,21 @@ export const DONATIONS = [
         rafflEntry: 1,
         sent: false,
     },
+    {
+        amount: 10,
+        org: "Black Girls CODE",
+        date: "2020-07-04",
+        order: ["octopus"],
+        octopusColor: ["light pink", "light blue"],
+        sent: false,
+    },
+    {
+        amount: 9,
+        org: "The Trevor Project",
+        date: "2020-07-04",
+        order: ["octopus", "raffle"],
+        octopusColor: ["hot pink"],
+        raffleEntry: 1,
+        sent: false,
+    },
 ]
