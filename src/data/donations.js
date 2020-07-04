@@ -688,4 +688,13 @@ export const DONATIONS = [
         raffleEntry: 2,
         sent: false,
     },
+    {
+        amount: 15,
+        org: "Black Girls CODE",
+        id: 59,
+        date: "2020-07-03",
+        order: ["raffle"],
+        raffleEntry: 5,
+        sent: false,
+    },
 ]
