@@ -5,7 +5,8 @@ import { Link } from "gatsby"
 
 import "../css/products.css"
 import OctopusImage from "../components/product-images/octopus-image"
-
+import ScrunchieImage from "../components/product-images/scrunchie-image"
+import CoasterImage from "../components/product-images/coaster-image"
 const ProductsPage = () => {
     return (
         <Layout>
@@ -65,7 +66,24 @@ const ProductsPage = () => {
                     </p>
                 </div>
                 <div className="product-image-wrapper">
-                    <OctopusImage />
+                    <ScrunchieImage />
+                </div>
+            </div>
+            <div className="product-container reverse">
+                <div className="product-content">
+                    <h3>Coasters</h3>
+                    <p>
+                        If you receive this, we would totally understand if you
+                        didn't use it for its intended purpose just so that you
+                        can always see that beautiful stitch art. You might even
+                        choose to frame it.
+                    </p>
+                    <p>
+                        <strong>Made by:</strong> Lorem Ipsum
+                    </p>
+                </div>
+                <div className="product-image-wrapper">
+                    <CoasterImage />
                 </div>
             </div>
         </Layout>
