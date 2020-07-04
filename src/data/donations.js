@@ -372,7 +372,8 @@ export const DONATIONS = [
         date: "2020-06-28",
         order: ["octopus"],
         octopusColor: ["orange"],
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 20,
@@ -381,7 +382,8 @@ export const DONATIONS = [
         date: "2020-06-28",
         order: ["octopus"],
         octopusColor: ["yellow"],
-        sent: false,
+        sent: true,
+        state: "New Jersey",
     },
     {
         amount: 5,
@@ -601,7 +603,8 @@ export const DONATIONS = [
         date: "2020-07-02",
         order: ["octopus"],
         octopusColor: ["maroon"], //also green blue and pink
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 170,
@@ -644,6 +647,7 @@ export const DONATIONS = [
         id: 52,
         date: "2020-07-03",
         order: ["raffle"],
+        raffleEntry: 1,
         sent: false,
     },
     {
@@ -653,6 +657,35 @@ export const DONATIONS = [
         date: "2020-07-03",
         order: ["octopus"],
         octopusColor: ["hot pink"], //multicolored
+        sent: false,
+    },
+    {
+        amount: 5,
+        org: "The University Club Family Fund",
+        id: 56,
+        date: "2020-07-03",
+        order: ["bracelet"],
+        braceletColor: ["pride"], // erin
+        sent: true,
+        state: "Florida",
+    },
+    {
+        amount: 5,
+        org: "The University Club Family Fund",
+        id: 57,
+        date: "2020-07-03",
+        order: ["octopus"],
+        octopusColor: ["hot pink"], // orange yellow teal
+        sent: false,
+    },
+    {
+        amount: 12,
+        org: "The University Club Family Fund",
+        id: 58,
+        date: "2020-07-03",
+        order: ["octopus", "raffle"],
+        octopusColor: ["white"],
+        raffleEntry: 2,
         sent: false,
     },
 ]
