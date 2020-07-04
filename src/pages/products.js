@@ -7,6 +7,7 @@ import "../css/products.css"
 import OctopusImage from "../components/product-images/octopus-image"
 import ScrunchieImage from "../components/product-images/scrunchie-image"
 import CoasterImage from "../components/product-images/coaster-image"
+import ChonktopusImage from "../components/product-images/chonktopus-image"
 const ProductsPage = () => {
     return (
         <Layout>
@@ -17,6 +18,8 @@ const ProductsPage = () => {
                 , any of these products could be yours. We're always looking to
                 expand our octopi themed goodies, so let us know if you have any
                 ideas or if you can make some goodies for The Octopus Project.
+                If your name already appears on this page, then thank you for
+                your contribution!
             </p>
             <div className="product-container">
                 <div className="product-content">
@@ -24,7 +27,9 @@ const ProductsPage = () => {
                     <p>
                         The one, the only. The original Octopus Project
                         offering. These crochet octopi are made with love and
-                        can come in a variety of different colors.
+                        can come in a variety of different colors. They can even
+                        just be something to hold on those nights (you know
+                        those nights).
                     </p>
                     <p>
                         <strong>Made by:</strong> Erin, Maddie
@@ -73,10 +78,11 @@ const ProductsPage = () => {
                 <div className="product-content">
                     <h3>Coasters</h3>
                     <p>
-                        If you receive this, we would totally understand if you
-                        didn't use it for its intended purpose just so that you
-                        can always see that beautiful stitch art. You might even
-                        choose to frame it.
+                        Functional and beautiful, this coaster will hold your
+                        drink with intense loyalty. But don't worry if you don't
+                        want to use it; we would totally understand if you just
+                        want it so that you can look at that gorgeous art. You
+                        might even choose to frame it.
                     </p>
                     <p>
                         <strong>Made by:</strong> Andrea
@@ -102,7 +108,7 @@ const ProductsPage = () => {
                     </p>
                 </div>
                 <div className="product-image-wrapper">
-                    <CoasterImage />
+                    <ChonktopusImage />
                 </div>
             </div>
         </Layout>
