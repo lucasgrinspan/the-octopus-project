@@ -2,15 +2,15 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
-const ScrunchieImage = () => (
+const CoasterImage = () => (
     <StaticQuery
         query={graphql`
             query {
-                file(relativePath: { eq: "products/scrunchie.jpg" }) {
+                file(relativePath: { eq: "products/coaster.jpg" }) {
                     childImageSharp {
                         # Specify a fluid image and fragment
                         # The default maxWidth is 800 pixels
-                        fixed(width: 320, height: 200) {
+                        fixed(width: 320, height: 320) {
                             ...GatsbyImageSharpFixed_tracedSVG
                         }
                     }
@@ -20,7 +20,7 @@ const ScrunchieImage = () => (
         render={data => (
             <Img
                 fixed={data.file.childImageSharp.fixed}
-                alt="Octopus themed scrunchie"
+                alt="Crochet octopus"
                 style={{
                     borderRadius: 10,
                     boxShadow:
@@ -30,4 +30,4 @@ const ScrunchieImage = () => (
         )}
     />
 )
-export default ScrunchieImage
+export default CoasterImage
