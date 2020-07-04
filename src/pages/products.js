@@ -27,7 +27,7 @@ const ProductsPage = () => {
                         can come in a variety of different colors.
                     </p>
                     <p>
-                        <strong>Made by:</strong> Erin Russell
+                        <strong>Made by:</strong> Erin, Maddie
                     </p>
                 </div>
                 <div className="product-image-wrapper">
@@ -45,7 +45,7 @@ const ProductsPage = () => {
                         octopi charms.
                     </p>
                     <p>
-                        <strong>Made by:</strong> Lorem Ipsum
+                        <strong>Made by:</strong> Natalie
                     </p>
                 </div>
                 <div className="product-image-wrapper">
@@ -62,7 +62,7 @@ const ProductsPage = () => {
                         without saying that there will be octopi on them.
                     </p>
                     <p>
-                        <strong>Made by:</strong> Lorem Ipsum
+                        <strong>Made by:</strong> Brenna
                     </p>
                 </div>
                 <div className="product-image-wrapper">
@@ -79,7 +79,7 @@ const ProductsPage = () => {
                         choose to frame it.
                     </p>
                     <p>
-                        <strong>Made by:</strong> Lorem Ipsum
+                        <strong>Made by:</strong> Andrea
                     </p>
                 </div>
                 <div className="product-image-wrapper">
