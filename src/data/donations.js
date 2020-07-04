@@ -703,7 +703,7 @@ export const DONATIONS = [
         id: 60,
         date: "2020-07-04",
         order: ["octopus"],
-        octopusColor: ["red", "light pink"],
+        octopusColor: ["maroon", "light pink"],
         sent: false,
     },
     {
