@@ -802,7 +802,7 @@ export const DONATIONS = [
         date: "2020-07-04",
         id: 66,
         order: ["octopus"],
-        octopusColor: ["multicolor"],
+        octopusColor: ["multicolored"],
         raffleEntry: 3,
         sent: false,
     },
