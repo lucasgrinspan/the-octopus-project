@@ -121,6 +121,28 @@ const ColorChart = ({ colorData }) => {
                 labelSkipHeight={12}
                 labelTextColor={"black"}
                 minValue={0}
+                defs={[
+                    {
+                        id: "rainbow",
+                        type: "linearGradient",
+                        colors: [
+                            { offset: 0, color: "rgba(255,69,69,1)" },
+                            { offset: 18, color: "rgba(237,177,58,1)" },
+                            { offset: 37, color: "rgba(237,240,70,1)" },
+                            { offset: 56, color: "rgba(48,236,99,1)" },
+                            { offset: 73, color: "rgba(48,164,236,1)" },
+                            { offset: 100, color: "rgba(226,48,236,1)" },
+                        ],
+                    },
+                ]}
+                fill={[
+                    {
+                        match: {
+                            id: "multicolored",
+                        },
+                        id: "rainbow",
+                    },
+                ]}
             />
         </div>
     )

@@ -528,7 +528,7 @@ export const DONATIONS = [
         id: 43,
         date: "2020-06-30",
         order: ["octopus"],
-        octopusColor: ["yellow"], // also orange
+        octopusColor: ["multicolored"],
         sent: false,
     },
     {
@@ -584,7 +584,7 @@ export const DONATIONS = [
         id: 49,
         date: "2020-07-02",
         order: ["octopus"],
-        octopusColor: ["yellow"], //also green blue and pink
+        octopusColor: ["multicolored"],
         sent: false,
     },
     {
@@ -602,7 +602,7 @@ export const DONATIONS = [
         id: 51,
         date: "2020-07-02",
         order: ["octopus"],
-        octopusColor: ["maroon"], //also green blue and pink
+        octopusColor: ["multicolored"],
         sent: true,
         state: "Florida",
     },
@@ -629,7 +629,7 @@ export const DONATIONS = [
         id: 53,
         date: "2020-07-02",
         order: ["octopus", "scrunchie"],
-        octopusColor: ["yellow"], // green blue purple
+        octopusColor: ["multicolored"],
         sent: false,
     },
     {
@@ -656,7 +656,7 @@ export const DONATIONS = [
         id: 55,
         date: "2020-07-03",
         order: ["octopus"],
-        octopusColor: ["hot pink"], //multicolored
+        octopusColor: ["multicolored"],
         sent: false,
     },
     {
@@ -675,7 +675,7 @@ export const DONATIONS = [
         id: 57,
         date: "2020-07-03",
         order: ["octopus"],
-        octopusColor: ["hot pink"], // orange yellow teal
+        octopusColor: ["multicolored"],
         sent: false,
     },
     {
@@ -773,7 +773,7 @@ export const DONATIONS = [
         date: "2020-07-04",
         id: 64,
         order: ["octopus", "raffle"],
-        octopusColor: ["hot pink"], //rainbow
+        octopusColor: ["multicolored"],
         rafflEntry: 1,
         sent: false,
     },

@@ -12,7 +12,7 @@ export const COLORS = {
     white: "hsl(0, 0%, 95%)",
     grey: "hsl(0, 0%, 66%)",
     black: "hsl(0, 0%, 6%)",
-    rainbow:
+    multicolored:
         "linear-gradient(0deg, rgba(255,69,69,1) 0%, rgba(237,177,58,1) 18%, rgba(237,240,70,1) 37%, rgba(48,236,99,1) 56%, rgba(48,164,236,1) 73%, rgba(226,48,236,1) 96%)",
 }
 
@@ -31,5 +31,5 @@ export const COLORS_CONTRAST = {
     white: true,
     grey: true,
     black: false,
-    rainbow: true,
+    multicolored: true,
 }
