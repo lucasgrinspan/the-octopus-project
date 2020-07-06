@@ -806,4 +806,13 @@ export const DONATIONS = [
         raffleEntry: 3,
         sent: false,
     },
+    {
+        amount: 5,
+        org: "Black Girls CODE",
+        date: "2020-07-05",
+        id: 66,
+        order: ["octopus"],
+        octopusColor: ["teal"],
+        sent: false,
+    },
 ]
