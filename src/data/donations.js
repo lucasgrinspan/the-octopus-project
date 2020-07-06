@@ -831,4 +831,14 @@ export const DONATIONS = [
         octopusColor: ["teal"],
         sent: false,
     },
+    {
+        amount: 15,
+        org: "The University Club Family Fund",
+        date: "2020-07-06",
+        id: 67,
+        order: ["octopus", "coaster"],
+        octopusColor: ["orange"],
+        coasterColor: ["blm", "pi"],
+        sent: false,
+    },
 ]
