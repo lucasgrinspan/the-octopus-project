@@ -841,4 +841,13 @@ export const DONATIONS = [
         coasterColor: ["blm", "pi"],
         sent: false,
     },
+    {
+        amount: 5,
+        org: "Black Girls CODE",
+        date: "2020-07-06",
+        id: 68,
+        order: ["octopus"],
+        octopusColor: ["lavender"],
+        sent: false,
+    },
 ]
