@@ -1,0 +1,30 @@
+div.filter-wrapper {
+    border-radius: 1000px;
+    background: var(--brand-gradient);
+    background-clip: border-box;
+    display: inline-block;
+    margin-right: 15px;
+}
+label.filter-label {
+    border: 2px solid var(--color-1);
+    color: var(--color-1);
+    background-color: var(--bg-color);
+    border-radius: 1000px;
+    padding: 7px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    user-select: none;
+    transition: all 100ms ease-in-out;
+    position: relative;
+    font-weight: bold;
+}
+label.filter-label.selected {
+    background-color: var(--brand-color-1);
+}
+label.filter-label input.filter-tag {
+    position: absolute;
+    opacity: 0;
+}

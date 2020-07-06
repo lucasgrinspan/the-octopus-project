@@ -41,6 +41,8 @@ const LedgerPage = () => {
             }
         } else if (sort.col === "amount") {
             return sort.down ? b.amount - a.amount : a.amount - b.amount
+        } else {
+            return 0
         }
     })
 
