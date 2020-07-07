@@ -33,3 +33,20 @@ export const COLORS_CONTRAST = {
     black: false,
     multicolored: true,
 }
+
+export const COLORS_AVAILABILITY = {
+    "light pink": true,
+    "hot pink": true,
+    coral: true,
+    maroon: true,
+    orange: true,
+    yellow: true,
+    "dark green": true,
+    "light blue": false,
+    teal: true,
+    lavender: true,
+    white: true,
+    grey: true,
+    black: true,
+    multicolored: true,
+}
