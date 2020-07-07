@@ -869,4 +869,13 @@ export const DONATIONS = [
         octopusColor: ["lavender"],
         sent: false,
     },
+    {
+        amount: 5,
+        org: "Black Trans Advocacy Coalition",
+        date: "2020-07-07",
+        id: 71,
+        order: ["octopus"],
+        octopusColor: ["yellow"],
+        sent: false,
+    },
 ]
