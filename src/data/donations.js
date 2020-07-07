@@ -893,7 +893,7 @@ export const DONATIONS = [
         org: "The LoveLand Foundation",
         date: "2020-07-07",
         id: 73,
-        order: [],
+        order: ["scrunchie"],
         sent: false,
     },
     {
@@ -901,7 +901,9 @@ export const DONATIONS = [
         org: "The Trevor Project",
         date: "2020-07-07",
         id: 74,
-        order: [],
+        order: ["octopus", "raffle"],
+        octopusColor: ["pink"],
+        raffleEntry: 3,
         sent: false,
     },
 ]
