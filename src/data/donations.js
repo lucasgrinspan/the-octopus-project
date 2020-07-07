@@ -850,4 +850,23 @@ export const DONATIONS = [
         octopusColor: ["lavender"],
         sent: false,
     },
+    {
+        amount: 3,
+        org: "Campaign Zero",
+        date: "2020-07-06",
+        id: 69,
+        order: ["raffle"],
+        raffleEntry: 1,
+        sent: false,
+    },
+    {
+        amount: 5,
+        org:
+            "The Griffin-Gracy Educational Retreat & Historical Center’s LGBTQ Freedom Fund",
+        date: "2020-07-06",
+        id: 70,
+        order: ["octopus"],
+        octopusColor: ["lavender"],
+        sent: false,
+    },
 ]
