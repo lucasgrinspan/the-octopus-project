@@ -8,6 +8,7 @@ import OctopusImage from "../components/product-images/octopus-image"
 import ScrunchieImage from "../components/product-images/scrunchie-image"
 import CoasterImage from "../components/product-images/coaster-image"
 import ChonktopusImage from "../components/product-images/chonktopus-image"
+import BraceletImage from "../components/product-images/bracelet-image"
 const ProductsPage = () => {
     return (
         <Layout>
@@ -54,7 +55,7 @@ const ProductsPage = () => {
                     </p>
                 </div>
                 <div className="product-image-wrapper">
-                    <OctopusImage />
+                    <BraceletImage />
                 </div>
             </div>
             <div className="product-container">
