@@ -1,3 +1,25 @@
+const validateDonations = donations => {
+    const raiseError = (message, donation) => {
+        console.error(message)
+        console.error(donation)
+        alert("Invalid donation found")
+    }
+    donations.forEach(donation => {
+        // amount is greater than zero
+        if (donation.amount <= 0) {
+            raiseError(
+                "Invalid donation: donation amount is less than zero",
+                donation
+            )
+        }
+
+        // organization is a string and exists
+        if (typeof donation.org === "string" && donation.org.length > 0) {
+            raiseError("Invalid charity organization", donation)
+        }
+    })
+}
+
 export const DONATIONS = [
     {
         amount: 5,
@@ -459,7 +481,8 @@ export const DONATIONS = [
         order: ["octopus", "bracelet"],
         octopusColor: ["coral"],
         braceletColor: ["bi"],
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 10,
@@ -468,7 +491,8 @@ export const DONATIONS = [
         date: "2020-06-29",
         order: ["octopus"],
         octopusColor: ["orange"],
-        sent: false,
+        sent: true,
+        state: "Maine",
     },
     {
         amount: 10,
@@ -514,7 +538,8 @@ export const DONATIONS = [
         date: "2020-06-30",
         order: ["octopus"],
         octopusColor: ["yellow"],
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 10,
@@ -573,7 +598,8 @@ export const DONATIONS = [
         order: ["octopus", "bracelet"],
         octopusColor: ["orange"],
         braceletColor: ["pan"],
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 15,
@@ -582,7 +608,8 @@ export const DONATIONS = [
         date: "2020-07-01",
         order: ["octopus"],
         octopusColor: ["teal"],
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 5,
@@ -610,7 +637,8 @@ export const DONATIONS = [
         date: "2020-07-02",
         order: ["octopus"],
         octopusColor: ["lavender"],
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 10,
@@ -620,7 +648,7 @@ export const DONATIONS = [
         order: ["octopus"],
         octopusColor: ["multicolored"],
         sent: true,
-        state: "Florida",
+        state: "Florida", // maroon?
     },
     {
         amount: 170,
@@ -637,7 +665,8 @@ export const DONATIONS = [
         date: "2020-07-02",
         order: ["octopus"],
         octopusColor: ["white"],
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 10,
@@ -655,7 +684,8 @@ export const DONATIONS = [
         date: "2020-07-03",
         order: ["octopus"],
         octopusColor: ["hot pink"],
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 10,
@@ -702,7 +732,8 @@ export const DONATIONS = [
         order: ["octopus", "raffle"],
         octopusColor: ["white"],
         raffleEntry: 2,
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 15,
@@ -719,8 +750,9 @@ export const DONATIONS = [
         id: 60,
         date: "2020-07-04",
         order: ["octopus"],
-        octopusColor: ["maroon", "light pink"],
-        sent: false,
+        octopusColor: ["maroon", "hot pink"],
+        sent: true,
+        state: "North Carolina",
     },
     {
         amount: 10,
@@ -771,7 +803,7 @@ export const DONATIONS = [
         id: 62,
         date: "2020-07-04",
         order: ["octopus"],
-        octopusColor: ["light blue"],
+        octopusColor: ["teal"],
         sent: false,
     },
     {
@@ -902,7 +934,26 @@ export const DONATIONS = [
         date: "2020-07-07",
         id: 74,
         order: ["octopus", "raffle"],
-        octopusColor: ["pink"],
+        octopusColor: ["hot pink"],
+        raffleEntry: 3,
+        sent: false,
+    },
+    {
+        amount: 5,
+        org: "The LoveLand Foundation",
+        id: 75,
+        date: "2020-07-07",
+        order: ["octopus"],
+        octopusColor: [],
+        sent: false,
+    },
+    {
+        amount: 15,
+        org: "The LoveLand Foundation",
+        id: 76,
+        date: "2020-07-07",
+        order: ["octopus", "raffle"],
+        octopusColor: ["hot pink"],
         raffleEntry: 3,
         sent: false,
     },
