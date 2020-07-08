@@ -2,11 +2,10 @@ const validateDonations = donations => {
     const raiseError = (message, donation) => {
         console.error(message)
         console.error(donation)
-        alert("Invalid donation found")
     }
     donations.forEach(donation => {
         // amount is greater than zero
-        if (donation.amount <= 0) {
+        if (!(donation.amount > 0)) {
             raiseError(
                 "Invalid donation: donation amount is less than zero",
                 donation
@@ -14,13 +13,66 @@ const validateDonations = donations => {
         }
 
         // organization is a string and exists
-        if (typeof donation.org === "string" && donation.org.length > 0) {
+        if (typeof donation.org !== "string" || !(donation.org.length > 0)) {
             raiseError("Invalid charity organization", donation)
         }
+
+        // date exists and can be parsed
+        if (isNaN(Date.parse(donation.date))) {
+            raiseError("Invalid date", donation)
+        }
+
+        // a valid id is given to the post
+        if (!(donation.id >= 0)) {
+            raiseError("invalid id", donation)
+        }
+
+        // check that order exists even if empty
+        if (donation.order.length < 0) {
+            raiseError("order is not an array", donation)
+        }
+
+        const objects = [
+            "raffle",
+            "octopus",
+            "scrunchie",
+            "bracelet",
+            "coaster",
+            "keychain",
+        ]
+        donation.order.forEach(x => {
+            if (!objects.includes(x)) {
+                raiseError("Invalid order", donation)
+            }
+        })
+
+        if (donation.order.includes("octopus")) {
+            if (donation.octopusColor.length < 0) {
+                raiseError("octopus color array is expected", donation)
+            }
+        }
+
+        if (donation.order.includes("raffle")) {
+            if (!(donation.raffleEntry > 0)) {
+                raiseError("raffle entry expected", donation)
+            }
+        }
+
+        if (!donation.hasOwnProperty("sent")) {
+            raiseError("sent field is expected", donation)
+        }
+
+        if (donation.sent) {
+            if (!donation.hasOwnProperty("state")) {
+                raiseError("state field is expected", donation)
+            }
+        }
     })
+
+    return donations
 }
 
-export const DONATIONS = [
+const donationData = [
     {
         amount: 5,
         org: "Dream Defenders Miami",
@@ -822,7 +874,7 @@ export const DONATIONS = [
         id: 64,
         order: ["octopus", "raffle"],
         octopusColor: ["multicolored"],
-        rafflEntry: 1,
+        raffleEntry: 1,
         sent: false,
     },
     {
@@ -958,3 +1010,5 @@ export const DONATIONS = [
         sent: false,
     },
 ]
+
+export const DONATIONS = validateDonations(donationData)
