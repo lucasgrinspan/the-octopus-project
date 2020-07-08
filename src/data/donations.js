@@ -1009,6 +1009,15 @@ const donationData = [
         raffleEntry: 3,
         sent: false,
     },
+    {
+        amount: 20,
+        org: "Campaign Zero",
+        id: 77,
+        date: "2020-07-08",
+        order: ["octopus"],
+        octopusColor: ["teal"],
+        sent: false,
+    },
 ]
 
 export const DONATIONS = validateDonations(donationData)
