@@ -1075,6 +1075,16 @@ const donationData = [
         octopusColor: ["grey"],
         sent: false,
     },
+    {
+        amount: 25,
+        org: "Dream Defenders Miami",
+        id: 84,
+        date: "2020-07-09",
+        order: ["octopus", "raffle"],
+        octopusColor: ["dark green"],
+        raffleEntry: 6,
+        sent: false,
+    },
 ]
 
 export const DONATIONS = validateDonations(donationData)
