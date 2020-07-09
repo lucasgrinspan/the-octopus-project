@@ -1038,6 +1038,15 @@ const donationData = [
         braceletColor: ["lesbian"],
         sent: false,
     },
+    {
+        amount: 10,
+        org: "Therapy Fund for Black Women and Girls",
+        id: 80,
+        date: "2020-07-09",
+        order: ["octopus"],
+        octopusColor: ["lavender"],
+        sent: false,
+    },
 ]
 
 export const DONATIONS = validateDonations(donationData)
