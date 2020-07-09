@@ -1052,8 +1052,9 @@ const donationData = [
         org: "The LoveLand Foundation",
         id: 81,
         date: "2020-07-09",
-        order: ["octopus"],
+        order: ["octopus", "raffle"],
         octopusColor: ["lavender", "light pink"],
+        raffleEntry: 1,
         sent: false,
     },
     {
