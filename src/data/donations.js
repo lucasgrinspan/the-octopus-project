@@ -1029,6 +1029,15 @@ const donationData = [
         octopusColor: ["yellow", "yellow"],
         sent: false,
     },
+    {
+        amount: 5,
+        org: "The University Club Family Fund",
+        id: 79,
+        date: "2020-07-08",
+        order: ["bracelet"],
+        braceletColor: ["lesbian"],
+        sent: false,
+    },
 ]
 
 export const DONATIONS = validateDonations(donationData)
