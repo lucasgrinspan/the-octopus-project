@@ -445,7 +445,8 @@ const donationData = [
         date: "2020-06-28",
         order: ["octopus"],
         octopusColor: ["lavender"],
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 20,
@@ -1025,7 +1026,7 @@ const donationData = [
         id: 78,
         date: "2020-07-08",
         order: ["octopus"],
-        octopusColor: ["yellow"],
+        octopusColor: ["yellow", "yellow"],
         sent: false,
     },
 ]
