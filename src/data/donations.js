@@ -1066,6 +1066,15 @@ const donationData = [
         octopusColor: ["hot pink"],
         sent: false,
     },
+    {
+        amount: 5,
+        org: "Black Girls CODE",
+        id: 83,
+        date: "2020-07-09",
+        order: ["octopus"],
+        octopusColor: ["grey"],
+        sent: false,
+    },
 ]
 
 export const DONATIONS = validateDonations(donationData)
