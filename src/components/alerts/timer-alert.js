@@ -16,7 +16,9 @@ const TimerAlert = () => {
         <div className="alert alert-success">
             <IoIosHourglass className="alert-icon" />
             <div className="alert-content">
-                <p className="alert-title">{daysRemaining} days left!</p>
+                <p className="alert-title">
+                    {daysRemaining} {daysRemaining === 1 ? "day" : "days"} left!
+                </p>
                 <p className="alert-text">
                     This raffle will only last until July 10th!{" "}
                 </p>
