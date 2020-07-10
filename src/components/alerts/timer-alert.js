@@ -12,15 +12,22 @@ const TimerAlert = () => {
         var diff = Math.floor((endDate - now) / 86400000) + 1
         setDaysRemaining(diff)
     }, [])
+
     return (
         <div className="alert alert-success">
             <IoIosHourglass className="alert-icon" />
             <div className="alert-content">
                 <p className="alert-title">
-                    {daysRemaining} {daysRemaining === 1 ? "day" : "days"} left!
+                    {daysRemaining === 0
+                        ? "Time's running out!"
+                        : `${daysRemaining} ${
+                              daysRemaining === 1 ? "day" : "days"
+                          } left!`}
                 </p>
                 <p className="alert-text">
-                    This raffle will only last until July 10th!{" "}
+                    {daysRemaining === 0
+                        ? "This raffle ends tonight!"
+                        : "This raffle will only last until July 10th!"}
                 </p>
             </div>
         </div>
