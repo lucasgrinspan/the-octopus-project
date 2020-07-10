@@ -1092,6 +1092,31 @@ const donationData = [
         raffleEntry: 6,
         sent: false,
     },
+    {
+        amount: 20,
+        org: "NAACP Legal Defense and Education Fund",
+        id: 85,
+        date: "2020-07-09",
+        order: ["octopus"],
+        octopusColor: ["grey", "grey", "lavender"],
+        sent: false,
+    },
+    {
+        amount: 20,
+        org: "The Trevor Project",
+        id: 85,
+        date: "2020-07-09",
+        order: [],
+        sent: false,
+    },
+    {
+        amount: 10,
+        org: "Central Florida LGBTQ+ Relief Fund",
+        id: 86,
+        date: "2020-07-09",
+        order: [],
+        sent: false,
+    },
 ]
 
 export const DONATIONS = validateDonations(donationData)
