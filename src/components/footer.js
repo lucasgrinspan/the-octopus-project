@@ -19,12 +19,11 @@ const Footer = () => {
             <div id="footer-border"></div>
             <div id="footer-content">
                 <div id="footer-top-content">
-                    <Img
+                    <img
                         id="footer-logo"
-                        fixed={data.file.childImageSharp.fixed}
+                        src={require("../images/logo-dark.svg")}
                         alt="The Octopus Project Logo"
-                        style={{ marginRight: 30 }}
-                        imgStyle={{ margin: 0 }}
+                        style={{ marginRight: 30, width: 200, height: 83 }}
                     />
                     <div id="footer-pages">
                         <Link to="/the-team/">Meet the Team</Link>
