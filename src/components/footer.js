@@ -3,17 +3,6 @@ import { Link, useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 import { FaInstagram, FaHeart } from "react-icons/fa"
 const Footer = () => {
-    const data = useStaticQuery(graphql`
-        query {
-            file(relativePath: { eq: "logo-dark.png" }) {
-                childImageSharp {
-                    fixed(width: 200, height: 83) {
-                        ...GatsbyImageSharpFixed_tracedSVG
-                    }
-                }
-            }
-        }
-    `)
     return (
         <footer>
             <div id="footer-border"></div>

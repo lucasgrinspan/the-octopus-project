@@ -106,7 +106,9 @@ const OrgChart = ({ donationTable }) => {
                 padAngle={0.7}
                 borderWidth={1}
                 borderColor={{ from: "color", modifiers: [["darker", 0.2]] }}
-                sliceLabel={d => `$${d.value}`}
+                sliceLabel={d =>
+                    `$${d.value % 1 !== 0 ? d.value.toFixed(2) : d.value}`
+                }
                 radialLabel={d => {
                     if (
                         d.id ===

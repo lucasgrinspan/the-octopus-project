@@ -97,7 +97,7 @@ const LedgerPage = () => {
                         {tableData.map((donation, index) => {
                             return (
                                 <tr key={index}>
-                                    <td>${donation.amount}</td>
+                                    <td>${donation.amount.toFixed(2)}</td>
                                     <td>{donation.org}</td>
                                     <td>
                                         {formatDate(new Date(donation.date))}

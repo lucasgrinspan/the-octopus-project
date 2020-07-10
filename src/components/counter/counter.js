@@ -10,7 +10,7 @@ const Counter = ({ total }) => {
     return (
         <Link to="/stats/" style={{ textDecoration: "none" }}>
             <div id="charity-container">
-                <p id="charity-total">{formatter.format(total)}</p>
+                <p id="charity-total">{formatter.format(Math.floor(total))}</p>
                 <p id="charity-subtitle">raised so far!</p>
             </div>
         </Link>
