@@ -25,12 +25,23 @@
     align-items: center;
     justify-content: center;
 }
+.stat-card-unit-value-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 .stat-card-value {
     font-weight: bolder;
     text-align: center;
     font-size: 1.5rem;
     margin-bottom: 0;
     text-transform: capitalize;
+}
+.stat-card-unit {
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-size: 1.125rem;
 }
 .stat-card-value.dollar-amount {
     font-size: 4rem;

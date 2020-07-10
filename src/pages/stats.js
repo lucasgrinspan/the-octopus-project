@@ -106,16 +106,28 @@ let countOctopiSent = donations => {
     return numSent
 }
 
-let calculateMostPopularOctopusColor = octopusTable => {
-    let mostPopularColor = ""
-    let maxColorRequested = 0
-    Object.keys(octopusTable).forEach(color => {
-        if (octopusTable[color] > maxColorRequested) {
-            maxColorRequested = octopusTable[color]
-            mostPopularColor = color
+// const calculateMostPopularOctopusColor = octopusTable => {
+//     let mostPopularColor = ""
+//     let maxColorRequested = 0
+//     Object.keys(octopusTable).forEach(color => {
+//         if (octopusTable[color] > maxColorRequested) {
+//             maxColorRequested = octopusTable[color]
+//             mostPopularColor = color
+//         }
+//     })
+//     return mostPopularColor
+// }
+
+const calculateNumberOfStates = donations => {
+    let statesArray = []
+    donations.forEach(donation => {
+        if (donation.sent) {
+            if (!statesArray.includes(donation.state)) {
+                statesArray.push(donation.state)
+            }
         }
     })
-    return mostPopularColor
+    return statesArray.length
 }
 
 const StatsPage = () => {
@@ -127,7 +139,7 @@ const StatsPage = () => {
     let largestDonation = findLargestDonation(idDonationTable)
     let numDonators = countNumDonators(idDonationTable)
     let numOctopi = countOctopiSent(DONATIONS)
-    let mostPopularColor = calculateMostPopularOctopusColor(colorTable)
+    let numStates = calculateNumberOfStates(DONATIONS)
 
     return (
         <Layout>
@@ -152,22 +164,26 @@ const StatsPage = () => {
                 <StatCard
                     title="Largest donation from a single person?"
                     value={largestDonation}
-                    unit="$"
                     isNum
+                    isMonetary
                 />
                 <StatCard
                     title="How many people have donated?"
                     value={numDonators}
                     isNum
+                    unit="people"
                 />
                 <StatCard
                     title="How many octopi have been sent?"
                     value={numOctopi}
                     isNum
+                    unit="octopi"
                 />
                 <StatCard
-                    title="Most popular octopus color?"
-                    value={mostPopularColor}
+                    title="How many states have we delivered to?"
+                    value={numStates}
+                    isNum
+                    unit="states"
                 />
             </div>
             <ColorChart colorData={colorTable} />
