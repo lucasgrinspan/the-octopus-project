@@ -28,3 +28,6 @@ label.filter-label input.filter-tag {
     position: absolute;
     opacity: 0;
 }
+label.filter-label input:hover {
+    cursor: pointer;
+}
