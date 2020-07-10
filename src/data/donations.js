@@ -824,7 +824,8 @@ const donationData = [
         date: "2020-07-04",
         order: ["octopus"],
         octopusColor: ["yellow"],
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 5,
@@ -867,7 +868,8 @@ const donationData = [
         date: "2020-07-04",
         order: ["octopus"],
         octopusColor: ["lavender"],
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 10,
@@ -886,7 +888,8 @@ const donationData = [
         id: 65,
         order: ["octopus"],
         octopusColor: ["light pink", "light blue"],
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 9,
@@ -894,9 +897,10 @@ const donationData = [
         date: "2020-07-04",
         order: ["octopus", "raffle"],
         id: 65,
-        octopusColor: ["hot pink"],
+        octopusColor: ["multicolored"],
         raffleEntry: 2,
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 15,
@@ -906,7 +910,8 @@ const donationData = [
         order: ["octopus"],
         octopusColor: ["multicolored"],
         raffleEntry: 3,
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 5,
