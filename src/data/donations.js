@@ -683,7 +683,8 @@ const donationData = [
         date: "2020-07-02",
         order: ["octopus"],
         octopusColor: ["multicolored"],
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 10,
@@ -880,7 +881,8 @@ const donationData = [
         order: ["octopus", "raffle"],
         octopusColor: ["multicolored"],
         raffleEntry: 1,
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 10,
@@ -1207,6 +1209,14 @@ const donationData = [
         date: "2020-07-11", // 10th in erins
         order: ["octopus"],
         octopusColor: ["grey"],
+        sent: false,
+    },
+    {
+        amount: 21,
+        org: "Black Trans Advocacy Coalition",
+        id: 91,
+        date: "2020-07-11",
+        order: [],
         sent: false,
     },
 ]
