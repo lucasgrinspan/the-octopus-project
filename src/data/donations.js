@@ -1182,6 +1182,15 @@ const donationData = [
         raffleEntry: 10,
         sent: false,
     },
+    {
+        amount: 30,
+        org: "Black Girls CODE",
+        id: 59,
+        date: "2020-07-10",
+        order: ["raffle"],
+        raffleEntry: 10,
+        sent: false,
+    },
 ]
 let raffleTotal = 0
 donationData.forEach(donation => {
@@ -1189,6 +1198,5 @@ donationData.forEach(donation => {
         raffleTotal += donation.raffleEntry
     }
 })
-console.log(raffleTotal)
 
 export const DONATIONS = validateDonations(donationData)
