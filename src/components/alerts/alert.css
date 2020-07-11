@@ -31,6 +31,14 @@
 .alert.alert-success a {
     color: var(--success-text-link);
 }
+.alert.alert-error {
+    border: 2px solid var(--error-border);
+    background-color: var(--error-bg);
+    color: var(--error-text-color);
+}
+.alert.alert-error a {
+    color: var(--error-text-link);
+}
 .alert-content {
     margin-left: 6px;
 }

@@ -1,33 +1,15 @@
 import React, { useEffect, useState } from "react"
-import { Link } from "gatsby"
 import { IoIosHourglass } from "react-icons/io"
 import "./alert.css"
 
 const TimerAlert = () => {
-    const [daysRemaining, setDaysRemaining] = useState("Few")
-
-    useEffect(() => {
-        let endDate = new Date("July 10, 2020")
-        let now = new Date()
-        var diff = Math.floor((endDate - now) / 86400000) + 1
-        setDaysRemaining(diff)
-    }, [])
-
     return (
-        <div className="alert alert-success">
+        <div className="alert alert-error">
             <IoIosHourglass className="alert-icon" />
             <div className="alert-content">
-                <p className="alert-title">
-                    {daysRemaining === 0
-                        ? "Time's running out!"
-                        : `${daysRemaining} ${
-                              daysRemaining === 1 ? "day" : "days"
-                          } left!`}
-                </p>
+                <p className="alert-title">Congrats to the winner!</p>
                 <p className="alert-text">
-                    {daysRemaining === 0
-                        ? "This raffle ends tonight!"
-                        : "This raffle will only last until July 10th!"}
+                    This raffle has ended! Stay posted for any future raffles!
                 </p>
             </div>
         </div>

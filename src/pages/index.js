@@ -24,7 +24,6 @@ const IndexPage = () => {
     return (
         <Layout index={true}>
             <SEO title="Home" />
-            <RaffleAlert />
             <h1>Welcome</h1>
             <div id="landing-content-container">
                 <div id="landing-image">
