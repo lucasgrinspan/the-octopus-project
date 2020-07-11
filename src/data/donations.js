@@ -485,7 +485,8 @@ const donationData = [
         date: "2020-06-28",
         order: ["octopus"],
         octopusColor: ["maroon"],
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 5,
@@ -667,7 +668,7 @@ const donationData = [
     },
     {
         amount: 5,
-        org: "We The Protesters",
+        org: "Campaign Zero",
         id: 48,
         date: "2020-07-01",
         order: ["octopus"],
@@ -702,7 +703,7 @@ const donationData = [
         order: ["octopus"],
         octopusColor: ["multicolored"],
         sent: true,
-        state: "Florida", // maroon?
+        state: "Florida",
     },
     {
         amount: 170,
@@ -733,7 +734,7 @@ const donationData = [
     },
     {
         amount: 5,
-        org: "We The Protesters",
+        org: "Campaign Zero",
         id: 54,
         date: "2020-07-03",
         order: ["octopus"],
@@ -765,7 +766,7 @@ const donationData = [
         id: 56,
         date: "2020-07-03",
         order: ["bracelet"],
-        braceletColor: ["pride"], // erin
+        braceletColor: ["pride"],
         sent: true,
         state: "Florida",
     },
@@ -907,7 +908,7 @@ const donationData = [
         org: "The LoveLand Foundation",
         date: "2020-07-04",
         id: 66,
-        order: ["octopus"],
+        order: ["octopus", "raffle"],
         octopusColor: ["multicolored"],
         raffleEntry: 3,
         sent: true,
@@ -917,7 +918,7 @@ const donationData = [
         amount: 5,
         org: "Black Girls CODE",
         date: "2020-07-05",
-        id: 66,
+        id: 69,
         order: ["octopus"],
         octopusColor: ["teal"],
         sent: true,
@@ -946,7 +947,7 @@ const donationData = [
         amount: 3,
         org: "Campaign Zero",
         date: "2020-07-06",
-        id: 69,
+        id: 24,
         order: ["raffle"],
         raffleEntry: 1,
         sent: false,
@@ -1001,10 +1002,10 @@ const donationData = [
     {
         amount: 5,
         org: "The LoveLand Foundation",
-        id: 75,
+        id: 21,
         date: "2020-07-07",
         order: ["octopus"],
-        octopusColor: [],
+        octopusColor: ["orange"],
         sent: false,
     },
     {
@@ -1037,6 +1038,15 @@ const donationData = [
         sent: false,
     },
     {
+        amount: 10,
+        org: "The LoveLand Foundation",
+        id: 78,
+        date: "2020-07-08",
+        order: ["raffle"],
+        raffleEntry: 3,
+        sent: false,
+    },
+    {
         amount: 5,
         org: "The University Club Family Fund",
         id: 79,
@@ -1047,7 +1057,7 @@ const donationData = [
     },
     {
         amount: 10,
-        org: "Therapy Fund for Black Women and Girls",
+        org: "The LoveLand Foundation",
         id: 80,
         date: "2020-07-09",
         order: ["octopus"],
@@ -1059,9 +1069,18 @@ const donationData = [
         org: "The LoveLand Foundation",
         id: 81,
         date: "2020-07-09",
-        order: ["octopus", "raffle"],
+        order: ["octopus"],
         octopusColor: ["lavender", "light pink"],
         raffleEntry: 1,
+        sent: false,
+    },
+    {
+        amount: 7,
+        org: "Central Florida LGBTQ+ Relief Fund",
+        id: 81,
+        date: "2020-07-09",
+        order: ["raffle"],
+        raffleEntry: 4,
         sent: false,
     },
     {
@@ -1071,6 +1090,14 @@ const donationData = [
         date: "2020-07-09",
         order: ["octopus"],
         octopusColor: ["hot pink"],
+        sent: false,
+    },
+    {
+        amount: 5,
+        org: "Black Trans Advocacy Coalition",
+        id: 21,
+        date: "2020-07-09",
+        order: ["scrunchie"],
         sent: false,
     },
     {
@@ -1132,22 +1159,15 @@ const donationData = [
         org: "It Gets Better Project",
         id: 87,
         date: "2020-07-09",
-        order: [],
-        sent: false,
-    },
-    {
-        amount: 10.5,
-        org: "It Gets Better Project",
-        id: 87,
-        date: "2020-07-09",
-        order: ["octopus"],
+        order: ["octopus", "raffle"],
         octopusColor: ["multicolored"],
+        raffleEntry: 1,
         sent: false,
     },
     {
-        amount: 20,
+        amount: 10,
         org: "The University Club Family Fund",
-        id: 29,
+        id: 30,
         date: "2020-07-09",
         order: ["octopus"],
         octopusColor: ["lavender"],
@@ -1155,13 +1175,20 @@ const donationData = [
     },
     {
         amount: 30,
-        org: "LGBTQ Fund",
+        org: "LGBTQ Freedom Fund",
         id: 88,
-        date: "2020-07-09",
+        date: "2020-07-10",
         order: ["raffle"],
         raffleEntry: 10,
         sent: false,
     },
 ]
+let raffleTotal = 0
+donationData.forEach(donation => {
+    if (donation.order.includes("raffle")) {
+        raffleTotal += donation.raffleEntry
+    }
+})
+console.log(raffleTotal)
 
 export const DONATIONS = validateDonations(donationData)
