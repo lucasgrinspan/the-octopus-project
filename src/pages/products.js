@@ -116,10 +116,10 @@ const ProductsPage = () => {
                 <div className="product-content">
                     <h3>Bear</h3>
                     <p>
-                        Even bears distance socially. With strength and grace,
-                        they lead by example. Stuffed with stuffing and colored
-                        with colors, these bears will let you <i>bear</i>{" "}
-                        anything life will throw at you
+                        Even bears wear masks! With strength and grace, they
+                        lead by example. Stuffed with stuffing and colored with
+                        colors, these bears will let you <i>bear</i> anything
+                        life will throw at you
                     </p>
                     <p>
                         <strong>Made by:</strong> Sebastian
