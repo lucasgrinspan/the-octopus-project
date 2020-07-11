@@ -1191,6 +1191,24 @@ const donationData = [
         raffleEntry: 10,
         sent: false,
     },
+    {
+        amount: 5,
+        org: "Black Trans Advocacy Coalition",
+        id: 90,
+        date: "2020-07-10",
+        order: ["octopus"],
+        octopusColor: ["lavender"],
+        sent: false,
+    },
+    {
+        amount: 10,
+        org: "Dream Defenders Miami",
+        id: 89,
+        date: "2020-07-11", // 10th in erins
+        order: ["octopus"],
+        octopusColor: ["grey"],
+        sent: false,
+    },
 ]
 let raffleTotal = 0
 donationData.forEach(donation => {
