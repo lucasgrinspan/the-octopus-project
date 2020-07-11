@@ -40,6 +40,7 @@ const validateDonations = donations => {
             "coaster",
             "keychain",
             "drawing",
+            "bear",
         ]
         donation.order.forEach(x => {
             if (!objects.includes(x)) {

@@ -9,6 +9,7 @@ import ScrunchieImage from "../components/product-images/scrunchie-image"
 import CoasterImage from "../components/product-images/coaster-image"
 import DrawingImage from "../components/product-images/drawing-image"
 import BraceletImage from "../components/product-images/bracelet-image"
+import BearImage from "../components/product-images/bear-image"
 const ProductsPage = () => {
     return (
         <Layout>
@@ -109,6 +110,23 @@ const ProductsPage = () => {
                 </div>
                 <div className="product-image-wrapper">
                     <DrawingImage />
+                </div>
+            </div>
+            <div className="product-container reverse">
+                <div className="product-content">
+                    <h3>Bear</h3>
+                    <p>
+                        Even bears distance socially. With strength and grace,
+                        they lead by example. Stuffed with stuffing and colored
+                        with colors, these bears will let you <i>bear</i>{" "}
+                        anything life will throw at you
+                    </p>
+                    <p>
+                        <strong>Made by:</strong> Sebastian
+                    </p>
+                </div>
+                <div className="product-image-wrapper">
+                    <BearImage />
                 </div>
             </div>
         </Layout>
