@@ -10,7 +10,7 @@ const ChonktopusImage = () => (
                     childImageSharp {
                         # Specify a fluid image and fragment
                         # The default maxWidth is 800 pixels
-                        fixed(width: 320, height: 476) {
+                        fixed(width: 320, height: 230) {
                             ...GatsbyImageSharpFixed_tracedSVG
                         }
                     }
