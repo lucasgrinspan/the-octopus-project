@@ -1210,11 +1210,5 @@ const donationData = [
         sent: false,
     },
 ]
-let raffleTotal = 0
-donationData.forEach(donation => {
-    if (donation.order.includes("raffle")) {
-        raffleTotal += donation.raffleEntry
-    }
-})
 
 export const DONATIONS = validateDonations(donationData)
