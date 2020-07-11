@@ -1218,7 +1218,8 @@ const donationData = [
         org: "Black Trans Advocacy Coalition",
         id: 91,
         date: "2020-07-11",
-        order: [],
+        order: ["octopus"],
+        octopusColor: ["grey"],
         sent: false,
     },
 ]
