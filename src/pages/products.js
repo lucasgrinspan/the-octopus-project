@@ -7,7 +7,7 @@ import "../css/products.css"
 import OctopusImage from "../components/product-images/octopus-image"
 import ScrunchieImage from "../components/product-images/scrunchie-image"
 import CoasterImage from "../components/product-images/coaster-image"
-import ChonktopusImage from "../components/product-images/chonktopus-image"
+import DrawingImage from "../components/product-images/drawing-image"
 import BraceletImage from "../components/product-images/bracelet-image"
 const ProductsPage = () => {
     return (
@@ -95,21 +95,20 @@ const ProductsPage = () => {
             </div>
             <div className="product-container">
                 <div className="product-content">
-                    <h3>The Beast</h3>
+                    <h3>Drawings</h3>
                     <p>
-                        This isn't the type of octopus you would take to your
-                        parent's house. You'll be arrested on sight with
-                        possession of this monster. The Chonktopus. But don't
-                        get used to seeing this here because this is part of a
-                        limited time offer! This bad boy can only be received by
-                        winning our <Link to="/raffle/">raffle</Link>!
+                        Drawings. From the earliest cave painters, to
+                        Michaelangelo in the Renaissance, to Dhwani in our time,
+                        pencil to paper, drawing implement to canvas, it's what
+                        unifies humans of all ages. Be a part of the global
+                        culture with one of these beautiful drawings.
                     </p>
                     <p>
-                        <strong>Made by:</strong> Evil Scientists
+                        <strong>Made by:</strong> Dhwani
                     </p>
                 </div>
                 <div className="product-image-wrapper">
-                    <ChonktopusImage />
+                    <DrawingImage />
                 </div>
             </div>
         </Layout>

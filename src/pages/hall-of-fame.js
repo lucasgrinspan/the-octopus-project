@@ -11,6 +11,10 @@ const HallOfFamePage = () => {
                 This is where we memorialize the great winners of our raffles,
                 giveaways, or anything like that.
             </p>
+            <h3>The Chonktopus</h3>
+            <p>
+                <strong>Winner:</strong> Rachel Alexander
+            </p>
         </Layout>
     )
 }
