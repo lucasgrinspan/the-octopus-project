@@ -45,10 +45,9 @@ const IndexPage = () => {
                         to wonderful people who've donated to one of these BLM
                         or LGBTQ+ <Link to="/charities/">charities</Link>! These
                         octopi are hand-made with love by our talented team. We
-                        also offer other{" "}
-                        <Link to="/products/">octopus themed goodies</Link>{" "}
-                        including bracelets, scrunchies, and coasters for $5!
-                        Meet the octopi and other products at our{" "}
+                        also braclets, scrunchies, coasters, and so much more!
+                        Check out our whole <Link to="/products/">catalog</Link>
+                        . Meet the octopi and other products at our{" "}
                         <Link to="/gallery/">gallery</Link>.
                     </p>
                     <p>
