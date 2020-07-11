@@ -18,7 +18,8 @@ const HallOfFamePage = () => {
                         Our very first raffle! We've had some great times with
                         the Chonktopus and now we're excited that he's moving on
                         and seeing the world (another town in Florida). We will
-                        miss him dearly.
+                        miss him dearly. This raffle raised $270 for a great
+                        cause.
                     </p>
                     <p>
                         <strong>Winner:</strong> Rachel Alexander
