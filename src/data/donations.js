@@ -1231,6 +1231,14 @@ const donationData = [
         octopusColor: ["multicolored"],
         sent: false,
     },
+    {
+        amount: 10,
+        org: "Central Florida LGBTQ+ Relief Fund",
+        id: 93,
+        date: "2020-07-12",
+        order: [],
+        sent: false,
+    },
 ]
 
 export const DONATIONS = validateDonations(donationData)
