@@ -114,7 +114,7 @@ const ProductsPage = () => {
             </div>
             <div className="product-container reverse">
                 <div className="product-content">
-                    <h3>Bear</h3>
+                    <h3>Bears</h3>
                     <p>
                         Even bears wear masks! With strength and grace, they
                         lead by example. Stuffed with stuffing and colored with
