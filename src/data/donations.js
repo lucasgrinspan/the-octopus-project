@@ -1265,6 +1265,15 @@ const donationData = [
         order: [],
         sent: false,
     },
+    {
+        amount: 10,
+        org: "The LoveLand Foundation",
+        id: 96,
+        date: "2020-07-13",
+        order: ["octopus"],
+        octopusColor: ["teal"],
+        sent: false,
+    },
 ]
 
 export const DONATIONS = validateDonations(donationData)
