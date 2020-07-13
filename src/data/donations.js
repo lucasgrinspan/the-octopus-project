@@ -1280,7 +1280,7 @@ const donationData = [
         id: 97,
         date: "2020-07-13",
         order: ["octopus"],
-        octopusColor: [],
+        octopusColor: ["lavender"],
         sent: false,
     },
 ]
