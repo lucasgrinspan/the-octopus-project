@@ -1240,6 +1240,31 @@ const donationData = [
         octopusColor: ["hot pink", "multicolored"],
         sent: false,
     },
+    {
+        amount: 30,
+        org: "The Trevor Project",
+        id: 94,
+        order: ["bear"],
+        date: "2020-07-13",
+        sent: false,
+    },
+    {
+        amount: 28,
+        org: "Dream Defenders Miami",
+        id: 95,
+        date: "2020-07-13",
+        order: ["octopus"],
+        octopusColor: ["teal", "lavender"],
+        sent: false,
+    },
+    {
+        amount: 15,
+        org: "The Trevor Project",
+        id: 95,
+        date: "2020-07-13",
+        order: [],
+        sent: false,
+    },
 ]
 
 export const DONATIONS = validateDonations(donationData)
