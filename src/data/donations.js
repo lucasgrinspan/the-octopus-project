@@ -1236,7 +1236,8 @@ const donationData = [
         org: "Central Florida LGBTQ+ Relief Fund",
         id: 93,
         date: "2020-07-12",
-        order: [],
+        order: ["octopus"],
+        octopusColor: ["hot pink", "multicolored"],
         sent: false,
     },
 ]
