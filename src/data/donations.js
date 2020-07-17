@@ -1,35 +1,35 @@
 const validateDonations = donations => {
     const raiseError = (message, donation) => {
-        console.error(message)
-        console.error(donation)
-    }
+        console.error(message);
+        console.error(donation);
+    };
     donations.forEach(donation => {
         // amount is greater than zero
         if (!(donation.amount > 0)) {
             raiseError(
                 "Invalid donation: donation amount is less than zero",
                 donation
-            )
+            );
         }
 
         // organization is a string and exists
         if (typeof donation.org !== "string" || !(donation.org.length > 0)) {
-            raiseError("Invalid charity organization", donation)
+            raiseError("Invalid charity organization", donation);
         }
 
         // date exists and can be parsed
         if (isNaN(Date.parse(donation.date))) {
-            raiseError("Invalid date", donation)
+            raiseError("Invalid date", donation);
         }
 
         // a valid id is given to the post
         if (!(donation.id >= 0)) {
-            raiseError("invalid id", donation)
+            raiseError("invalid id", donation);
         }
 
         // check that order exists even if empty
         if (donation.order.length < 0) {
-            raiseError("order is not an array", donation)
+            raiseError("order is not an array", donation);
         }
 
         const objects = [
@@ -41,38 +41,44 @@ const validateDonations = donations => {
             "keychain",
             "drawing",
             "bear",
-        ]
+        ];
         donation.order.forEach(x => {
             if (!objects.includes(x)) {
-                raiseError("Invalid order", donation)
+                raiseError("Invalid order", donation);
             }
-        })
+        });
 
         if (donation.order.includes("octopus")) {
             if (donation.octopusColor.length < 0) {
-                raiseError("octopus color array is expected", donation)
+                raiseError("octopus color array is expected", donation);
+            }
+        }
+
+        if (donation.order.includes("bracelet")) {
+            if (donation.braceletColor.length < 0) {
+                raiseError("bracelet color array is expected", donation);
+            }
+        }
+
+        if (donation.order.includes("coaster")) {
+            if (donation.coasterColor.length < 0) {
+                raiseError("coaster color array is expected", donation);
             }
         }
 
         if (donation.order.includes("raffle")) {
             if (!(donation.raffleEntry > 0)) {
-                raiseError("raffle entry expected", donation)
+                raiseError("raffle entry expected", donation);
             }
         }
 
         if (!donation.hasOwnProperty("sent")) {
-            raiseError("sent field is expected", donation)
+            raiseError("sent field is expected", donation);
         }
+    });
 
-        if (donation.sent) {
-            if (!donation.hasOwnProperty("state")) {
-                raiseError("state field is expected", donation)
-            }
-        }
-    })
-
-    return donations
-}
+    return donations;
+};
 
 const donationData = [
     {
@@ -159,8 +165,7 @@ const donationData = [
         date: "2020-06-26",
         id: 6,
         order: [],
-        octopusColor: [],
-        sent: false,
+        sent: true,
     },
     {
         amount: 10,
@@ -268,7 +273,7 @@ const donationData = [
         id: 15,
         order: [],
         octopusColor: [],
-        sent: false,
+        sent: true,
     },
     {
         amount: 10,
@@ -557,7 +562,8 @@ const donationData = [
         date: "2020-06-29",
         order: ["bracelet"],
         braceletColor: ["pan"],
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 5,
@@ -566,7 +572,8 @@ const donationData = [
         date: "2020-06-29",
         order: ["octopus"],
         octopusColor: ["teal"],
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 5,
@@ -585,7 +592,8 @@ const donationData = [
         date: "2020-06-30",
         order: ["bracelet"],
         braceletColor: ["bi"],
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 10,
@@ -714,7 +722,7 @@ const donationData = [
         id: 52,
         date: "2020-07-02",
         order: [],
-        sent: false,
+        sent: true,
     },
     {
         amount: 5,
@@ -752,7 +760,7 @@ const donationData = [
         date: "2020-07-03",
         order: ["raffle"],
         raffleEntry: 3,
-        sent: false,
+        sent: true,
     },
     {
         amount: 5,
@@ -780,7 +788,8 @@ const donationData = [
         date: "2020-07-03",
         order: ["octopus"],
         octopusColor: ["multicolored"],
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 12,
@@ -800,7 +809,7 @@ const donationData = [
         date: "2020-07-03",
         order: ["raffle"],
         raffleEntry: 5,
-        sent: false,
+        sent: true,
     },
     {
         amount: 10,
@@ -819,7 +828,7 @@ const donationData = [
         date: "2020-07-04",
         order: ["raffle"],
         raffleEntry: 3,
-        sent: false,
+        sent: true,
     },
     {
         amount: 7,
@@ -838,7 +847,7 @@ const donationData = [
         date: "2020-07-04",
         order: ["raffle"],
         raffleEntry: 5,
-        sent: false,
+        sent: true,
     },
     {
         amount: 5,
@@ -846,7 +855,7 @@ const donationData = [
         id: 62,
         date: "2020-07-04",
         order: [],
-        sent: false,
+        sent: true,
     },
     {
         amount: 5,
@@ -854,7 +863,7 @@ const donationData = [
         id: 62,
         date: "2020-07-04",
         order: [],
-        sent: false,
+        sent: true,
     },
     {
         amount: 5,
@@ -863,7 +872,8 @@ const donationData = [
         date: "2020-07-04",
         order: ["octopus"],
         octopusColor: ["teal"],
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 5,
@@ -935,7 +945,7 @@ const donationData = [
         id: 67,
         order: ["octopus", "coaster"],
         octopusColor: ["orange"],
-        coasterColor: ["blm", "pi"],
+        coasterColor: ["blm", "bi"],
         sent: false,
     },
     {
@@ -991,7 +1001,8 @@ const donationData = [
         date: "2020-07-07",
         id: 73,
         order: ["scrunchie"],
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 15,
@@ -1001,7 +1012,8 @@ const donationData = [
         order: ["octopus", "raffle"],
         octopusColor: ["hot pink"],
         raffleEntry: 3,
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 5,
@@ -1020,7 +1032,8 @@ const donationData = [
         order: ["octopus", "raffle"],
         octopusColor: ["hot pink"],
         raffleEntry: 3,
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 20,
@@ -1030,7 +1043,8 @@ const donationData = [
         order: ["octopus", "raffle"],
         octopusColor: ["teal"],
         raffleEntry: 5,
-        sent: false,
+        sent: true,
+        state: "New York",
     },
     {
         amount: 11,
@@ -1039,7 +1053,8 @@ const donationData = [
         date: "2020-07-08",
         order: ["octopus"],
         octopusColor: ["yellow", "yellow"],
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 10,
@@ -1066,7 +1081,8 @@ const donationData = [
         date: "2020-07-09",
         order: ["octopus"],
         octopusColor: ["lavender"],
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 15,
@@ -1076,7 +1092,8 @@ const donationData = [
         order: ["octopus"],
         octopusColor: ["lavender", "light pink"],
         raffleEntry: 1,
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 7,
@@ -1094,7 +1111,8 @@ const donationData = [
         date: "2020-07-09",
         order: ["octopus"],
         octopusColor: ["hot pink"],
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 5,
@@ -1130,7 +1148,8 @@ const donationData = [
         date: "2020-07-09",
         order: ["octopus"],
         octopusColor: ["grey", "grey", "lavender"],
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 20,
@@ -1148,7 +1167,8 @@ const donationData = [
         date: "2020-07-09",
         order: ["octopus"],
         octopusColor: ["lavender"],
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 7.5,
@@ -1175,7 +1195,8 @@ const donationData = [
         date: "2020-07-09",
         order: ["octopus"],
         octopusColor: ["lavender"],
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 30,
@@ -1292,6 +1313,15 @@ const donationData = [
         octopusColor: ["multicolored"],
         sent: false,
     },
-]
+    {
+        amount: 5,
+        org: "The University Club Family Fund",
+        id: 98,
+        date: "2020-07-13",
+        order: ["octopus"],
+        octopusColor: ["multicolored"],
+        sent: false,
+    },
+];
 
-export const DONATIONS = validateDonations(donationData)
+export const DONATIONS = validateDonations(donationData);
