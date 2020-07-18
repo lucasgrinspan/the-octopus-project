@@ -158,7 +158,8 @@ const OrderPage = ({ pageContext: { donation } }) => {
                 {orderArray.map(item => {
                     return (
                         <li>
-                            {`${item.color} `}
+                            {item.color}
+                            {item.color && " "}
                             {item.item}
                         </li>
                     );

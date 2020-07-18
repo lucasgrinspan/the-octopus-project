@@ -18,7 +18,7 @@ exports.createPages = ({ actions: { createPage } }) => {
     }).map((donation, index) => {
         return createPage({
             path: `order/${index * 5}`,
-            component: path.resolve("./src/templates/order/order.js"),
+            component: path.resolve("./src/templates/order/order-template.js"),
             context: { donation },
         });
     });
