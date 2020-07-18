@@ -44,7 +44,7 @@ const Stepper = ({ amount, org, sent, order, date }) => {
             Millions of tiny forest elves are hand crafting your {orderDisplay}.
         </>,
         <>
-            Your package has been dropped off in the mailbox! If you love your
+            Your package has been dropped off in the mailbox! If you love your{" "}
             {orderDisplay}! Tag us with a picture of it on your Instagram!
             <br />
             <strong>Don't want our relationship to end? </strong>
@@ -55,7 +55,7 @@ const Stepper = ({ amount, org, sent, order, date }) => {
 
     // These are the step titles if the step is reached
     const stepTitlesDone = [
-        `You donated $${amount} to ${org}!`,
+        `You donated $${amount.toFixed(2)} to ${org}!`,
         `We started your ${orderDisplay}!`,
         `Shipped your ${orderDisplay}!`,
     ];
@@ -153,6 +153,17 @@ const OrderPage = ({ pageContext: { donation } }) => {
                 order={order}
                 date={new Date(date)}
             />
+            <h3 id="order-list-title">Your order:</h3>
+            <ul id="order-list">
+                {orderArray.map(item => {
+                    return (
+                        <li>
+                            {`${item.color} `}
+                            {item.item}
+                        </li>
+                    );
+                })}
+            </ul>
         </Layout>
     );
 };

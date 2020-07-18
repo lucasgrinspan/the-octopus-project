@@ -12,16 +12,40 @@
     font-weight: bold;
 }
 
-#order-stepper {
-    display: grid;
-    grid-template-columns: min-content max-content;
-    grid-gap: 10px;
+ul#order-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul#order-list li {
+    padding-left: 1em;
+    text-indent: -0.7em;
+    text-transform: capitalize;
+    margin-bottom: 0;
+    color: var(--color-1);
+}
+
+ul#order-list li::before {
+    content: "•";
+    padding-right: 7px;
+    color: var(--color-1); /* or whatever color you prefer */
 }
 
 #order-title {
     color: var(--color-1);
 }
+#order-list-title {
+    color: var(--color-1);
+    margin-bottom: 5px;
+}
 
+#order-stepper {
+    display: grid;
+    grid-template-columns: min-content max-content;
+    grid-gap: 10px;
+    margin-bottom: 40px;
+}
 .order-stepper-line {
     height: 50px;
     background-color: var(--color-1);
