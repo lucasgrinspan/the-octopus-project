@@ -1,110 +1,110 @@
-import React from "react"
+import React from "react";
 
-import { Link } from "gatsby"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import StatCard from "../components/stat-card/stat-card"
-import ColorChart from "../components/chart/color-chart"
-import OrgChart from "../components/chart/org-chart"
-import CHARITIES from "../data/charities"
-import { DONATIONS } from "../data/donations"
+import { Link } from "gatsby";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import StatCard from "../components/stat-card/stat-card";
+import ColorChart from "../components/chart/color-chart";
+import OrgChart from "../components/chart/org-chart";
+import CHARITIES from "../data/charities";
+import { DONATIONS } from "../data/donations";
 
 let generateDonationTable = (orgs, donations) => {
     // populate the donation table
-    let donationTable = {}
+    let donationTable = {};
     orgs.forEach(org => {
         if (org.noDonate) {
-            return
+            return;
         }
-        donationTable[org.name] = 0
-    })
+        donationTable[org.name] = 0;
+    });
 
     donations.forEach(donation => {
         if (!Object.keys(donationTable).includes(donation.org)) {
-            return
+            return;
         }
-        donationTable[donation.org] += donation.amount
-    })
-    return donationTable
-}
+        donationTable[donation.org] += donation.amount;
+    });
+    return donationTable;
+};
 
 let generateIdDonationTable = donations => {
-    let idDonationTable = {}
+    let idDonationTable = {};
     donations.forEach(donation => {
         if (donation.id in idDonationTable) {
-            idDonationTable[donation.id] += donation.amount
+            idDonationTable[donation.id] += donation.amount;
         } else {
-            idDonationTable[donation.id] = donation.amount
+            idDonationTable[donation.id] = donation.amount;
         }
-    })
-    return idDonationTable
-}
+    });
+    return idDonationTable;
+};
 
 let generateOctopusColorTable = donations => {
-    let octopusTable = {}
+    let octopusTable = {};
     donations.forEach(donation => {
         if (donation.order.includes("octopus")) {
             donation.octopusColor.forEach(color => {
                 if (color in octopusTable) {
-                    octopusTable[color]++
+                    octopusTable[color]++;
                 } else {
-                    octopusTable[color] = 1
+                    octopusTable[color] = 1;
                 }
-            })
+            });
         }
-    })
-    return octopusTable
-}
+    });
+    return octopusTable;
+};
 
 let findLargestReceiver = donationTable => {
-    let largestReceiver = ""
-    let largestAmount = 0
+    let largestReceiver = "";
+    let largestAmount = 0;
     Object.keys(donationTable).forEach(org => {
         if (donationTable[org] > largestAmount) {
-            largestAmount = donationTable[org]
-            largestReceiver = org
+            largestAmount = donationTable[org];
+            largestReceiver = org;
         }
-    })
-    return largestReceiver
-}
+    });
+    return largestReceiver;
+};
 
 let findSmallestReceiver = donationTable => {
-    let smallestReceiver = ""
-    let smallestAmount = 1000000 // imagine if we hit this
+    let smallestReceiver = "";
+    let smallestAmount = 1000000; // imagine if we hit this
     Object.keys(donationTable).forEach(org => {
         if (donationTable[org] < smallestAmount) {
-            smallestAmount = donationTable[org]
-            smallestReceiver = org
+            smallestAmount = donationTable[org];
+            smallestReceiver = org;
         }
-    })
-    return smallestReceiver
-}
+    });
+    return smallestReceiver;
+};
 
 // finds the largest donation from a single person
 let findLargestDonation = idDonationTable => {
     // loop through the donation table and find the largest donation
-    let largestDonation = 0
+    let largestDonation = 0;
     Object.keys(idDonationTable).forEach(id => {
         if (idDonationTable[id] > largestDonation) {
-            largestDonation = idDonationTable[id]
+            largestDonation = idDonationTable[id];
         }
-    })
-    return largestDonation
-}
+    });
+    return largestDonation;
+};
 
 let countNumDonators = idDonationTable => {
-    return Object.keys(idDonationTable).length
-}
+    return Object.keys(idDonationTable).length;
+};
 
 let countOctopiSent = donations => {
-    let numSent = 0
+    let numSent = 0;
     donations.forEach(donation => {
         if (donation.sent && donation.order.includes("octopus")) {
-            numSent += donation.octopusColor.length
+            numSent += donation.octopusColor.length;
         }
-    })
-    return numSent
-}
+    });
+    return numSent;
+};
 
 // const calculateMostPopularOctopusColor = octopusTable => {
 //     let mostPopularColor = ""
@@ -119,27 +119,27 @@ let countOctopiSent = donations => {
 // }
 
 const calculateNumberOfStates = donations => {
-    let statesArray = []
+    let statesArray = [];
     donations.forEach(donation => {
-        if (donation.sent) {
+        if (donation.sent && donation.state) {
             if (!statesArray.includes(donation.state)) {
-                statesArray.push(donation.state)
+                statesArray.push(donation.state);
             }
         }
-    })
-    return statesArray.length
-}
+    });
+    return statesArray.length;
+};
 
 const StatsPage = () => {
-    const donationTable = generateDonationTable(CHARITIES, DONATIONS)
-    const idDonationTable = generateIdDonationTable(DONATIONS)
-    const colorTable = generateOctopusColorTable(DONATIONS)
-    let largestReceiver = findLargestReceiver(donationTable)
-    let smallestReceiver = findSmallestReceiver(donationTable)
-    let largestDonation = findLargestDonation(idDonationTable)
-    let numDonators = countNumDonators(idDonationTable)
-    let numOctopi = countOctopiSent(DONATIONS)
-    let numStates = calculateNumberOfStates(DONATIONS)
+    const donationTable = generateDonationTable(CHARITIES, DONATIONS);
+    const idDonationTable = generateIdDonationTable(DONATIONS);
+    const colorTable = generateOctopusColorTable(DONATIONS);
+    let largestReceiver = findLargestReceiver(donationTable);
+    let smallestReceiver = findSmallestReceiver(donationTable);
+    let largestDonation = findLargestDonation(idDonationTable);
+    let numDonators = countNumDonators(idDonationTable);
+    let numOctopi = countOctopiSent(DONATIONS);
+    let numStates = calculateNumberOfStates(DONATIONS);
 
     return (
         <Layout>
@@ -200,7 +200,7 @@ const StatsPage = () => {
                 Check the raw data.
             </Link>
         </Layout>
-    )
-}
+    );
+};
 
-export default StatsPage
+export default StatsPage;

@@ -1,0 +1,56 @@
+.order-card {
+    width: 200px;
+    height: 300px;
+    background-color: white;
+    border: 1px solid var(--input-border);
+    border-radius: 5px;
+    box-shadow: var(--shadow);
+    padding: 15px;
+}
+.order-title {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+#order-stepper {
+    display: grid;
+    grid-template-columns: min-content max-content;
+    grid-gap: 10px;
+}
+
+#order-title {
+    color: var(--color-1);
+}
+
+.order-stepper-line {
+    height: 50px;
+    background-color: var(--color-1);
+    width: 6px;
+    border-radius: 1000px;
+    justify-self: center;
+}
+.not-done-order-stepper-line {
+    height: 50px;
+    background-color: transparent;
+    width: 6px;
+    border-radius: 1000px;
+    border: 2px solid var(--color-1);
+    justify-self: center;
+}
+.order-stepper-icon {
+    color: var(--color-1);
+    justify-self: center;
+    align-self: center;
+    width: 2rem;
+    height: 2rem;
+}
+.order-stepper-text {
+    margin-bottom: 0;
+    font-weight: bold;
+    font-size: 1.125rem;
+    color: var(--color-1);
+    align-self: center;
+}
+.order-stepper-description {
+    color: var(--color-1);
+}
