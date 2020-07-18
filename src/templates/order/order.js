@@ -16,9 +16,9 @@ import "./order.css";
 import { Link } from "gatsby";
 
 const Stepper = ({ amount, org, sent, order, date }) => {
-    let order = "order";
+    let orderDisplay = "order";
     if (order.length === 1 && order[0] !== "raffle") {
-        order = order[0];
+        orderDisplay = order[0];
     }
 
     const timeSinceOrdered = Math.abs(date - new Date());
@@ -40,10 +40,12 @@ const Stepper = ({ amount, org, sent, order, date }) => {
             We've received your order! We'll get started on it as soon as
             possible.
         </>,
-        <>Millions of tiny forest elves are hand crafting your {order}.</>,
+        <>
+            Millions of tiny forest elves are hand crafting your {orderDisplay}.
+        </>,
         <>
             Your package has been dropped off in the mailbox! If you love your
-            {order}! Tag us with a picture of it on your Instagram!
+            {orderDisplay}! Tag us with a picture of it on your Instagram!
             <br />
             <strong>Don't want our relationship to end? </strong>
             Consider <Link to="/get-involved/">getting involved</Link>! We miss
@@ -54,15 +56,15 @@ const Stepper = ({ amount, org, sent, order, date }) => {
     // These are the step titles if the step is reached
     const stepTitlesDone = [
         `You donated $${amount} to ${org}!`,
-        `We started your ${order}!`,
-        `Shipped your ${order}!`,
+        `We started your ${orderDisplay}!`,
+        `Shipped your ${orderDisplay}!`,
     ];
 
     // These are the step titles if the step is not reached
     const stepTitles = [
         `You donated $${amount} to ${org}!`,
-        `Creating your ${order}!`,
-        `Shipping your ${order}!`,
+        `Creating your ${orderDisplay}!`,
+        `Shipping your ${orderDisplay}!`,
     ];
 
     const DoneIcon = <IoIosCheckmarkCircle className="order-stepper-icon" />;
