@@ -45,7 +45,7 @@ const Stepper = ({ amount, org, sent, order, date }) => {
         </>,
         <>
             Your package has been dropped off in the mailbox! If you love your{" "}
-            {orderDisplay}! Tag us with a picture of it on your Instagram!
+            {orderDisplay}, tag us with a picture of it on your Instagram!
             <br />
             <strong>Don't want our relationship to end? </strong>
             Consider <Link to="/get-involved/">getting involved</Link>! We miss
@@ -155,9 +155,9 @@ const OrderPage = ({ pageContext: { donation } }) => {
             />
             <h3 id="order-list-title">Your order:</h3>
             <ul id="order-list">
-                {orderArray.map(item => {
+                {orderArray.map((item, index) => {
                     return (
-                        <li>
+                        <li key={index}>
                             {item.color}
                             {item.color && " "}
                             {item.item}

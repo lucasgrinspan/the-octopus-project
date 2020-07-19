@@ -946,7 +946,8 @@ const donationData = [
         order: ["octopus", "coaster"],
         octopusColor: ["orange"],
         coasterColor: ["blm", "bi"],
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 5,
