@@ -1,6 +1,7 @@
-import React from "react"
-import "../../css/global.css"
-import { FiExternalLink } from "react-icons/fi"
+import React from "react";
+import "../../css/global.css";
+import { FiExternalLink } from "react-icons/fi";
+import { OutboundLink } from "gatsby-plugin-google-analytics";
 
 const Charity = ({ title, link, desc, movements }) => (
     <div style={{ display: "flex", flexDirection: "column", marginBottom: 40 }}>
@@ -13,18 +14,18 @@ const Charity = ({ title, link, desc, movements }) => (
                             <span key="blm" role="img" aria-label="BLM">
                                 ✊🏿{" "}
                             </span>
-                        )
+                        );
                     case "lgbt":
                         return (
                             <span key="lgbt" role="img" aria-label="LGBTQ+">
                                 🏳️‍🌈{" "}
                             </span>
-                        )
+                        );
                 }
             })}
         </h3>
         <p style={{ marginBottom: 5 }}>{desc}</p>
-        <a
+        <OutboundLink
             href={link}
             className="rainbow"
             target="_blank"
@@ -32,8 +33,8 @@ const Charity = ({ title, link, desc, movements }) => (
         >
             Visit
             <FiExternalLink style={{ marginLeft: 10 }} />
-        </a>
+        </OutboundLink>
     </div>
-)
+);
 
-export default Charity
+export default Charity;
