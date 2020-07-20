@@ -49,16 +49,16 @@ ul#order-list li::before {
 .order-stepper-line {
     height: 50px;
     background-color: var(--color-1);
-    width: 6px;
+    width: 5px;
     border-radius: 1000px;
     justify-self: center;
 }
 .not-done-order-stepper-line {
     height: 50px;
     background-color: transparent;
-    width: 6px;
+    width: 5px;
     border-radius: 1000px;
-    border: 2px solid var(--color-1-disabled);
+    background-color: var(--color-1-disabled);
     justify-self: center;
 }
 .order-stepper-icon {
