@@ -1073,7 +1073,8 @@ const donationData = [
         date: "July 08, 2020",
         order: ["bracelet"],
         braceletColor: ["lesbian"],
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 10,
@@ -1224,7 +1225,8 @@ const donationData = [
         date: "July 10, 2020",
         order: ["octopus"],
         octopusColor: ["lavender"],
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 10,
@@ -1233,7 +1235,8 @@ const donationData = [
         date: "July 11, 2020", // 10th in erins
         order: ["octopus"],
         octopusColor: ["grey"],
-        sent: false,
+        sent: true,
+        state: "California",
     },
     {
         amount: 21,
@@ -1242,7 +1245,8 @@ const donationData = [
         date: "July 11, 2020",
         order: ["octopus"],
         octopusColor: ["grey"],
-        sent: false,
+        sent: true,
+        state: "Michigan",
     },
     {
         amount: 8,
@@ -1251,7 +1255,8 @@ const donationData = [
         date: "July 11, 2020",
         order: ["octopus"],
         octopusColor: ["multicolored"],
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 10,
@@ -1260,7 +1265,8 @@ const donationData = [
         date: "July 12, 2020",
         order: ["octopus"],
         octopusColor: ["hot pink", "multicolored"],
-        sent: false,
+        sent: true,
+        state: "Alabama",
     },
     {
         amount: 30,
@@ -1277,7 +1283,8 @@ const donationData = [
         date: "July 13, 2020",
         order: ["octopus"],
         octopusColor: ["teal", "lavender"],
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 15,
@@ -1285,7 +1292,8 @@ const donationData = [
         id: 95,
         date: "July 13, 2020",
         order: [],
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 10,
@@ -1294,7 +1302,8 @@ const donationData = [
         date: "July 13, 2020",
         order: ["octopus"],
         octopusColor: ["teal"],
-        sent: false,
+        sent: true,
+        state: "Illinois",
     },
     {
         amount: 5,
@@ -1303,7 +1312,8 @@ const donationData = [
         date: "July 13, 2020",
         order: ["octopus"],
         octopusColor: ["lavender"],
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 20,
@@ -1312,7 +1322,8 @@ const donationData = [
         date: "July 13, 2020",
         order: ["octopus"],
         octopusColor: ["multicolored"],
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
     {
         amount: 5,
@@ -1321,7 +1332,8 @@ const donationData = [
         date: "July 13, 2020",
         order: ["octopus"],
         octopusColor: ["multicolored"],
-        sent: false,
+        sent: true,
+        state: "Florida",
     },
 ];
 
