@@ -14,6 +14,10 @@ exports.createPages = ({ actions: { createPage } }) => {
         const onlyRaffle =
             donation.order.includes("raffle") && donation.order.length === 1;
 
+        if (donation.amount === 50) {
+            console.log(noOrder);
+            console.log(!(expired || noOrder || onlyRaffle));
+        }
         return !(expired || noOrder || onlyRaffle);
     }).map((donation, index) => {
         if (donation.sent) {

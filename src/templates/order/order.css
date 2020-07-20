@@ -58,7 +58,7 @@ ul#order-list li::before {
     background-color: transparent;
     width: 6px;
     border-radius: 1000px;
-    border: 2px solid var(--color-1);
+    border: 2px solid var(--color-1-disabled);
     justify-self: center;
 }
 .order-stepper-icon {
@@ -68,12 +68,18 @@ ul#order-list li::before {
     width: 2rem;
     height: 2rem;
 }
+.order-stepper-icon.disabled {
+    color: var(--color-1-disabled);
+}
 .order-stepper-text {
     margin-bottom: 0;
     font-weight: bold;
     font-size: 1.125rem;
     color: var(--color-1);
     align-self: center;
+}
+.order-stepper-text.disabled {
+    color: var(--color-1-disabled);
 }
 .order-stepper-description {
     color: var(--color-1);

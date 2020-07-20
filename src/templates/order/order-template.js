@@ -68,7 +68,9 @@ const Stepper = ({ amount, org, sent, order, date }) => {
     ];
 
     const DoneIcon = <IoIosCheckmarkCircle className="order-stepper-icon" />;
-    const NotDoneIcon = <IoIosRadioButtonOff className="order-stepper-icon" />;
+    const NotDoneIcon = (
+        <IoIosRadioButtonOff className="order-stepper-icon disabled" />
+    );
 
     const DoneStepLine = <div className="order-stepper-line"></div>;
     const NotDoneStepLine = <div className="not-done-order-stepper-line"></div>;
@@ -76,7 +78,11 @@ const Stepper = ({ amount, org, sent, order, date }) => {
     return (
         <div id="order-stepper">
             {stepNumber >= 0 ? DoneIcon : NotDoneIcon}
-            <p className="order-stepper-text">
+            <p
+                className={`order-stepper-text ${
+                    stepNumber < 0 ? "disabled" : ""
+                }`}
+            >
                 {stepNumber >= 0 ? stepTitlesDone[0] : stepTitles[0]}
             </p>
             {stepNumber >= 1 ? DoneStepLine : NotDoneStepLine}
@@ -88,7 +94,11 @@ const Stepper = ({ amount, org, sent, order, date }) => {
                 )}
             </div>
             {stepNumber >= 1 ? DoneIcon : NotDoneIcon}
-            <p className="order-stepper-text">
+            <p
+                className={`order-stepper-text ${
+                    stepNumber < 1 ? "disabled" : ""
+                }`}
+            >
                 {" "}
                 {stepNumber >= 1 ? stepTitlesDone[1] : stepTitles[1]}
             </p>
@@ -101,7 +111,11 @@ const Stepper = ({ amount, org, sent, order, date }) => {
                 )}
             </div>
             {stepNumber >= 2 ? DoneIcon : NotDoneIcon}
-            <p className="order-stepper-text">
+            <p
+                className={`order-stepper-text ${
+                    stepNumber < 2 ? "disabled" : ""
+                }`}
+            >
                 {" "}
                 {stepNumber >= 2 ? stepTitlesDone[2] : stepTitles[2]}
             </p>
