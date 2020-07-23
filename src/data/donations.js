@@ -1397,6 +1397,15 @@ const donationData = [
         bearColor: ["rainbow"],
         sent: false,
     },
+    {
+        amount: 5,
+        org: "Black Girls CODE",
+        id: 105,
+        date: "July 23, 2020 19:00",
+        order: ["octopus"],
+        octopusColor: ["multicolored"],
+        sent: false,
+    },
 ];
 
 export const DONATIONS = validateDonations(donationData);
