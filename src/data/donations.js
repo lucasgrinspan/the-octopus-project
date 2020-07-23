@@ -1388,6 +1388,15 @@ const donationData = [
         octopusColor: ["lavender"],
         sent: false,
     },
+    {
+        amount: 10,
+        org: "The Trevor Project",
+        id: 104,
+        date: "July 23, 2020 15:05",
+        order: ["bear"],
+        bearColor: ["rainbow"],
+        sent: false,
+    },
 ];
 
 export const DONATIONS = validateDonations(donationData);
