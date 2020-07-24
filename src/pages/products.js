@@ -1,15 +1,15 @@
-import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { Link } from "gatsby"
+import React from "react";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import { Link } from "gatsby";
 
-import "../css/products.css"
-import OctopusImage from "../components/product-images/octopus-image"
-import ScrunchieImage from "../components/product-images/scrunchie-image"
-import CoasterImage from "../components/product-images/coaster-image"
-import DrawingImage from "../components/product-images/drawing-image"
-import BraceletImage from "../components/product-images/bracelet-image"
-import BearImage from "../components/product-images/bear-image"
+import "../css/products.css";
+import OctopusImage from "../components/product-images/octopus-image";
+import ScrunchieImage from "../components/product-images/scrunchie-image";
+import CoasterImage from "../components/product-images/coaster-image";
+import DrawingImage from "../components/product-images/drawing-image";
+import BraceletImage from "../components/product-images/bracelet-image";
+import BearImage from "../components/product-images/bear-image";
 const ProductsPage = () => {
     return (
         <Layout>
@@ -34,7 +34,7 @@ const ProductsPage = () => {
                         those nights).
                     </p>
                     <p>
-                        <strong>Made by:</strong> Erin, Maddie
+                        <strong>Made by:</strong> Erin, Maddie, Paige
                     </p>
                 </div>
                 <div className="product-image-wrapper">
@@ -130,7 +130,7 @@ const ProductsPage = () => {
                 </div>
             </div>
         </Layout>
-    )
-}
+    );
+};
 
-export default ProductsPage
+export default ProductsPage;

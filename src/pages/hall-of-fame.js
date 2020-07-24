@@ -1,7 +1,7 @@
-import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import ChonktopusImage from "../components/product-images/chonktopus-image"
+import React from "react";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import RaffleImage from "../components/hall-of-fame-images/RaffleImage";
 const HallOfFamePage = () => {
     return (
         <Layout>
@@ -26,11 +26,11 @@ const HallOfFamePage = () => {
                     </p>
                 </div>
                 <div className="product-image-wrapper">
-                    <ChonktopusImage />
+                    <RaffleImage />
                 </div>
             </div>
         </Layout>
-    )
-}
+    );
+};
 
-export default HallOfFamePage
+export default HallOfFamePage;

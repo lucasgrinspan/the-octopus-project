@@ -1,22 +1,11 @@
-import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { Link, graphql, useStaticQuery } from "gatsby"
-import Img from "gatsby-image"
-import TimerAlert from "../components/alerts/timer-alert"
+import React from "react";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import { Link } from "gatsby";
+import TimerAlert from "../components/alerts/timer-alert";
+import ChonktopusImage from "../components/product-images/chonktopus-image";
 
 const RafflePage = () => {
-    const data = useStaticQuery(graphql`
-        query {
-            file(relativePath: { eq: "raffle.jpg" }) {
-                childImageSharp {
-                    fixed(width: 300, height: 446) {
-                        ...GatsbyImageSharpFixed_tracedSVG
-                    }
-                }
-            }
-        }
-    `)
     return (
         <Layout>
             <SEO title="Raffle" />
@@ -47,14 +36,7 @@ const RafflePage = () => {
                 }}
             >
                 <div id="raffle-image">
-                    <Img
-                        fixed={data.file.childImageSharp.fixed}
-                        style={{
-                            borderRadius: 10,
-                            boxShadow:
-                                "0 1px 1px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.12),0 4px 4px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.12),0 16px 16px rgba(0, 0, 0, 0.12)",
-                        }}
-                    />
+                    <ChonktopusImage />
                     <p>Do I look like a hat to you?</p>
                 </div>
             </div>
@@ -110,7 +92,7 @@ const RafflePage = () => {
                 <Link to="/contact/">contact us</Link>.
             </p>
         </Layout>
-    )
-}
+    );
+};
 
-export default RafflePage
+export default RafflePage;

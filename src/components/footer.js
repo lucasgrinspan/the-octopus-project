@@ -1,7 +1,7 @@
-import React from "react"
-import { Link, useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
-import { FaInstagram, FaHeart } from "react-icons/fa"
+import React from "react";
+import { Link, useStaticQuery, graphql } from "gatsby";
+import Img from "gatsby-image";
+import { FaInstagram, FaHeart } from "react-icons/fa";
 const Footer = () => {
     return (
         <footer>
@@ -17,8 +17,8 @@ const Footer = () => {
                     <div id="footer-pages">
                         <Link to="/the-team/">Meet the Team</Link>
                         <Link to="/get-involved/">Get Involved</Link>
-                        <Link to="/contact/">Contact</Link>
-                        <Link to="/stats/">Statistics</Link>
+                        <Link to="/products/">Our Products</Link>
+                        <Link to="/hall-of-fame/">Hall of Fame</Link>
                         <Link to="/gallery/">Gallery</Link>
                     </div>
                 </div>
@@ -43,7 +43,7 @@ const Footer = () => {
                 </div>
             </div>
         </footer>
-    )
-}
+    );
+};
 
-export default Footer
+export default Footer;
