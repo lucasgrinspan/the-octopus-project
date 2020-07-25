@@ -1415,6 +1415,15 @@ const donationData = [
         octopusColor: ["yellow"],
         sent: false,
     },
+    {
+        amount: 5,
+        org: "Dream Defenders Miami",
+        id: 0,
+        date: "July 24, 2020 21:10",
+        order: ["octopus"],
+        octopusColor: ["white"],
+        sent: false,
+    },
 ];
 
 export const DONATIONS = validateDonations(donationData);
