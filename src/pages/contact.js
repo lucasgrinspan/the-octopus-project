@@ -1,16 +1,18 @@
-import React from "react"
+import React from "react";
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import ContactForm from "../components/contact-form/contact-form"
-import ColorChart from "../components/color-chart/color-chart"
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import ContactForm from "../components/contact-form/contact-form";
+import ColorChart from "../components/color-chart/color-chart";
 
-import { COLORS, COLORS_CONTRAST } from "../data/colors"
+import { COLORS, COLORS_CONTRAST } from "../data/colors";
+import GoodbyeAlert from "../components/alerts/goodbye-alert";
 
 const ContactPage = () => {
     return (
         <Layout>
             <SEO title="Contact" />
+            <GoodbyeAlert />
             <h1>Contact</h1>
             <p>
                 We can be reached at our Instagram,{" "}
@@ -39,7 +41,7 @@ const ContactPage = () => {
             </p>
             <ColorChart colors={COLORS} colorsContrast={COLORS_CONTRAST} />
         </Layout>
-    )
-}
+    );
+};
 
-export default ContactPage
+export default ContactPage;

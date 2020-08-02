@@ -45,6 +45,11 @@
     --error-bg: #f8d7da;
     --error-border: #f5c6cb;
     --error-text-link: #491217;
+
+    --info-text-color: #004085;
+    --info-bg: #cce5ff;
+    --info-border: #b8daff;
+    --info-text-link: #002752;
 }
 #landing-image {
     float: right;

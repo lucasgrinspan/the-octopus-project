@@ -39,6 +39,15 @@
 .alert.alert-error a {
     color: var(--error-text-link);
 }
+.alert.alert-info {
+    border: 2px solid var(--info-border);
+    background-color: var(--info-bg);
+    color: var(--info-text-color);
+}
+.alert.alert-info a {
+    color: var(--info-text-link);
+}
+
 .alert-content {
     margin-left: 6px;
 }

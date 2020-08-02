@@ -1,13 +1,13 @@
-import React from "react"
-import { Link, useStaticQuery } from "gatsby"
-import Img from "gatsby-image"
-import { FiExternalLink } from "react-icons/fi"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
+import React from "react";
+import { Link, useStaticQuery } from "gatsby";
+import Img from "gatsby-image";
+import { FiExternalLink } from "react-icons/fi";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
 
-import "../css/global.css"
-import "../css/index.css"
-import RaffleAlert from "../components/alerts/raffle-alert"
+import "../css/global.css";
+import "../css/index.css";
+import GoodbyeAlert from "../components/alerts/goodbye-alert";
 
 const IndexPage = () => {
     const data = useStaticQuery(graphql`
@@ -20,10 +20,11 @@ const IndexPage = () => {
                 }
             }
         }
-    `)
+    `);
     return (
         <Layout index={true}>
             <SEO title="Home" />
+            <GoodbyeAlert />
             <h1>Welcome</h1>
             <div id="landing-content-container">
                 <div id="landing-image">
@@ -122,7 +123,7 @@ const IndexPage = () => {
                 </p>
             </div>
         </Layout>
-    )
-}
+    );
+};
 
-export default IndexPage
+export default IndexPage;
